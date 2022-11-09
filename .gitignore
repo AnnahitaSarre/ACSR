@@ -7,7 +7,6 @@ data/CUSTIME written syllables/
 *.mp4
 *.avi
 *.csv
-*.lpc
 *.png
 *.wav
 !data/test_videos/*
