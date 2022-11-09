@@ -1,0 +1,1 @@
+la   bu-ti-k   e-tE   d@   1   ka-R-t-je   e-l-wa-Ne   d2   la   fu-l   ,except ["d'accessoires"], check the phon for: {'la': 'la', 'était': 'etE', 'un': '1', 'éloigné': 'elwaNe', 'de': 'd2', 'foule': 'ful'}

@@ -1,0 +1,1 @@
+a-p-RE   d2   i-l   i   a-vE   p-l5   d2   sa-l   a   la-ve   ,except ['semaines', 'vêtements'], check the phon for: {'après': 'apRE', 'il': 'il', 'y': 'i', 'avait': 'avE', 'plein': 'pl5', 'de': 'd2', 'sales': 'sal'}

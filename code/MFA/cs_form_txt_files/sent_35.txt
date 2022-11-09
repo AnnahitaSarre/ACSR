@@ -1,0 +1,1 @@
+a-p-RE   y-n   ba-la-d   d@   le   S@   me   bO-t   e-tE   ku-vE-R-t   d2   bu   ,check the cv for: {'après': 'apRE', 'une': 'yn', 'les': 'le', 'mes': 'me', 'bottes': 'bOt', 'étaient': 'etE', 'couvertes': 'kuvERt', 'de': 'd2'}

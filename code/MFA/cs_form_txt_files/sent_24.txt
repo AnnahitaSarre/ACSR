@@ -1,0 +1,1 @@
+sa   nu-vE-l   S@-b-R   a   1   my-R   p5   @   Ru-Z   ,except ['entièrement'], check the phon for: {'sa': 'sa', 'nouvelle': 'nuvEl', 'chambre': 'S@bR', 'a': 'a', 'un': '1', 'peint': 'p5', 'en': '@', 'rouge': 'RuZ'}

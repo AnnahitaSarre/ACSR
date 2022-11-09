@@ -1,0 +1,1 @@
+@   e-te   a   la   mE-R   le   @-f@   Z-wE   sy-R   la   ,except ['pelouse'], check the phon for: {'en': '@', 'été': 'ete', 'la': 'la', 'les': 'le', 'sur': 'syR'}

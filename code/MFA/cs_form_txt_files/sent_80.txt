@@ -1,0 +1,1 @@
+E-l   @-kO-R   Za-mE   pa-se   la   bu-R-s   ,except ["n'est", 'devant'], check the phon for: {'passée': 'pase', 'la': 'la'}

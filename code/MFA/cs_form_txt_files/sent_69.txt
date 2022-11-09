@@ -1,0 +1,1 @@
+le   d2   e-ty-d-j@   s2   s§   R@-k§-t-Re   e   s§   t§-be   a-mu-R2   ,except ['rapidement'], check the phon for: {'les': 'le', 'étudiants': 'etydj@', 'sont': 's§', 'rencontrés': 'R@k§tRe', 'tombés': 't§be', 'amoureux': 'amuR2'}

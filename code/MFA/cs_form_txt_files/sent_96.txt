@@ -1,0 +1,1 @@
+pu-R   e-de   la   fa-mi-j   d2   sa   fa-m   a   O-R-ga-ni-ze   tu   ,except ['diego', "l'enterrement"], check the phon for: {'pour': 'puR', 'la': 'la', 'de': 'd2', 'sa': 'sa', 'a': 'a', 'organisé': 'ORganize', 'tout': 'tu'}

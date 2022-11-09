@@ -1,0 +1,386 @@
+/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 0.24.2 when using version 1.1.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 0.24.2 when using version 1.1.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+  0%|          | 0/93 [00:00<?, ?it/s]INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+  1%|          | 1/93 [00:01<02:42,  1.77s/it]  2%|▏         | 2/93 [00:01<01:14,  1.22it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+  3%|▎         | 3/93 [00:02<00:50,  1.79it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+  4%|▍         | 4/93 [00:02<00:38,  2.29it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+  5%|▌         | 5/93 [00:02<00:32,  2.75it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+  6%|▋         | 6/93 [00:02<00:27,  3.13it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+  8%|▊         | 7/93 [00:03<00:25,  3.41it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+  9%|▊         | 8/93 [00:03<00:24,  3.47it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 10%|▉         | 9/93 [00:03<00:22,  3.69it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 11%|█         | 10/93 [00:03<00:21,  3.83it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 12%|█▏        | 11/93 [00:04<00:20,  3.95it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 13%|█▎        | 12/93 [00:04<00:20,  4.02it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 14%|█▍        | 13/93 [00:04<00:19,  4.04it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 15%|█▌        | 14/93 [00:04<00:20,  3.88it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 16%|█▌        | 15/93 [00:05<00:19,  3.96it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 17%|█▋        | 16/93 [00:05<00:19,  3.99it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 18%|█▊        | 17/93 [00:05<00:18,  4.06it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 19%|█▉        | 18/93 [00:05<00:18,  4.13it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 20%|██        | 19/93 [00:06<00:17,  4.14it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 22%|██▏       | 20/93 [00:06<00:17,  4.15it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 23%|██▎       | 21/93 [00:06<00:18,  3.94it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 24%|██▎       | 22/93 [00:06<00:17,  4.00it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 25%|██▍       | 23/93 [00:07<00:17,  3.97it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 26%|██▌       | 24/93 [00:07<00:17,  4.05it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 27%|██▋       | 25/93 [00:07<00:16,  4.09it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 28%|██▊       | 26/93 [00:07<00:16,  4.14it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 29%|██▉       | 27/93 [00:08<00:15,  4.17it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 30%|███       | 28/93 [00:08<00:16,  3.85it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 31%|███       | 29/93 [00:08<00:16,  3.94it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 32%|███▏      | 30/93 [00:08<00:15,  4.04it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 33%|███▎      | 31/93 [00:09<00:15,  4.06it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 34%|███▍      | 32/93 [00:09<00:14,  4.11it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 35%|███▌      | 33/93 [00:09<00:14,  4.14it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 37%|███▋      | 34/93 [00:09<00:14,  4.15it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 38%|███▊      | 35/93 [00:10<00:14,  3.99it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 39%|███▊      | 36/93 [00:10<00:14,  4.07it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 40%|███▉      | 37/93 [00:10<00:13,  4.08it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 41%|████      | 38/93 [00:10<00:13,  4.14it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 42%|████▏     | 39/93 [00:10<00:12,  4.17it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 43%|████▎     | 40/93 [00:11<00:12,  4.17it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 44%|████▍     | 41/93 [00:11<00:12,  4.21it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 45%|████▌     | 42/93 [00:11<00:12,  4.02it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 46%|████▌     | 43/93 [00:11<00:12,  4.05it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 47%|████▋     | 44/93 [00:12<00:11,  4.09it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 48%|████▊     | 45/93 [00:12<00:11,  4.17it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 49%|████▉     | 46/93 [00:12<00:11,  4.17it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 51%|█████     | 47/93 [00:12<00:10,  4.22it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 52%|█████▏    | 48/93 [00:13<00:10,  4.13it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 53%|█████▎    | 49/93 [00:13<00:11,  3.96it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 54%|█████▍    | 50/93 [00:13<00:10,  4.06it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 55%|█████▍    | 51/93 [00:13<00:10,  4.12it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 56%|█████▌    | 52/93 [00:14<00:09,  4.14it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 57%|█████▋    | 53/93 [00:14<00:09,  4.18it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 58%|█████▊    | 54/93 [00:14<00:09,  4.22it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 59%|█████▉    | 55/93 [00:14<00:09,  3.91it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 60%|██████    | 56/93 [00:15<00:09,  4.01it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 61%|██████▏   | 57/93 [00:15<00:08,  4.09it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 62%|██████▏   | 58/93 [00:15<00:08,  4.09it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 63%|██████▎   | 59/93 [00:15<00:08,  4.13it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 65%|██████▍   | 60/93 [00:16<00:07,  4.20it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 66%|██████▌   | 61/93 [00:16<00:07,  4.19it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 67%|██████▋   | 62/93 [00:16<00:07,  3.94it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 68%|██████▊   | 63/93 [00:16<00:07,  4.05it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 69%|██████▉   | 64/93 [00:17<00:07,  4.08it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 70%|██████▉   | 65/93 [00:17<00:06,  4.12it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 71%|███████   | 66/93 [00:17<00:06,  4.17it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 72%|███████▏  | 67/93 [00:17<00:05,  4.39it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 73%|███████▎  | 68/93 [00:17<00:05,  4.54it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 74%|███████▍  | 69/93 [00:18<00:05,  4.39it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 75%|███████▌  | 70/93 [00:18<00:05,  4.55it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 76%|███████▋  | 71/93 [00:18<00:04,  4.63it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 77%|███████▋  | 72/93 [00:18<00:04,  4.66it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 78%|███████▊  | 73/93 [00:19<00:04,  4.75it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 80%|███████▉  | 74/93 [00:19<00:03,  4.82it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 81%|████████  | 75/93 [00:19<00:03,  4.86it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 82%|████████▏ | 76/93 [00:19<00:03,  4.51it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 83%|████████▎ | 77/93 [00:19<00:03,  4.64it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 84%|████████▍ | 78/93 [00:20<00:03,  4.72it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 85%|████████▍ | 79/93 [00:20<00:02,  4.80it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 86%|████████▌ | 80/93 [00:20<00:02,  4.85it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 87%|████████▋ | 81/93 [00:20<00:02,  4.88it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 88%|████████▊ | 82/93 [00:20<00:02,  4.91it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 89%|████████▉ | 83/93 [00:21<00:02,  4.57it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 90%|█████████ | 84/93 [00:21<00:01,  4.68it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 91%|█████████▏| 85/93 [00:21<00:01,  4.76it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 92%|█████████▏| 86/93 [00:21<00:01,  4.81it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 94%|█████████▎| 87/93 [00:21<00:01,  4.85it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 95%|█████████▍| 88/93 [00:22<00:01,  4.88it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 96%|█████████▌| 89/93 [00:22<00:00,  4.92it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 97%|█████████▋| 90/93 [00:22<00:00,  4.62it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 98%|█████████▊| 91/93 [00:22<00:00,  4.70it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 99%|█████████▉| 92/93 [00:23<00:00,  4.77it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+100%|██████████| 93/93 [00:23<00:00,  4.81it/s]100%|██████████| 93/93 [00:23<00:00,  4.00it/s]
+/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 0.24.2 when using version 1.1.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 0.24.2 when using version 1.1.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+  0%|          | 0/93 [00:00<?, ?it/s]INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+  1%|          | 1/93 [00:01<02:44,  1.79s/it]  2%|▏         | 2/93 [00:01<01:15,  1.21it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+  3%|▎         | 3/93 [00:02<00:50,  1.78it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+  4%|▍         | 4/93 [00:02<00:39,  2.28it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+  5%|▌         | 5/93 [00:02<00:32,  2.73it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+  6%|▋         | 6/93 [00:02<00:27,  3.11it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+  8%|▊         | 7/93 [00:03<00:25,  3.39it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+  9%|▊         | 8/93 [00:03<00:24,  3.44it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 10%|▉         | 9/93 [00:03<00:22,  3.65it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 11%|█         | 10/93 [00:03<00:21,  3.79it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 12%|█▏        | 11/93 [00:04<00:20,  3.91it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 13%|█▎        | 12/93 [00:04<00:20,  3.97it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 14%|█▍        | 13/93 [00:04<00:20,  3.99it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 15%|█▌        | 14/93 [00:04<00:20,  3.81it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 16%|█▌        | 15/93 [00:05<00:20,  3.88it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 17%|█▋        | 16/93 [00:05<00:19,  3.94it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 18%|█▊        | 17/93 [00:05<00:18,  4.04it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 19%|█▉        | 18/93 [00:05<00:18,  4.11it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 20%|██        | 19/93 [00:06<00:17,  4.12it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 22%|██▏       | 20/93 [00:06<00:17,  4.14it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 23%|██▎       | 21/93 [00:06<00:18,  3.94it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 24%|██▎       | 22/93 [00:06<00:17,  4.00it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 25%|██▍       | 23/93 [00:07<00:17,  3.97it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 26%|██▌       | 24/93 [00:07<00:17,  4.05it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 27%|██▋       | 25/93 [00:07<00:16,  4.08it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 28%|██▊       | 26/93 [00:07<00:16,  4.13it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 29%|██▉       | 27/93 [00:08<00:16,  4.11it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 30%|███       | 28/93 [00:08<00:16,  3.87it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 31%|███       | 29/93 [00:08<00:16,  3.95it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 32%|███▏      | 30/93 [00:08<00:15,  4.04it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 33%|███▎      | 31/93 [00:09<00:15,  4.06it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 34%|███▍      | 32/93 [00:09<00:14,  4.10it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 35%|███▌      | 33/93 [00:09<00:14,  4.14it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 37%|███▋      | 34/93 [00:09<00:14,  4.14it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 38%|███▊      | 35/93 [00:10<00:14,  3.95it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 39%|███▊      | 36/93 [00:10<00:14,  4.03it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 40%|███▉      | 37/93 [00:10<00:13,  4.05it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 41%|████      | 38/93 [00:10<00:13,  4.10it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 42%|████▏     | 39/93 [00:11<00:13,  4.14it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 43%|████▎     | 40/93 [00:11<00:12,  4.15it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 44%|████▍     | 41/93 [00:11<00:12,  4.18it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 45%|████▌     | 42/93 [00:11<00:12,  3.96it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 46%|████▌     | 43/93 [00:12<00:12,  4.00it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 47%|████▋     | 44/93 [00:12<00:12,  4.05it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 48%|████▊     | 45/93 [00:12<00:11,  4.13it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 49%|████▉     | 46/93 [00:12<00:11,  4.13it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 51%|█████     | 47/93 [00:13<00:10,  4.19it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 52%|█████▏    | 48/93 [00:13<00:10,  4.11it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 53%|█████▎    | 49/93 [00:13<00:11,  3.93it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 54%|█████▍    | 50/93 [00:13<00:10,  4.02it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 55%|█████▍    | 51/93 [00:14<00:10,  4.09it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 56%|█████▌    | 52/93 [00:14<00:09,  4.11it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 57%|█████▋    | 53/93 [00:14<00:09,  4.15it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 58%|█████▊    | 54/93 [00:14<00:09,  4.20it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 59%|█████▉    | 55/93 [00:15<00:09,  3.88it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 60%|██████    | 56/93 [00:15<00:09,  3.99it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 61%|██████▏   | 57/93 [00:15<00:08,  4.05it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 62%|██████▏   | 58/93 [00:15<00:08,  4.07it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 63%|██████▎   | 59/93 [00:15<00:08,  4.10it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 65%|██████▍   | 60/93 [00:16<00:07,  4.18it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 66%|██████▌   | 61/93 [00:16<00:07,  4.18it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 67%|██████▋   | 62/93 [00:16<00:07,  3.92it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 68%|██████▊   | 63/93 [00:16<00:07,  4.03it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 69%|██████▉   | 64/93 [00:17<00:07,  4.07it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 70%|██████▉   | 65/93 [00:17<00:06,  4.12it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 71%|███████   | 66/93 [00:17<00:06,  4.17it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 72%|███████▏  | 67/93 [00:17<00:05,  4.38it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 73%|███████▎  | 68/93 [00:18<00:05,  4.54it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 74%|███████▍  | 69/93 [00:18<00:05,  4.31it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 75%|███████▌  | 70/93 [00:18<00:05,  4.43it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 76%|███████▋  | 71/93 [00:18<00:04,  4.57it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 77%|███████▋  | 72/93 [00:18<00:04,  4.69it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 78%|███████▊  | 73/93 [00:19<00:04,  4.76it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 80%|███████▉  | 74/93 [00:19<00:03,  4.82it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 81%|████████  | 75/93 [00:19<00:03,  4.86it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 82%|████████▏ | 76/93 [00:19<00:03,  4.53it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 83%|████████▎ | 77/93 [00:20<00:03,  4.64it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 84%|████████▍ | 78/93 [00:20<00:03,  4.73it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 85%|████████▍ | 79/93 [00:20<00:02,  4.79it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 86%|████████▌ | 80/93 [00:20<00:02,  4.81it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 87%|████████▋ | 81/93 [00:20<00:02,  4.83it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 88%|████████▊ | 82/93 [00:21<00:02,  4.85it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 89%|████████▉ | 83/93 [00:21<00:02,  4.51it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 90%|█████████ | 84/93 [00:21<00:01,  4.62it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 91%|█████████▏| 85/93 [00:21<00:01,  4.70it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 92%|█████████▏| 86/93 [00:21<00:01,  4.77it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 94%|█████████▎| 87/93 [00:22<00:01,  4.82it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 95%|█████████▍| 88/93 [00:22<00:01,  4.86it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 96%|█████████▌| 89/93 [00:22<00:00,  4.88it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 97%|█████████▋| 90/93 [00:22<00:00,  4.56it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 98%|█████████▊| 91/93 [00:22<00:00,  4.66it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+ 99%|█████████▉| 92/93 [00:23<00:00,  4.74it/s]/network/lustre/iss02/cohen/data/Annahita/LPC/ACSR/Decoder/code/utils.py:169: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  df_coords = df_coords.append(dict(zip(columns, row)),
+100%|██████████| 93/93 [00:23<00:00,  4.80it/s]100%|██████████| 93/93 [00:23<00:00,  3.98it/s]

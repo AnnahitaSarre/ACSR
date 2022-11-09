@@ -1,0 +1,1 @@
+le   po-li-s-je   pa   dy   tu   k§-p-Ri   R@-k§-t-Re   ,except ["n'avaient", "qu'elles", "s'étaient"], check the phon for: {'les': 'le', 'policiers': 'polisje', 'pas': 'pa', 'tout': 'tu', 'compris': 'k§pRi', 'rencontrées': 'R@k§tRe'}

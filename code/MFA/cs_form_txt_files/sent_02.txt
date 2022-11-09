@@ -1,0 +1,1 @@
+a   u-b-li-je   la   Ra-d-jo   k2   sa   mE-R   a-vE   k§-s-t-R-8i-t   ,except ['albert'], check the phon for: {'a': 'a', 'oublié': 'ublije', 'la': 'la', 'que': 'k2', 'sa': 'sa', 'avait': 'avE'}

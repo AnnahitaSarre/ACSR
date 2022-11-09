@@ -1,0 +1,1 @@
+@   s§   li-v-R   i-l   a   d2   ,except ['regardant', 'deviné', "l'espèce", "l'abeille"], check the phon for: {'en': '@', 'son': 's§', 'livre': 'livR', 'il': 'il', 'a': 'a', 'de': 'd2'}

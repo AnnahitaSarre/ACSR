@@ -1,0 +1,5 @@
+python is /network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/bin/python
+Loaded model: ../trained_models/model_rf_position_female_cropped.pkl
+../stimuli/words/mp4/../stimuli/words/mp4/word_h0_01.mp4
+Loaded model: ../trained_models/model_rf_shape_female_cropped.pkl
+../stimuli/words/mp4/../stimuli/words/mp4/word_h0_01.mp4

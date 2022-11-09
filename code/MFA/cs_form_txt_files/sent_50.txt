@@ -1,0 +1,1 @@
+pu-R   n2   pa   a-v-wa-R   f5   i-l   o-RE   dy   m@-Ze   p-ly   vi-t   ,check the cv for: {'pour': 'puR', 'pas': 'pa', 'avoir': 'avwaR', 'il': 'il', 'aurait': 'oRE', 'dû': 'dy', 'manger': 'm@Ze', 'plus': 'ply', 'vite': 'vit'}

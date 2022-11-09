@@ -1,0 +1,1 @@
+Z2   s-8i   a-le   1   Sa   ,except ['acheter'], check the phon for: {'je': 'Z2', 'suis': 's8i', 'un': '1'}

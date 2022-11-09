@@ -1,0 +1,1 @@
+,except ['capirot'], check the phon for: {}

@@ -1,0 +1,1 @@
+a-p-RE   sa   pa-n   1   pa-s@   E-de   a   pu-se   sa   v-wa-ty-R   ,except ["l'a"], check the phon for: {'après': 'apRE', 'sa': 'sa', 'un': '1', 'passant': 'pas@', 'voiture': 'vwatyR'}

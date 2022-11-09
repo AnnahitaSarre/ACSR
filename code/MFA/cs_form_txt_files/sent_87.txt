@@ -1,0 +1,1 @@
+1   t-RE   Z9-n   S-j5   1   S-jo   ,except ["s'appelle"], check the phon for: {'un': '1', 'jeune': 'Z9n'}

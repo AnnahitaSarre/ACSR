@@ -1,0 +1,1 @@
+sa   vy   a   di-mi-n-8e   e   E-l   d-wa   y-n   nu-vE-l   pE-R   d2   ,except ['acheter', 'lunnettes'], check the phon for: {'sa': 'sa', 'vue': 'vy', 'a': 'a', 'diminué': 'dimin8e', 'doit': 'dwa', 'une': 'yn', 'nouvelle': 'nuvEl', 'paire': 'pER', 'de': 'd2'}

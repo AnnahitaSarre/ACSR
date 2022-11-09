@@ -1,0 +1,266 @@
+python is /network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/bin/python
+Loaded model: ../trained_models/model_rf_position_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_l1_01_pseudo.mp4
+Extracting coordinates...
+                 fn_video frame_number  ...  z_r_hand20  v_r_hand20
+0   word_l1_01_pseudo.mp4            2  ...    0.020313         0.0
+1   word_l1_01_pseudo.mp4            3  ...    0.055734         0.0
+2   word_l1_01_pseudo.mp4            4  ...    0.043535         0.0
+3   word_l1_01_pseudo.mp4            5  ...    0.039512         0.0
+4   word_l1_01_pseudo.mp4            6  ...    0.027898         0.0
+5   word_l1_01_pseudo.mp4            7  ...    0.027895         0.0
+6   word_l1_01_pseudo.mp4            8  ...    0.022406         0.0
+7   word_l1_01_pseudo.mp4            9  ...    0.024991         0.0
+8   word_l1_01_pseudo.mp4           10  ...    0.019919         0.0
+9   word_l1_01_pseudo.mp4           11  ...    0.019122         0.0
+10  word_l1_01_pseudo.mp4           12  ...    0.031930         0.0
+11  word_l1_01_pseudo.mp4           13  ...    0.025574         0.0
+12  word_l1_01_pseudo.mp4           14  ...    0.023408         0.0
+13  word_l1_01_pseudo.mp4           15  ...    0.026318         0.0
+14  word_l1_01_pseudo.mp4           16  ...    0.030834         0.0
+15  word_l1_01_pseudo.mp4           17  ...    0.031093         0.0
+16  word_l1_01_pseudo.mp4           18  ...    0.017910         0.0
+17  word_l1_01_pseudo.mp4           19  ...    0.023963         0.0
+18  word_l1_01_pseudo.mp4           20  ...    0.020630         0.0
+19  word_l1_01_pseudo.mp4           21  ...    0.009724         0.0
+20  word_l1_01_pseudo.mp4           22  ...    0.008852         0.0
+21  word_l1_01_pseudo.mp4           23  ...    0.007688         0.0
+22  word_l1_01_pseudo.mp4           24  ...    0.010621         0.0
+23  word_l1_01_pseudo.mp4           25  ...    0.011012         0.0
+24  word_l1_01_pseudo.mp4           26  ...    0.008809         0.0
+25  word_l1_01_pseudo.mp4           27  ...    0.011147         0.0
+26  word_l1_01_pseudo.mp4           28  ...    0.011208         0.0
+27  word_l1_01_pseudo.mp4           29  ...    0.013165         0.0
+28  word_l1_01_pseudo.mp4           30  ...    0.012505         0.0
+29  word_l1_01_pseudo.mp4           31  ...    0.007029         0.0
+30  word_l1_01_pseudo.mp4           32  ...    0.007351         0.0
+31  word_l1_01_pseudo.mp4           33  ...    0.006057         0.0
+32  word_l1_01_pseudo.mp4           34  ...    0.012182         0.0
+33  word_l1_01_pseudo.mp4           35  ...    0.021122         0.0
+34  word_l1_01_pseudo.mp4           36  ...    0.025472         0.0
+35  word_l1_01_pseudo.mp4           37  ...    0.020366         0.0
+36  word_l1_01_pseudo.mp4           38  ...    0.022266         0.0
+37  word_l1_01_pseudo.mp4           39  ...    0.023461         0.0
+38  word_l1_01_pseudo.mp4           40  ...    0.027253         0.0
+39  word_l1_01_pseudo.mp4           41  ...    0.029734         0.0
+40  word_l1_01_pseudo.mp4           42  ...    0.031260         0.0
+41  word_l1_01_pseudo.mp4           43  ...    0.023706         0.0
+42  word_l1_01_pseudo.mp4           44  ...    0.021711         0.0
+43  word_l1_01_pseudo.mp4           45  ...    0.018777         0.0
+44  word_l1_01_pseudo.mp4           46  ...    0.018467         0.0
+45  word_l1_01_pseudo.mp4           47  ...    0.014176         0.0
+46  word_l1_01_pseudo.mp4           48  ...    0.013676         0.0
+47  word_l1_01_pseudo.mp4           49  ...    0.013575         0.0
+48  word_l1_01_pseudo.mp4           50  ...    0.012408         0.0
+49  word_l1_01_pseudo.mp4           51  ...    0.023557         0.0
+50  word_l1_01_pseudo.mp4           52  ...    0.013353         0.0
+51  word_l1_01_pseudo.mp4           53  ...    0.020196         0.0
+52  word_l1_01_pseudo.mp4           54  ...    0.036529         0.0
+53  word_l1_01_pseudo.mp4           55  ...    0.027954         0.0
+54  word_l1_01_pseudo.mp4           56  ...    0.029964         0.0
+55  word_l1_01_pseudo.mp4           57  ...    0.017657         0.0
+56  word_l1_01_pseudo.mp4           58  ...    0.050614         0.0
+57  word_l1_01_pseudo.mp4           59  ...    0.036925         0.0
+
+[58 rows x 1958 columns]
+Extracting features...
+Face width computed for normalizaiton 0.16219255146938724
+Features saved to: ../output/word_l1_01_pseudo_features.csv
+                 fn_video  ... distance_r_hand6_r_hand10
+0   word_l1_01_pseudo.mp4  ...                  0.244292
+1   word_l1_01_pseudo.mp4  ...                  0.192598
+2   word_l1_01_pseudo.mp4  ...                  0.190914
+3   word_l1_01_pseudo.mp4  ...                  0.190463
+4   word_l1_01_pseudo.mp4  ...                  0.173751
+5   word_l1_01_pseudo.mp4  ...                  0.170324
+6   word_l1_01_pseudo.mp4  ...                  0.165016
+7   word_l1_01_pseudo.mp4  ...                  0.143189
+8   word_l1_01_pseudo.mp4  ...                  0.152349
+9   word_l1_01_pseudo.mp4  ...                  0.150996
+10  word_l1_01_pseudo.mp4  ...                  0.155419
+11  word_l1_01_pseudo.mp4  ...                  0.147384
+12  word_l1_01_pseudo.mp4  ...                  0.142289
+13  word_l1_01_pseudo.mp4  ...                  0.148230
+14  word_l1_01_pseudo.mp4  ...                  0.165274
+15  word_l1_01_pseudo.mp4  ...                  0.175223
+16  word_l1_01_pseudo.mp4  ...                  0.177374
+17  word_l1_01_pseudo.mp4  ...                  0.193557
+18  word_l1_01_pseudo.mp4  ...                  0.236212
+19  word_l1_01_pseudo.mp4  ...                  0.267432
+20  word_l1_01_pseudo.mp4  ...                  0.314154
+21  word_l1_01_pseudo.mp4  ...                  0.343372
+22  word_l1_01_pseudo.mp4  ...                  0.379303
+23  word_l1_01_pseudo.mp4  ...                  0.369867
+24  word_l1_01_pseudo.mp4  ...                  0.389698
+25  word_l1_01_pseudo.mp4  ...                  0.394463
+26  word_l1_01_pseudo.mp4  ...                  0.382042
+27  word_l1_01_pseudo.mp4  ...                  0.392304
+28  word_l1_01_pseudo.mp4  ...                  0.389760
+29  word_l1_01_pseudo.mp4  ...                  0.386504
+30  word_l1_01_pseudo.mp4  ...                  0.366525
+31  word_l1_01_pseudo.mp4  ...                  0.318243
+32  word_l1_01_pseudo.mp4  ...                  0.348274
+33  word_l1_01_pseudo.mp4  ...                  0.331097
+34  word_l1_01_pseudo.mp4  ...                  0.313120
+35  word_l1_01_pseudo.mp4  ...                  0.300182
+36  word_l1_01_pseudo.mp4  ...                  0.312470
+37  word_l1_01_pseudo.mp4  ...                  0.311830
+38  word_l1_01_pseudo.mp4  ...                  0.312631
+39  word_l1_01_pseudo.mp4  ...                  0.301293
+40  word_l1_01_pseudo.mp4  ...                  0.311698
+41  word_l1_01_pseudo.mp4  ...                  0.305257
+42  word_l1_01_pseudo.mp4  ...                  0.302153
+43  word_l1_01_pseudo.mp4  ...                  0.294541
+44  word_l1_01_pseudo.mp4  ...                  0.279486
+45  word_l1_01_pseudo.mp4  ...                  0.232708
+46  word_l1_01_pseudo.mp4  ...                  0.225248
+47  word_l1_01_pseudo.mp4  ...                  0.241915
+48  word_l1_01_pseudo.mp4  ...                  0.229310
+49  word_l1_01_pseudo.mp4  ...                  0.234889
+50  word_l1_01_pseudo.mp4  ...                  0.240558
+51  word_l1_01_pseudo.mp4  ...                  0.246207
+52  word_l1_01_pseudo.mp4  ...                  0.229186
+53  word_l1_01_pseudo.mp4  ...                  0.233101
+54  word_l1_01_pseudo.mp4  ...                  0.229430
+55  word_l1_01_pseudo.mp4  ...                  0.231062
+56  word_l1_01_pseudo.mp4  ...                  0.188987
+57  word_l1_01_pseudo.mp4  ...                  0.195516
+
+[58 rows x 30 columns]
+csv file with predictions was saved to ../output/predictions_rf_position_female_cropped_word_l1_01_pseudo.csv
+Loaded model: ../trained_models/model_rf_shape_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_l1_01_pseudo.mp4
+Extracting coordinates...
+                 fn_video frame_number  ...  z_r_hand20  v_r_hand20
+0   word_l1_01_pseudo.mp4            2  ...    0.020313         0.0
+1   word_l1_01_pseudo.mp4            3  ...    0.055734         0.0
+2   word_l1_01_pseudo.mp4            4  ...    0.043535         0.0
+3   word_l1_01_pseudo.mp4            5  ...    0.039512         0.0
+4   word_l1_01_pseudo.mp4            6  ...    0.027898         0.0
+5   word_l1_01_pseudo.mp4            7  ...    0.027895         0.0
+6   word_l1_01_pseudo.mp4            8  ...    0.022406         0.0
+7   word_l1_01_pseudo.mp4            9  ...    0.024991         0.0
+8   word_l1_01_pseudo.mp4           10  ...    0.019919         0.0
+9   word_l1_01_pseudo.mp4           11  ...    0.019122         0.0
+10  word_l1_01_pseudo.mp4           12  ...    0.031930         0.0
+11  word_l1_01_pseudo.mp4           13  ...    0.025574         0.0
+12  word_l1_01_pseudo.mp4           14  ...    0.023408         0.0
+13  word_l1_01_pseudo.mp4           15  ...    0.026318         0.0
+14  word_l1_01_pseudo.mp4           16  ...    0.030834         0.0
+15  word_l1_01_pseudo.mp4           17  ...    0.031093         0.0
+16  word_l1_01_pseudo.mp4           18  ...    0.017910         0.0
+17  word_l1_01_pseudo.mp4           19  ...    0.023963         0.0
+18  word_l1_01_pseudo.mp4           20  ...    0.020630         0.0
+19  word_l1_01_pseudo.mp4           21  ...    0.009724         0.0
+20  word_l1_01_pseudo.mp4           22  ...    0.008852         0.0
+21  word_l1_01_pseudo.mp4           23  ...    0.007688         0.0
+22  word_l1_01_pseudo.mp4           24  ...    0.010621         0.0
+23  word_l1_01_pseudo.mp4           25  ...    0.011012         0.0
+24  word_l1_01_pseudo.mp4           26  ...    0.008809         0.0
+25  word_l1_01_pseudo.mp4           27  ...    0.011147         0.0
+26  word_l1_01_pseudo.mp4           28  ...    0.011208         0.0
+27  word_l1_01_pseudo.mp4           29  ...    0.013165         0.0
+28  word_l1_01_pseudo.mp4           30  ...    0.012505         0.0
+29  word_l1_01_pseudo.mp4           31  ...    0.007029         0.0
+30  word_l1_01_pseudo.mp4           32  ...    0.007351         0.0
+31  word_l1_01_pseudo.mp4           33  ...    0.006057         0.0
+32  word_l1_01_pseudo.mp4           34  ...    0.012182         0.0
+33  word_l1_01_pseudo.mp4           35  ...    0.021122         0.0
+34  word_l1_01_pseudo.mp4           36  ...    0.025472         0.0
+35  word_l1_01_pseudo.mp4           37  ...    0.020366         0.0
+36  word_l1_01_pseudo.mp4           38  ...    0.022266         0.0
+37  word_l1_01_pseudo.mp4           39  ...    0.023461         0.0
+38  word_l1_01_pseudo.mp4           40  ...    0.027253         0.0
+39  word_l1_01_pseudo.mp4           41  ...    0.029734         0.0
+40  word_l1_01_pseudo.mp4           42  ...    0.031260         0.0
+41  word_l1_01_pseudo.mp4           43  ...    0.023706         0.0
+42  word_l1_01_pseudo.mp4           44  ...    0.021711         0.0
+43  word_l1_01_pseudo.mp4           45  ...    0.018777         0.0
+44  word_l1_01_pseudo.mp4           46  ...    0.018467         0.0
+45  word_l1_01_pseudo.mp4           47  ...    0.014176         0.0
+46  word_l1_01_pseudo.mp4           48  ...    0.013676         0.0
+47  word_l1_01_pseudo.mp4           49  ...    0.013575         0.0
+48  word_l1_01_pseudo.mp4           50  ...    0.012408         0.0
+49  word_l1_01_pseudo.mp4           51  ...    0.023557         0.0
+50  word_l1_01_pseudo.mp4           52  ...    0.013353         0.0
+51  word_l1_01_pseudo.mp4           53  ...    0.020196         0.0
+52  word_l1_01_pseudo.mp4           54  ...    0.036529         0.0
+53  word_l1_01_pseudo.mp4           55  ...    0.027954         0.0
+54  word_l1_01_pseudo.mp4           56  ...    0.029964         0.0
+55  word_l1_01_pseudo.mp4           57  ...    0.017657         0.0
+56  word_l1_01_pseudo.mp4           58  ...    0.050614         0.0
+57  word_l1_01_pseudo.mp4           59  ...    0.036925         0.0
+
+[58 rows x 1958 columns]
+Extracting features...
+Face width computed for normalizaiton 0.16219255146938724
+Features saved to: ../output/word_l1_01_pseudo_features.csv
+                 fn_video  ... distance_r_hand6_r_hand10
+0   word_l1_01_pseudo.mp4  ...                  0.244292
+1   word_l1_01_pseudo.mp4  ...                  0.192598
+2   word_l1_01_pseudo.mp4  ...                  0.190914
+3   word_l1_01_pseudo.mp4  ...                  0.190463
+4   word_l1_01_pseudo.mp4  ...                  0.173751
+5   word_l1_01_pseudo.mp4  ...                  0.170324
+6   word_l1_01_pseudo.mp4  ...                  0.165016
+7   word_l1_01_pseudo.mp4  ...                  0.143189
+8   word_l1_01_pseudo.mp4  ...                  0.152349
+9   word_l1_01_pseudo.mp4  ...                  0.150996
+10  word_l1_01_pseudo.mp4  ...                  0.155419
+11  word_l1_01_pseudo.mp4  ...                  0.147384
+12  word_l1_01_pseudo.mp4  ...                  0.142289
+13  word_l1_01_pseudo.mp4  ...                  0.148230
+14  word_l1_01_pseudo.mp4  ...                  0.165274
+15  word_l1_01_pseudo.mp4  ...                  0.175223
+16  word_l1_01_pseudo.mp4  ...                  0.177374
+17  word_l1_01_pseudo.mp4  ...                  0.193557
+18  word_l1_01_pseudo.mp4  ...                  0.236212
+19  word_l1_01_pseudo.mp4  ...                  0.267432
+20  word_l1_01_pseudo.mp4  ...                  0.314154
+21  word_l1_01_pseudo.mp4  ...                  0.343372
+22  word_l1_01_pseudo.mp4  ...                  0.379303
+23  word_l1_01_pseudo.mp4  ...                  0.369867
+24  word_l1_01_pseudo.mp4  ...                  0.389698
+25  word_l1_01_pseudo.mp4  ...                  0.394463
+26  word_l1_01_pseudo.mp4  ...                  0.382042
+27  word_l1_01_pseudo.mp4  ...                  0.392304
+28  word_l1_01_pseudo.mp4  ...                  0.389760
+29  word_l1_01_pseudo.mp4  ...                  0.386504
+30  word_l1_01_pseudo.mp4  ...                  0.366525
+31  word_l1_01_pseudo.mp4  ...                  0.318243
+32  word_l1_01_pseudo.mp4  ...                  0.348274
+33  word_l1_01_pseudo.mp4  ...                  0.331097
+34  word_l1_01_pseudo.mp4  ...                  0.313120
+35  word_l1_01_pseudo.mp4  ...                  0.300182
+36  word_l1_01_pseudo.mp4  ...                  0.312470
+37  word_l1_01_pseudo.mp4  ...                  0.311830
+38  word_l1_01_pseudo.mp4  ...                  0.312631
+39  word_l1_01_pseudo.mp4  ...                  0.301293
+40  word_l1_01_pseudo.mp4  ...                  0.311698
+41  word_l1_01_pseudo.mp4  ...                  0.305257
+42  word_l1_01_pseudo.mp4  ...                  0.302153
+43  word_l1_01_pseudo.mp4  ...                  0.294541
+44  word_l1_01_pseudo.mp4  ...                  0.279486
+45  word_l1_01_pseudo.mp4  ...                  0.232708
+46  word_l1_01_pseudo.mp4  ...                  0.225248
+47  word_l1_01_pseudo.mp4  ...                  0.241915
+48  word_l1_01_pseudo.mp4  ...                  0.229310
+49  word_l1_01_pseudo.mp4  ...                  0.234889
+50  word_l1_01_pseudo.mp4  ...                  0.240558
+51  word_l1_01_pseudo.mp4  ...                  0.246207
+52  word_l1_01_pseudo.mp4  ...                  0.229186
+53  word_l1_01_pseudo.mp4  ...                  0.233101
+54  word_l1_01_pseudo.mp4  ...                  0.229430
+55  word_l1_01_pseudo.mp4  ...                  0.231062
+56  word_l1_01_pseudo.mp4  ...                  0.188987
+57  word_l1_01_pseudo.mp4  ...                  0.195516
+
+[58 rows x 30 columns]
+csv file with predictions was saved to ../output/predictions_rf_shape_female_cropped_word_l1_01_pseudo.csv
+Visualization for: ../stimuli/words/mp4/word_l1_01_pseudo.mp4
+32
+SYLLABLE ONSETS (IN FRAMES):
+[]
+MAXIMA (IN FRAMES)
+[14 24 26 40]
+Syllable, frame number (mfa), frame number (onset)

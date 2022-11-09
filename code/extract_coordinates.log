@@ -1,0 +1,4 @@
+python extract_coordinates.py --gender male --cropping cropped
+Extracting coordinates from: ../data/training_videos/male/cropped/position_00.mp4
+Extracting coordinates from: ../data/training_videos/male/cropped/position_01.mp4
+Extracting coordinates from: ../data/training_videos/male/cropped/position_02.mp4

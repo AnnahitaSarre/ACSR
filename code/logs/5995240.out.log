@@ -1,0 +1,73 @@
+python is /network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/bin/python
+Loaded model: ../trained_models/model_rf_position_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_l0_02_pseudo.mp4
+Extracting coordinates...
+                 fn_video frame_number  ...  z_r_hand20  v_r_hand20
+0   word_l0_02_pseudo.mp4            2  ...    0.053676         0.0
+1   word_l0_02_pseudo.mp4            3  ...    0.020764         0.0
+2   word_l0_02_pseudo.mp4            4  ...    0.057988         0.0
+3   word_l0_02_pseudo.mp4            5  ...    0.023222         0.0
+4   word_l0_02_pseudo.mp4            6  ...    0.027759         0.0
+..                    ...          ...  ...         ...         ...
+68  word_l0_02_pseudo.mp4           70  ...    0.023684         0.0
+69  word_l0_02_pseudo.mp4           71  ...    0.024487         0.0
+70  word_l0_02_pseudo.mp4           72  ...    0.039337         0.0
+71  word_l0_02_pseudo.mp4           73  ...    0.035801         0.0
+72  word_l0_02_pseudo.mp4           74  ...    0.033919         0.0
+
+[73 rows x 1958 columns]
+Extracting features...
+Face width computed for normalizaiton 0.1614208131174195
+Features saved to: ../output/word_l0_02_pseudo_features.csv
+                 fn_video  ... distance_r_hand6_r_hand10
+0   word_l0_02_pseudo.mp4  ...                  0.180036
+1   word_l0_02_pseudo.mp4  ...                  0.220530
+2   word_l0_02_pseudo.mp4  ...                  0.219605
+3   word_l0_02_pseudo.mp4  ...                  0.222246
+4   word_l0_02_pseudo.mp4  ...                  0.264434
+..                    ...  ...                       ...
+68  word_l0_02_pseudo.mp4  ...                  0.277725
+69  word_l0_02_pseudo.mp4  ...                  0.278034
+70  word_l0_02_pseudo.mp4  ...                  0.226172
+71  word_l0_02_pseudo.mp4  ...                  0.203967
+72  word_l0_02_pseudo.mp4  ...                  0.211649
+
+[73 rows x 30 columns]
+csv file with predictions was saved to ../output/predictions_rf_position_female_cropped_word_l0_02_pseudo.csv
+Loaded model: ../trained_models/model_rf_shape_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_l0_02_pseudo.mp4
+Extracting coordinates...
+                 fn_video frame_number  ...  z_r_hand20  v_r_hand20
+0   word_l0_02_pseudo.mp4            2  ...    0.053676         0.0
+1   word_l0_02_pseudo.mp4            3  ...    0.020764         0.0
+2   word_l0_02_pseudo.mp4            4  ...    0.057988         0.0
+3   word_l0_02_pseudo.mp4            5  ...    0.023222         0.0
+4   word_l0_02_pseudo.mp4            6  ...    0.027759         0.0
+..                    ...          ...  ...         ...         ...
+68  word_l0_02_pseudo.mp4           70  ...    0.023684         0.0
+69  word_l0_02_pseudo.mp4           71  ...    0.024487         0.0
+70  word_l0_02_pseudo.mp4           72  ...    0.039337         0.0
+71  word_l0_02_pseudo.mp4           73  ...    0.035801         0.0
+72  word_l0_02_pseudo.mp4           74  ...    0.033919         0.0
+
+[73 rows x 1958 columns]
+Extracting features...
+Face width computed for normalizaiton 0.1614208131174195
+Features saved to: ../output/word_l0_02_pseudo_features.csv
+                 fn_video  ... distance_r_hand6_r_hand10
+0   word_l0_02_pseudo.mp4  ...                  0.180036
+1   word_l0_02_pseudo.mp4  ...                  0.220530
+2   word_l0_02_pseudo.mp4  ...                  0.219605
+3   word_l0_02_pseudo.mp4  ...                  0.222246
+4   word_l0_02_pseudo.mp4  ...                  0.264434
+..                    ...  ...                       ...
+68  word_l0_02_pseudo.mp4  ...                  0.277725
+69  word_l0_02_pseudo.mp4  ...                  0.278034
+70  word_l0_02_pseudo.mp4  ...                  0.226172
+71  word_l0_02_pseudo.mp4  ...                  0.203967
+72  word_l0_02_pseudo.mp4  ...                  0.211649
+
+[73 rows x 30 columns]
+csv file with predictions was saved to ../output/predictions_rf_shape_female_cropped_word_l0_02_pseudo.csv
+Visualization for: ../stimuli/words/mp4/word_l0_02_pseudo.mp4
+32

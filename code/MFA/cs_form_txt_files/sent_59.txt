@@ -1,0 +1,1 @@
+@-t@-dy   m-jo-le   1   Sa   ,except ["j'ai"], check the phon for: {'entendu': '@t@dy', 'un': '1'}

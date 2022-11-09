@@ -1,0 +1,1 @@
+pu-R   a-me-l-jo-Re   sE-t   i-l   fo-d-RE   a-Zu-te   1   p2   d2   sy-k-R   ,except ['recette'], check the phon for: {'pour': 'puR', 'il': 'il', 'un': '1', 'peu': 'p2', 'de': 'd2', 'sucre': 'sykR'}

@@ -1,0 +1,1 @@
+d2   t-RE   l§-g   sy-R   s§   ba-to   ,except ["l'équipe", "s'est", 'entrainée', 'semaines'], check the phon for: {'de': 'd2', 'longues': 'l§g', 'sur': 'syR', 'son': 's§'}

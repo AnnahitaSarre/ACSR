@@ -1,0 +1,1 @@
+pu-R   a-v-wa-R   pa-R-ti-si-pe   a   la   ku-R-s   a   1   ba-d-Z   ,except ["l'enfant", 'reçu'], check the phon for: {'pour': 'puR', 'avoir': 'avwaR', 'la': 'la', 'course': 'kuRs', 'a': 'a', 'un': '1'}

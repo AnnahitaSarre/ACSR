@@ -1,0 +1,1 @@
+le   ma-R-S@   d2   le-gy-m   pa   d2   fE-R   la   gE-R   ,except ["n'ont", "l'habitude"], check the phon for: {'les': 'le', 'marchands': 'maRS@', 'de': 'd2', 'pas': 'pa', 'la': 'la'}

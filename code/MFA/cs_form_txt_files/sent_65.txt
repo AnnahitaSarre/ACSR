@@ -1,0 +1,1 @@
+p@-d@   la   R@-do-ne   le   p-je   d2   l-8i   p-ly   ma-l   a   Sa-k   pa   ,except ['lila', 'faisaient'], check the phon for: {'pendant': 'p@d@', 'la': 'la', 'randonnée': 'R@done', 'les': 'le', 'de': 'd2', 'lui': 'l8i', 'plus': 'ply', 'mal': 'mal', 'pas': 'pa'}

@@ -1,0 +1,78 @@
+python is /network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/bin/python
+Loaded model: ../trained_models/model_rf_position_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_l0_03_pseudo.mp4
+Extracting coordinates...
+                 fn_video frame_number  ...  z_r_hand20  v_r_hand20
+0   word_l0_03_pseudo.mp4            1  ...    0.054047         0.0
+1   word_l0_03_pseudo.mp4            2  ...    0.031696         0.0
+2   word_l0_03_pseudo.mp4            3  ...    0.042594         0.0
+3   word_l0_03_pseudo.mp4            4  ...    0.019497         0.0
+4   word_l0_03_pseudo.mp4            5  ...    0.025606         0.0
+..                    ...          ...  ...         ...         ...
+61  word_l0_03_pseudo.mp4           62  ...    0.032357         0.0
+62  word_l0_03_pseudo.mp4           63  ...    0.045393         0.0
+63  word_l0_03_pseudo.mp4           64  ...    0.040457         0.0
+64  word_l0_03_pseudo.mp4           65  ...    0.032605         0.0
+65  word_l0_03_pseudo.mp4           66  ...    0.038073         0.0
+
+[66 rows x 1958 columns]
+Extracting features...
+Face width computed for normalizaiton 0.16173193856528773
+Features saved to: ../output/word_l0_03_pseudo_features.csv
+                 fn_video  ... distance_r_hand6_r_hand10
+0   word_l0_03_pseudo.mp4  ...                  0.258884
+1   word_l0_03_pseudo.mp4  ...                  0.205697
+2   word_l0_03_pseudo.mp4  ...                  0.210328
+3   word_l0_03_pseudo.mp4  ...                  0.192640
+4   word_l0_03_pseudo.mp4  ...                  0.185144
+..                    ...  ...                       ...
+61  word_l0_03_pseudo.mp4  ...                  0.154099
+62  word_l0_03_pseudo.mp4  ...                  0.161566
+63  word_l0_03_pseudo.mp4  ...                  0.159871
+64  word_l0_03_pseudo.mp4  ...                  0.186410
+65  word_l0_03_pseudo.mp4  ...                  0.187086
+
+[66 rows x 30 columns]
+csv file with predictions was saved to ../output/predictions_rf_position_female_cropped_word_l0_03_pseudo.csv
+Loaded model: ../trained_models/model_rf_shape_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_l0_03_pseudo.mp4
+Extracting coordinates...
+                 fn_video frame_number  ...  z_r_hand20  v_r_hand20
+0   word_l0_03_pseudo.mp4            1  ...    0.054047         0.0
+1   word_l0_03_pseudo.mp4            2  ...    0.031696         0.0
+2   word_l0_03_pseudo.mp4            3  ...    0.042594         0.0
+3   word_l0_03_pseudo.mp4            4  ...    0.019497         0.0
+4   word_l0_03_pseudo.mp4            5  ...    0.025606         0.0
+..                    ...          ...  ...         ...         ...
+61  word_l0_03_pseudo.mp4           62  ...    0.032357         0.0
+62  word_l0_03_pseudo.mp4           63  ...    0.045393         0.0
+63  word_l0_03_pseudo.mp4           64  ...    0.040457         0.0
+64  word_l0_03_pseudo.mp4           65  ...    0.032605         0.0
+65  word_l0_03_pseudo.mp4           66  ...    0.038073         0.0
+
+[66 rows x 1958 columns]
+Extracting features...
+Face width computed for normalizaiton 0.16173193856528773
+Features saved to: ../output/word_l0_03_pseudo_features.csv
+                 fn_video  ... distance_r_hand6_r_hand10
+0   word_l0_03_pseudo.mp4  ...                  0.258884
+1   word_l0_03_pseudo.mp4  ...                  0.205697
+2   word_l0_03_pseudo.mp4  ...                  0.210328
+3   word_l0_03_pseudo.mp4  ...                  0.192640
+4   word_l0_03_pseudo.mp4  ...                  0.185144
+..                    ...  ...                       ...
+61  word_l0_03_pseudo.mp4  ...                  0.154099
+62  word_l0_03_pseudo.mp4  ...                  0.161566
+63  word_l0_03_pseudo.mp4  ...                  0.159871
+64  word_l0_03_pseudo.mp4  ...                  0.186410
+65  word_l0_03_pseudo.mp4  ...                  0.187086
+
+[66 rows x 30 columns]
+csv file with predictions was saved to ../output/predictions_rf_shape_female_cropped_word_l0_03_pseudo.csv
+Visualization for: ../stimuli/words/mp4/word_l0_03_pseudo.mp4
+32
+SYLLABLE ONSETS (IN FRAMES):
+[]
+MAXIMA (IN FRAMES)
+[16 33 49]
+Syllable, frame number (mfa), frame number (onset)

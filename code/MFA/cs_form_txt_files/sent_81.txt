@@ -1,0 +1,1 @@
+a-p-RE   la-ve   le   m5   le   a   se-Se   a-vE-k   y-n   sE-R-v-jE-t   ,except ["s'être", 'nathan'], check the phon for: {'après': 'apRE', 'lavé': 'lave', 'les': 'le', 'a': 'a', 'une': 'yn'}

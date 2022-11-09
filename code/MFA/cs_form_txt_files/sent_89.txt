@@ -1,0 +1,1 @@
+a   e-te   t-Ri-s-t   d2   de-ku-v-Ri-R   k2   s§   p-wa-s§   Ru-Z   e-tE   mO-R   ,except ['manon'], check the phon for: {'a': 'a', 'été': 'ete', 'de': 'd2', 'que': 'k2', 'son': 's§', 'rouge': 'RuZ', 'était': 'etE', 'mort': 'mOR'}

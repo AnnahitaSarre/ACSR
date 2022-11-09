@@ -1,0 +1,1 @@
+a-p-RE   a-v-wa-R   e-te   la-ve   l2   kO-l   p-ly   ta-Se   d2   bu   ,except ["n'était"], check the phon for: {'après': 'apRE', 'avoir': 'avwaR', 'été': 'ete', 'lavé': 'lave', 'le': 'l2', 'plus': 'ply', 'de': 'd2'}

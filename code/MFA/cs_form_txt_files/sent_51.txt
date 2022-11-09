@@ -1,0 +1,1 @@
+e-tE   k2   s§   e-ki-p   d2   ba-s-kE-t   pa   ga-Ne   ,except ['kevin', 'deçu', "n'ait"], check the phon for: {'était': 'etE', 'que': 'k2', 'son': 's§', 'équipe': 'ekip', 'de': 'd2', 'pas': 'pa', 'gagné': 'gaNe'}

@@ -1,0 +1,1 @@
+,except ['vogal'], check the phon for: {}

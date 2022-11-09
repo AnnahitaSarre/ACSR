@@ -1,0 +1,1 @@
+le   fo   Zy-mo   e-tE   o-si   di-fe-R@   k2   l2   Zu-R   e   la   n-8i   ,check the cv for: {'les': 'le', 'faux': 'fo', 'étaient': 'etE', 'différents': 'difeR@', 'que': 'k2', 'le': 'l2', 'la': 'la', 'nuit': 'n8i'}

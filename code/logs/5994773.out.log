@@ -1,0 +1,71 @@
+python is /network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/bin/python
+Loaded model: ../trained_models/model_rf_position_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_h0_01_pseudo.mp4
+Extracting coordinates...
+                 fn_video frame_number  ...  z_r_hand20  v_r_hand20
+0   word_h0_01_pseudo.mp4            6  ...    0.024876         0.0
+1   word_h0_01_pseudo.mp4            7  ...    0.036161         0.0
+2   word_h0_01_pseudo.mp4            8  ...    0.031727         0.0
+3   word_h0_01_pseudo.mp4            9  ...    0.026146         0.0
+4   word_h0_01_pseudo.mp4           10  ...    0.024273         0.0
+..                    ...          ...  ...         ...         ...
+65  word_h0_01_pseudo.mp4           71  ...    0.049957         0.0
+66  word_h0_01_pseudo.mp4           72  ...    0.054843         0.0
+67  word_h0_01_pseudo.mp4           73  ...    0.071321         0.0
+68  word_h0_01_pseudo.mp4           74  ...    0.047454         0.0
+69  word_h0_01_pseudo.mp4           75  ...    0.052836         0.0
+
+[70 rows x 1958 columns]
+Extracting features...
+Face width computed for normalizaiton 0.16137595637947064
+Features saved to: ../output/word_h0_01_pseudo_features.csv
+                 fn_video  ... distance_r_hand6_r_hand10
+0   word_h0_01_pseudo.mp4  ...                  0.351987
+1   word_h0_01_pseudo.mp4  ...                  0.370785
+2   word_h0_01_pseudo.mp4  ...                  0.326735
+3   word_h0_01_pseudo.mp4  ...                  0.310035
+4   word_h0_01_pseudo.mp4  ...                  0.316700
+..                    ...  ...                       ...
+65  word_h0_01_pseudo.mp4  ...                  0.174344
+66  word_h0_01_pseudo.mp4  ...                  0.172961
+67  word_h0_01_pseudo.mp4  ...                  0.174058
+68  word_h0_01_pseudo.mp4  ...                  0.179079
+69  word_h0_01_pseudo.mp4  ...                  0.192816
+
+[70 rows x 30 columns]
+csv file with predictions was saved to ../output/predictions_rf_position_female_cropped_word_h0_01_pseudo.csv
+Loaded model: ../trained_models/model_rf_shape_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_h0_01_pseudo.mp4
+Extracting coordinates...
+                 fn_video frame_number  ...  z_r_hand20  v_r_hand20
+0   word_h0_01_pseudo.mp4            6  ...    0.024876         0.0
+1   word_h0_01_pseudo.mp4            7  ...    0.036161         0.0
+2   word_h0_01_pseudo.mp4            8  ...    0.031727         0.0
+3   word_h0_01_pseudo.mp4            9  ...    0.026146         0.0
+4   word_h0_01_pseudo.mp4           10  ...    0.024273         0.0
+..                    ...          ...  ...         ...         ...
+65  word_h0_01_pseudo.mp4           71  ...    0.049957         0.0
+66  word_h0_01_pseudo.mp4           72  ...    0.054843         0.0
+67  word_h0_01_pseudo.mp4           73  ...    0.071321         0.0
+68  word_h0_01_pseudo.mp4           74  ...    0.047454         0.0
+69  word_h0_01_pseudo.mp4           75  ...    0.052836         0.0
+
+[70 rows x 1958 columns]
+Extracting features...
+Face width computed for normalizaiton 0.16137595637947064
+Features saved to: ../output/word_h0_01_pseudo_features.csv
+                 fn_video  ... distance_r_hand6_r_hand10
+0   word_h0_01_pseudo.mp4  ...                  0.351987
+1   word_h0_01_pseudo.mp4  ...                  0.370785
+2   word_h0_01_pseudo.mp4  ...                  0.326735
+3   word_h0_01_pseudo.mp4  ...                  0.310035
+4   word_h0_01_pseudo.mp4  ...                  0.316700
+..                    ...  ...                       ...
+65  word_h0_01_pseudo.mp4  ...                  0.174344
+66  word_h0_01_pseudo.mp4  ...                  0.172961
+67  word_h0_01_pseudo.mp4  ...                  0.174058
+68  word_h0_01_pseudo.mp4  ...                  0.179079
+69  word_h0_01_pseudo.mp4  ...                  0.192816
+
+[70 rows x 30 columns]
+csv file with predictions was saved to ../output/predictions_rf_shape_female_cropped_word_h0_01_pseudo.csv

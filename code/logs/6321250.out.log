@@ -1,0 +1,80 @@
+python is /network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/bin/python
+Loaded model: ../trained_models/model_rf_position_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_h2_14.mp4
+Extracting coordinates...
+          fn_video frame_number   x_face0  ...  y_r_hand20  z_r_hand20  v_r_hand20
+0   word_h2_14.mp4            2  0.497524  ...    1.061964    0.092126         0.0
+1   word_h2_14.mp4            3  0.497464  ...    1.015235    0.005112         0.0
+2   word_h2_14.mp4            4  0.497294  ...    0.987710    0.022960         0.0
+3   word_h2_14.mp4            5  0.497678  ...    0.963702    0.027231         0.0
+4   word_h2_14.mp4            6  0.496480  ...    0.943421    0.032644         0.0
+..             ...          ...       ...  ...         ...         ...         ...
+59  word_h2_14.mp4           61  0.493901  ...    0.645611   -0.030747         0.0
+60  word_h2_14.mp4           62  0.493844  ...    0.658446   -0.008175         0.0
+61  word_h2_14.mp4           63  0.494237  ...    0.688286    0.004986         0.0
+62  word_h2_14.mp4           64  0.494209  ...    0.730412    0.009460         0.0
+63  word_h2_14.mp4           65  0.494311  ...    0.765534    0.008235         0.0
+
+[64 rows x 1958 columns]
+Extracting features...
+Face width computed for normalizaiton 0.15961362374443036
+Features saved to: ../output/word_h2_14_features.csv
+          fn_video  ... distance_r_hand6_r_hand10
+0   word_h2_14.mp4  ...                  0.283737
+1   word_h2_14.mp4  ...                  0.278640
+2   word_h2_14.mp4  ...                  0.281168
+3   word_h2_14.mp4  ...                  0.279638
+4   word_h2_14.mp4  ...                  0.316337
+..             ...  ...                       ...
+59  word_h2_14.mp4  ...                  0.148473
+60  word_h2_14.mp4  ...                  0.147745
+61  word_h2_14.mp4  ...                  0.164709
+62  word_h2_14.mp4  ...                  0.152107
+63  word_h2_14.mp4  ...                  0.153415
+
+[64 rows x 30 columns]
+csv file with predictions was saved to ../output/predictions_rf_position_female_cropped_word_h2_14.csv
+Loaded model: ../trained_models/model_rf_shape_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_h2_14.mp4
+Extracting coordinates...
+          fn_video frame_number   x_face0  ...  y_r_hand20  z_r_hand20  v_r_hand20
+0   word_h2_14.mp4            2  0.497524  ...    1.061964    0.092126         0.0
+1   word_h2_14.mp4            3  0.497464  ...    1.015235    0.005112         0.0
+2   word_h2_14.mp4            4  0.497294  ...    0.987710    0.022960         0.0
+3   word_h2_14.mp4            5  0.497678  ...    0.963702    0.027231         0.0
+4   word_h2_14.mp4            6  0.496480  ...    0.943421    0.032644         0.0
+..             ...          ...       ...  ...         ...         ...         ...
+59  word_h2_14.mp4           61  0.493901  ...    0.645611   -0.030747         0.0
+60  word_h2_14.mp4           62  0.493844  ...    0.658446   -0.008175         0.0
+61  word_h2_14.mp4           63  0.494237  ...    0.688286    0.004986         0.0
+62  word_h2_14.mp4           64  0.494209  ...    0.730412    0.009460         0.0
+63  word_h2_14.mp4           65  0.494311  ...    0.765534    0.008235         0.0
+
+[64 rows x 1958 columns]
+Extracting features...
+Face width computed for normalizaiton 0.15961362374443036
+Features saved to: ../output/word_h2_14_features.csv
+          fn_video  ... distance_r_hand6_r_hand10
+0   word_h2_14.mp4  ...                  0.283737
+1   word_h2_14.mp4  ...                  0.278640
+2   word_h2_14.mp4  ...                  0.281168
+3   word_h2_14.mp4  ...                  0.279638
+4   word_h2_14.mp4  ...                  0.316337
+..             ...  ...                       ...
+59  word_h2_14.mp4  ...                  0.148473
+60  word_h2_14.mp4  ...                  0.147745
+61  word_h2_14.mp4  ...                  0.164709
+62  word_h2_14.mp4  ...                  0.152107
+63  word_h2_14.mp4  ...                  0.153415
+
+[64 rows x 30 columns]
+csv file with predictions was saved to ../output/predictions_rf_shape_female_cropped_word_h2_14.csv
+Visualization for: ../stimuli/words/mp4/word_h2_14.mp4
+32
+SYLLABLE ONSETS (IN FRAMES):
+[26 40]
+MAXIMA (IN FRAMES)
+[25 58]
+Syllable, frame number (mfa), frame number (onset)
+pE 26 25
+R 40 58

@@ -1,0 +1,1 @@
+l2   po-v-R   O-m   tu-Zu-R   d2   pE-R-d-R   y-n   nu-vE-l   d@   ,except ["s'inquiétait"], check the phon for: {'le': 'l2', 'pauvre': 'povR', 'de': 'd2', 'une': 'yn', 'nouvelle': 'nuvEl'}

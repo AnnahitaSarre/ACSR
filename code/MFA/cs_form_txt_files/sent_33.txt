@@ -1,0 +1,1 @@
+@   Ry-S   E-l   a   e-te   pi-ke   pa-R   y-n   a-bE-j   ,except ["s'approchant", "d'une"], check the phon for: {'en': '@', 'a': 'a', 'été': 'ete', 'piquée': 'pike', 'par': 'paR', 'une': 'yn'}

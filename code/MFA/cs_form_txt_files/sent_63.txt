@@ -1,0 +1,1 @@
+pu-R   u-v-Ri-R   la   pO-R-t   to-ma   a   ti-Re   d2   tu-t   se   fO-R-s   ,check the cv for: {'pour': 'puR', 'la': 'la', 'porte': 'pORt', 'a': 'a', 'tiré': 'tiRe', 'de': 'd2', 'toutes': 'tut', 'ses': 'se', 'forces': 'fORs'}
