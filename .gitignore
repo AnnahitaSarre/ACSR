@@ -3,7 +3,7 @@ data/training_videos/
 data/CUSTIME sentences
 data/CUSTIME words
 data/CUSTIME written syllables/
-data/test_videos/*
+!data/test_videos/test_marked.avi
 !data/test_videos/test_marked.png
 *.mp4
 *.avi
