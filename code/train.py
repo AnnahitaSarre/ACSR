@@ -38,10 +38,10 @@ df_features = pd.read_csv(os.path.join(args.path2features, f'training_features_{
 feature_names = get_feature_names(args.property_type)
 # print('Training with the following features:')
 # print(feature_names)
- 
 df_features = df_features[['fn_video'] + feature_names]# features
 df_features = df_features.loc[df_features['fn_video'].str.contains(args.property_type,
                                                                    regex=False)]
+df_features = df_features.dropna() # remove nans
 y = df_features['fn_video'] # target value
 X = df_features.drop(['fn_video'], axis=1)
 

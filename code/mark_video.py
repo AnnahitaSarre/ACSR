@@ -2,36 +2,41 @@
 """
 Created on Mon Jun 27 14:08:44 2022
 
-@author: hagar
 """
 import argparse
 import os
 import pandas as pd
-
-from utils import load_model, load_video, compute_velocity
-from viz import mark_pred_on_video
+from pathlib import Path
+import PyQt5
+import utils
+import viz
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--gender', default='male', choices=['male', 'female'])
+parser.add_argument('--gender', default='female', choices=['male', 'female'])
 parser.add_argument('--cropping', default='cropped', choices=['cropped', 'non_cropped'])
 parser.add_argument('--model-type', choices=['rf', 'lr', 'rc', 'gb'],
                     help = 'rf:random-forest; lr:logisitic-regrssion',
                     default='rf')
-parser.add_argument('--fn-video', default='word_h0_02.mp4')
-parser.add_argument('--path2video', default=os.path.join('..', 'data',
-                                                         'test_videos'))
+parser.add_argument('--fn-video', default='word_h0_10.mp4')
+parser.add_argument('--path2video', default=os.path.join('..', 'stimuli',
+                                                         'words', 'mp4'))
 parser.add_argument('--path2predictions', default=os.path.join('..',
                                                                'output'))
 parser.add_argument('--path2output', default=os.path.join('..', 'output'))
 parser.add_argument('--text-factor', default=1, type=float)
-parser.add_argument('--textgrid', action='store_true', default=False,
+parser.add_argument('--textgrid', action='store_true', default=True,
                     help='If true, onset from grid text will be added')
 parser.add_argument('--show-video', action='store_true', default=False)
 args = parser.parse_args()
 
+os.environ["QT_QPA_PLATFORM_PLUGIN_PATH"] = os.fspath(
+    Path(PyQt5.__file__).resolve().parent / "Qt5" / "plugins"
+)
+
+
 # LOAD VIDEO
 fn_video = os.path.join(args.path2video, args.fn_video)
-cap = load_video(fn_video)
+cap = utils.load_video(fn_video)
 print(f'Visualization for: {fn_video}')
 print(cap.__sizeof__())
 
@@ -49,23 +54,40 @@ df_coord = pd.read_csv(os.path.join(args.path2output,
 df_features = pd.read_csv(os.path.join(args.path2output,
                                        f'{args.fn_video[:-4]}_features.csv'))
 
-velocity, acceleration = compute_velocity(df_coord, 'r_hand9', 
-                                          fn=f'../output/velocity_{args.fn_video}')
-   
+# SAVE MESAURES TO CSV
+df_measures = pd.read_csv(os.path.join(args.path2output,
+                          f'{args.fn_video[:-4]}_measures.csv'))
 
-# print(velocity.shape)
+# GET STIMULUS ENTIRE STRING
+str_stimulus = utils.get_stimulus_string(fn_video)
 
-# print(df_predictions_pos, df_predictions_shape)
-fig_joint, ax_join = mark_pred_on_video(cap, fn_video, args.gender, args.cropping,
-                                        df_predictions_pos, df_predictions_shape,
-                                        velocity, acceleration, 
-                                        velocity_thresh=0.008,
-                                        acceleration_thresh=0.003,
-                                        p_thresh=0.5,
-                                        text_factor=args.text_factor,
-                                        textgrid=args.textgrid,
-                                        show=args.show_video)
+# GET SYLLABLE ONSETS FROM MFA
+if args.textgrid:
+    lpc_syllables, onset_frames_syllables_mfa = utils.get_syllable_onset_frames_from_mfa(fn_video)
+    n_syllables = len(onset_frames_syllables_mfa)
+else:
+    lpc_syllables = None
+    onset_frames_syllables_mfa = None
+    n_syllables = None
 
-print(f'The marked video was saved to: {fn_video}')
-fig_joint.savefig(f'../figures/{fn_video}.png')
-print(f'Figure was save to: ../figures/{fn_video}.png')
+
+# GET SYLLABLE ONSETS from File
+fn_txt = os.path.join(args.path2video, f'{os.path.basename(fn_video)}.events')
+df_events = pd.read_csv(fn_txt, skiprows=1)
+
+print(df_events)
+
+# MARK VIDEO
+viz.mark_video(cap, fn_video,
+               args.gender, args.cropping,
+               str_stimulus,
+               lpc_syllables,
+               df_predictions_pos,
+               df_predictions_shape,
+               df_measures['velocity_scaled'],
+               df_events['frame_number'].values,
+               onset_frames_syllables_mfa,
+               text_factor=1,
+               show=False)
+
+print(f'The marked video was saved to: {fn_video[:-4]}_marked_with_model_{args.gender}_{args.cropping}.avi')

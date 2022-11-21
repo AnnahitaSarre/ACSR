@@ -2,7 +2,6 @@
 """
 Created on Fri Jun 24 11:37:05 2022
 
-@author: hagar
 """
 import pickle
 import mediapipe as mp # Import mediapipe
@@ -15,6 +14,9 @@ from tqdm import tqdm
 import matplotlib.pyplot as plt
 from scipy.signal import savgol_filter
 import textgrids
+from sklearn.preprocessing import minmax_scale
+from scipy.signal import argrelextrema
+
 
 def load_model(filename):
     with open(filename, 'rb') as f:
@@ -34,9 +36,12 @@ def extract_class_from_fn(fn):
     get class number from filename, e.g.,
     '4' from 'position_04.mp4'
     '''
-    st = fn.find('_') + 1
-    ed = fn.find('.')
-    return int(fn[st:ed])
+    if fn is not None:
+        st = fn.find('_') + 1
+        ed = fn.find('.')
+        return int(fn[st:ed])
+    else:
+        return None
 
 
 def get_distance(df_name, landmark1, landmark2, norm_factor=None):
@@ -81,9 +86,10 @@ def get_delta_dim(df_name, landmark1, landmark2, dim, norm_factor=None):
     return  delta
     
     
-def extract_coordinates(cap, fn_video, show_video=False):
+def extract_coordinates(cap, fn_video, show_video=False, verbose=True):
     
-    
+    if verbose:
+        print(f'Extracting coordinates for: {fn_video}')    
     mp_drawing = mp.solutions.drawing_utils # Drawing helpers
     mp_holistic = mp.solutions.holistic # Mediapipe Solutions
     
@@ -104,6 +110,8 @@ def extract_coordinates(cap, fn_video, show_video=False):
     df_coords = pd.DataFrame(columns=columns)
 
     n_frames = int(cap. get(cv2. CAP_PROP_FRAME_COUNT))
+    if verbose:
+        print(f'Number of frames in video: {n_frames}')
     pbar = tqdm(total=n_frames)
 
     # Initiate holistic model
@@ -150,28 +158,26 @@ def extract_coordinates(cap, fn_video, show_video=False):
 
             
             # Export coordinates
-            try:
-                # Extract Face landmarks
-                
+            if results.face_landmarks is not None:
                 face = results.face_landmarks.landmark
                 face_row = list(np.array([[landmark.x, landmark.y, landmark.z,
                                            landmark.visibility] for landmark in face]).flatten())
-               
-               # Extract right hand landmarks
+
+            else:
+                face_row = [None] * 4
+           # Extract right hand landmarks
+            if results.right_hand_landmarks is not None:
                 r_hand = results.right_hand_landmarks.landmark
                 r_hand_row = list(np.array([[landmark.x, landmark.y, landmark.z,
                                              landmark.visibility] for landmark in r_hand]).flatten())
+            else:
+                r_hand_row = [None] * 4
 
-              
-                
-                #Create the row that will be written in the file
-                row = [fn_video, i_frame] + face_row +r_hand_row
-                df_coords = df_coords.append(dict(zip(columns, row)),
-                                             ignore_index=True)
 
-            except:
-                pass
-
+            #Create the row that will be written in the file
+            row = [fn_video, i_frame] + face_row +r_hand_row
+            curr_df = pd.DataFrame(dict(zip(columns, row)), index=[0])
+            df_coords = pd.concat([df_coords, curr_df], ignore_index=True)
 
             if cv2.waitKey(10) & 0xFF == ord('q'):
                 break
@@ -179,7 +185,9 @@ def extract_coordinates(cap, fn_video, show_video=False):
             
     cap.release()
     cv2.destroyAllWindows()
-    
+
+    assert df_coords.shape[0] == n_frames
+
     return df_coords
  
     
@@ -285,18 +293,26 @@ def get_feature_names(property_name):
 
 
 
-    
 def compute_predictions(model, df_features):
     '''
-    model - sklean model 
+    model - sklean model
     df_features - dataframe with n_samples X n_features
     '''
     X = df_features.to_numpy()
-    predicted_class = model.predict(X)
-    predicted_probs = model.predict_proba(X)
 
-    return predicted_probs, np.asarray(predicted_class)
- 
+    predicted_class, predicted_probs = [], []
+    for X_i in X:
+        if (None in X_i) or (np.nan in X_i) or any([xi!=xi for xi in X_i]):
+            predicted_c = None
+            predicted_p = None
+        else:
+            predicted_c = model.predict([X_i])[0]
+            predicted_p = model.predict_proba([X_i])[0]
+        predicted_class.append(predicted_c)
+        predicted_probs.append(predicted_p)
+
+    return np.asarray(predicted_probs, dtype=object), np.asarray(predicted_class)
+
  
 def compute_velocity(df, landmark, fn=None):
     frame_number = df['frame_number']
@@ -343,6 +359,142 @@ def get_phone_onsets(fn_textgrid):
     return times, labels
 
 
-def get_stimulus_string(fn_stimulus):
+def get_stimulus_string(fn_video):
+    fn_base = os.path.basename(fn_video)[:-4]
+    fn_stimulus = fn_base + '.txt'
+    fn_stimulus = os.path.join('../stimuli/words/mfa_in', fn_stimulus)
     s = open(fn_stimulus, 'r').readlines()
-    return s[0].strip('\n') 
+    return s[0].strip('\n')
+
+
+def dict_phone_transcription():
+    d = {}
+    d['R'] = 'ʁ'
+    d['N'] = 'ɲ'
+    # d['g'] = 'ɟ'
+    return d
+
+def find_syllable_onsets(lpc_syllables, times_phones, labels_phones):
+    phones = labels_phones.copy()
+    d_phone_transcription = dict_phone_transcription()
+    #print(lpc_syllables)
+    #[print(p, t) for p, t in zip(phones, times_phones)]
+    #print('-'*100)
+    times = []
+    for syllable in lpc_syllables:
+        first_phone = syllable[0]
+        if first_phone in d_phone_transcription.keys():
+            first_phone = d_phone_transcription[first_phone]
+        for i, phone in enumerate(phones):
+            if first_phone == phone:
+                times.append(times_phones[i])
+                del phones[i]
+                del times_phones[i]
+                break
+    return times
+
+
+def get_syllable_onset_frames_from_mfa(fn_video):
+    
+    # Load video and get number of frames per second (fps)
+    cap = load_video(fn_video)
+    fps = int(cap.get(cv2.CAP_PROP_FPS)) # frames per second
+    assert fps > 0; 'Frames per seconds is not a positive number' 
+    
+    # Load corresponing TextGrid file
+    fn_base = os.path.basename(fn_video)[:-4]
+    fn_textgrid = fn_base + '.TextGrid'
+    fn_textgrid = os.path.join('../stimuli/words/mfa_out', fn_textgrid)
+
+    # Get LPC parsing of stimulus, into separate SYLLABLES 
+    # (MFA is for ALL phones and we need to know which phones are at the beginning of each syllable)
+    fn_lpc_parsing = fn_base + '.lpc'
+    fn_lpc_parsing = os.path.join('../stimuli/words/txt', fn_lpc_parsing)
+    lpc_syllables = open(fn_lpc_parsing, 'r').readlines()[0].strip('\n').split()
+
+    # PHONE onests in seconds from MFA
+    onset_secs_phones_mfa, labels_phones_textgrid = get_phone_onsets(fn_textgrid)
+    
+    # SYLLABLE ONSET from MFA based on the onset of their FIRST PHONE
+    onset_secs_syllables_mfa = find_syllable_onsets(lpc_syllables, # in seconds
+                                                    onset_secs_phones_mfa,
+                                                    labels_phones_textgrid)
+    onset_frames_syllables_mfa = [int(t*fps) for t in onset_secs_syllables_mfa] # in frames
+
+    return lpc_syllables, onset_frames_syllables_mfa 
+
+
+
+def find_onsets_based_on_extrema(time_series,
+                                 n_syllables=None,
+                                 onset_frames_syllables_mfa=None,
+                                 thresh=None): # condition: time_series > thresh
+    
+    
+    onset_frames_syllables_mfa = np.asarray(onset_frames_syllables_mfa)
+    
+    # find extrema
+    onset_frames_extrema = argrelextrema(time_series, np.greater)[0]
+    # Threshold
+    if thresh is not None:
+        onset_frames_extrema = np.asarray([onset_frame for onset_frame in onset_frames_extrema if time_series[onset_frame]>thresh])
+
+    onset_frames_extrema_temp = onset_frames_extrema.copy()
+
+    onset_frames_picked = []
+    if onset_frames_syllables_mfa is not None: # use MFA onsets to constrain the solution
+        if len(onset_frames_syllables_mfa) == len(onset_frames_extrema_temp):
+            onset_frames_picked = onset_frames_extrema_temp
+        else:
+            for i_frame, onset_frame_syl_mfa in enumerate(onset_frames_syllables_mfa):
+                # Find extremum that is nearest to current MFA onset
+                delta = np.abs(onset_frames_extrema_temp - onset_frame_syl_mfa)
+                IX_onset_frame_extremum_nearest_mfa = np.argmin(delta)
+                onset_frame_extremum_nearest_mfa = onset_frames_extrema_temp[IX_onset_frame_extremum_nearest_mfa]
+                onset_frames_picked.append(onset_frame_extremum_nearest_mfa)
+                # Remove past indexes, in order to make sure the next onset frame is in the future
+                onset_frames_extrema_temp = onset_frames_extrema_temp[onset_frames_extrema_temp > onset_frame_extremum_nearest_mfa]
+    else:
+        IXs = np.argpartition(onset_frames_extrema, -n_syllables)[-n_syllables:]
+        onset_frames_picked = list(onset_frames_extrema,[IXs])
+    return onset_frames_picked, onset_frames_extrema
+
+def scale_velocity(velocity):
+    q25, q75 = np.percentile(velocity, 25), np.percentile(velocity, 75)
+    iqr = q75 - q25
+    cut_off = iqr * 1.5
+    lower, upper = q25 - cut_off, q75 + cut_off
+    velocity = np.clip(velocity, lower, upper)
+    velocity_scaled = minmax_scale(velocity)
+    return velocity_scaled
+
+
+def get_joint_measure(df_predictions_pos,
+                      df_predictions_shape,
+                      velocity_scaled,
+                      weight_velocity=1):
+    
+    # MAX PROBABILITIES (POSITION AND SHAPE)
+    max_probs_pos = df_predictions_pos.copy().filter(regex=("p_class*")).to_numpy().max(axis=1)
+    max_probs_shape = df_predictions_shape.copy().filter(regex=("p_class*")).to_numpy().max(axis=1)
+    probs_product = max_probs_pos * max_probs_shape
+    # JOINT
+    joint_measure = (weight_velocity * (1-velocity_scaled) + probs_product)/(1+weight_velocity)
+    joint_measure_smoothed = savgol_filter(joint_measure, 15, 3) # window, smooth
+    # replace nans caused by smoothing with original values
+    is_nan_smoothed = np.isnan(joint_measure_smoothed)
+    joint_measure_smoothed[is_nan_smoothed] = joint_measure[is_nan_smoothed]
+    
+    return joint_measure_smoothed
+
+
+def write_onsets_to_file(str_stimulus, lpc_syllables, onset_frames_picked, fn_txt):
+    
+    assert len(lpc_syllables) == len(onset_frames_picked)
+    with open(fn_txt, 'w') as f:
+        f.write(f'{str_stimulus}\n')
+        f.write('event,stimulus,frame_number\n')
+        for (syllable, onset) in zip(lpc_syllables, onset_frames_picked):
+            f.write(f'SYLLABLE ONSET, {syllable}, {onset}\n')
+    return None
+

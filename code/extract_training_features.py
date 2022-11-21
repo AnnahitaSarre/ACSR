@@ -18,7 +18,7 @@ parser.add_argument('--path2coordinates', default=os.path.join('..', 'output'))
 args=parser.parse_args()
 
 # LOAD COORDINATE DATAFRAME
-fn_coordinates = f'all_coords_face_hand_{args.gender}_{args.cropping}.csv'
+fn_coordinates = f'training_coords_face_hand_{args.gender}_{args.cropping}.csv'
 df_coord = pd.read_csv(os.path.join(args.path2coordinates, fn_coordinates))
 
 # CREATE NEW DATAFRAME FOR FEATURES

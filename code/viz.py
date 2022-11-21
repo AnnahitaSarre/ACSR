@@ -74,84 +74,61 @@ def find_minimal_velocity(joint_info, frames_syllables, index2frame, with_textgr
     return onsets, maxima
 
 
-def mark_pred_on_video(cap, fn_video, gender, cropping,
-                       df_predictions_pos, df_predictions_shape,
-                       velocity, acceleration,
-                       velocity_thresh=0.01,
-                       acceleration_thresh=0.003,
-                       p_thresh=0.5,
-                       text_factor=1,
-                       textgrid=False,
-                       plot_joint=True,
-                       show=False):
+def plot_joint_measure(df_predictions_pos,
+                       df_predictions_shape,
+                       velocity_scaled,
+                       joint_measure,
+                       lpc_syllables, 
+                       onset_frames_syllables_mfa=None,
+                       onsets_extrema=None):
+    
+    max_probs_pos = df_predictions_pos.copy().filter(regex=("p_class*")).to_numpy().max(axis=1)
+    max_probs_shape = df_predictions_shape.copy().filter(regex=("p_class*")).to_numpy().max(axis=1)
+     
+    fig, ax = plt.subplots(figsize=(10, 10))
+    
+    # X-axis is frame number
+    frames = df_predictions_pos['frame_number'].to_list()
+    # Plot joint measure, scaled velocity, and probs (position and shape)
+    
+    ax.plot(frames, joint_measure, 'k', lw=3)
+    ax.plot(frames, velocity_scaled, 'r', lw=1)
+    ax.plot(frames, max_probs_pos, 'g', lw=1)
+    ax.plot(frames, max_probs_shape, 'b', lw=1)
+    
+    # Cosmetics
+    ax.set_xlabel('Frame (MFA)', fontsize=14)
+    ax.set_ylabel('max(prob_pos)*max(prob_shape)*(1-minmax(velocity))', fontsize=14)
+    ax.set_xticklabels(lpc_syllables)
+    if onset_frames_syllables_mfa is not None:
+        ax.set_xticks(onset_frames_syllables_mfa)
+    
+    if onsets_extrema is not None:
+        for onset in onsets_extrema:
+            ax.axvline(onset, color='k', ls='--')
+    return fig, ax 
+
+def mark_video(cap, fn_video,
+               gender, cropping,
+               str_stimulus,
+               lpc_syllables,
+               df_predictions_pos,
+               df_predictions_shape,
+               velocity_scaled,
+               event_onset_frames,
+               onset_frames_syllables_mfa,
+               text_factor=1,
+               show=False):
    
     n_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     fps = int(cap.get(cv2.CAP_PROP_FPS)) # frames per second
     pbar = tqdm(total=n_frames)
     
-    index2frame = dict(zip(df_predictions_pos.index.to_list(), df_predictions_pos['frame_number'].to_list()))
     
     # MAX PROBABILITIES (POSITION AND SHAPE)
     max_probs_pos = df_predictions_pos.copy().filter(regex=("p_class*")).to_numpy().max(axis=1)
     max_probs_shape = df_predictions_shape.copy().filter(regex=("p_class*")).to_numpy().max(axis=1)
-    probs_product = max_probs_pos * max_probs_shape
-    # SCALE VELOCITY
-    q25, q75 = np.percentile(velocity, 25), np.percentile(velocity, 75)
-    iqr = q75 - q25
-    cut_off = iqr * 1.5
-    lower, upper = q25 - cut_off, q75 + cut_off
-    velocity = np.clip(velocity, lower, upper)
-    velocity_scaled = minmax_scale(velocity)
-    # JOINT
-    joint_info = (1-velocity_scaled) * probs_product
-    #joint_info = (1-velocity_scaled)
-    joint_info = savgol_filter(joint_info, 15, 3) # window
 
-    fn_base = os.path.basename(fn_video)[:-4] 
-    fn_textgrid = fn_base + '.TextGrid'
-    fn_textgrid = os.path.join('../stimuli/words/mfa_out', fn_textgrid)
-    times_phones, labels_phones = get_phone_onsets(fn_textgrid)
-    frames_phones = [int(t*fps) for t in times_phones]
-
-    fn_stimulus = fn_base + '.txt'
-    fn_stimulus = os.path.join('../stimuli/words/mfa_in', fn_stimulus)
-    str_stimulus = get_stimulus_string(fn_stimulus)
-
-    fn_lpc_parsing = fn_base + '.lpc'
-    fn_lpc_parsing = os.path.join('../stimuli/words/txt', fn_lpc_parsing)
-    lpc_syllables = open(fn_lpc_parsing, 'r').readlines()[0].strip('\n').split()
-    times_syllables = find_syllable_onsets(lpc_syllables,
-                                           times_phones, labels_phones)
-    frames_syllables = [int(t*fps) for t in times_syllables] 
-    
-    if textgrid:
-        onsets, i_frame_minima = find_minimal_velocity(joint_info, frames_syllables,
-                                                       index2frame, True) 
-    else:
-        onsets, i_frame_minima = find_minimal_velocity(joint_info, frames_syllables,
-                                                       index2frame, False) 
-
-    print('Syllable, frame number (mfa), frame number (onset)')
-    [print(syl, frame_mfa, onset) for syl,frame_mfa,onset in zip(lpc_syllables, frames_syllables, onsets)]
-    assert len(lpc_syllables) == len(times_syllables) == len(frames_syllables) == len(onsets)
-    
-
-    fig, ax = None, None
-    if plot_joint:
-        fig, ax = plt.subplots(figsize=(10, 10))
-        ax.plot(df_predictions_pos['frame_number'].to_list(), joint_info, 'k', lw=3)
-        ax.set_xlabel('Frame', fontsize=14)
-        ax.set_ylabel('max(prob_pos)*max(prob_shape)*(1-minmax(velocity))', fontsize=14)
-        ax.plot(df_predictions_pos['frame_number'].to_list(), velocity_scaled, 'r', lw=1)
-        ax.plot(df_predictions_pos['frame_number'].to_list(), max_probs_pos, 'g', lw=1)
-        ax.plot(df_predictions_pos['frame_number'].to_list(), max_probs_shape, 'b', lw=1)
-        ax.set_xticks(frames_syllables)
-        ax.set_xticklabels(lpc_syllables)
-        
-        for onset in onsets:
-            ax.axvline(onset, color='k', ls='--')
-
-    #return fig, ax
 
     mp_drawing = mp.solutions.drawing_utils # Drawing helpers
     mp_holistic = mp.solutions.holistic # Mediapipe Solutions
@@ -165,30 +142,38 @@ def mark_pred_on_video(cap, fn_video, gender, cropping,
 
     # Initiate holistic model
     with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
-        i_frame = 0
-        while cap.isOpened():
+        for i_frame in range(n_frames):
+        # while cap.isOpened():
             ret, frame = cap.read()
-            i_frame += 1
             if not ret:
-                print('!'*100)
+                print(f'Something went wrong at frame {i_frame}!')
                 break
             
             # POSITION
-            curr_row_pos = df_predictions_pos[df_predictions_pos['frame_number']==i_frame]
+            curr_row_pos = df_predictions_pos[df_predictions_pos['frame_number']==i_frame+1]
             # SHAPE
-            curr_row_shape = df_predictions_shape[df_predictions_shape['frame_number']==i_frame]
-            if curr_row_shape.empty or curr_row_pos.empty: # Process only 
-                pbar.update(1)
-                continue
+            curr_row_shape = df_predictions_shape[df_predictions_shape['frame_number']==i_frame+1]
+            if curr_row_shape.empty or curr_row_pos.empty:
+                print(f'Something went wrong at frame {i_frame}!')
+                break
             
             
             # GET PREDICTIONS
-            i_df = curr_row_shape.index
-            predicted_class_pos = curr_row_pos['predicted_class'].values[0]
-            predicted_probs_pos = curr_row_pos[f'p_class_{predicted_class_pos + 1}'].values[0]
+            # predicted_class_pos = int(curr_row_pos['predicted_class'].values[0])
+            # if np.isnan(predicted_class_pos):
+            #     print(f'nan values in frame {i_frame}')
+            #     continue
+            # else:
+            #     predicted_class_pos = int(predicted_class_pos)
+            # predicted_probs_pos = curr_row_pos[f'p_class_{predicted_class_pos + 1}'].values[0]
             
-            predicted_class_shape = curr_row_shape['predicted_class'].values[0]
-            predicted_probs_shape = curr_row_shape[f'p_class_{predicted_class_shape + 1}'].values[0]
+            # predicted_class_shape = int(curr_row_shape['predicted_class'].values[0])
+            # if np.isnan(predicted_class_shape):
+            #     print(f'nan values in frame {i_frame}')
+            #     continue
+            # else:
+            #     predicted_class_shape = int(predicted_class_shape)
+            # predicted_probs_shape = curr_row_shape[f'p_class_{predicted_class_shape + 1}'].values[0]
             
             # Recolor Feed
             image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
@@ -210,8 +195,13 @@ def mark_pred_on_video(cap, fn_video, gender, cropping,
                                      mp_drawing.DrawingSpec(color=(80,44,121), thickness=2, circle_radius=2))
             
        
-            # Open Cartoon        
-            fn_cartoon = f'pos_n{predicted_class_pos}_shape_n{predicted_class_shape}.png' 
+            # Open Cartoon   
+            predicted_class_pos = curr_row_pos['predicted_class'].values[0]
+            predicted_class_shape = curr_row_shape['predicted_class'].values[0]
+            if (not np.isnan(predicted_class_pos)) and (not np.isnan(predicted_class_shape)):
+                fn_cartoon = f'pos_n{int(predicted_class_pos)}_shape_n{int(predicted_class_shape)}.png' 
+            else:
+                fn_cartoon = 'empty.png'
             fn_cartoon = os.path.join('../data/cartoons/', fn_cartoon)
             cartoon = open_cartoon(fn_cartoon)
             height, width, channels = cartoon.shape
@@ -260,18 +250,19 @@ def mark_pred_on_video(cap, fn_video, gender, cropping,
                             font, 1/text_factor, (255, 255, 255), 2, line_type)
             
             y_text += dy_text
+            # if not np.isnan(velocity_scaled[i_frame]):
             cv2.putText(image, 'Velocity', (x1_text, y_text),
                         font, 1/text_factor, (255, 255, 255), 2, line_type)
-            cv2.putText(image, f'{velocity[i_df][0]:1.5f}', (x2_text, y_text),
+            cv2.putText(image, f'{velocity_scaled[i_frame]:1.5f}', (x2_text, y_text),
                         font, 1/text_factor, (255, 255, 255), 2, line_type)
-            if i_frame in i_frame_minima:
-                cv2.putText(image, '*', (int(x1_text/2), y_text),
-                            font, 1/text_factor, (255, 255, 255), 2, line_type)
+            # if i_frame in i_frame_minima:
+            #     cv2.putText(image, '*', (int(x1_text/2), y_text),
+            #                 font, 1/text_factor, (255, 255, 255), 2, line_type)
             
             y_text += dy_text
             cv2.putText(image, 'Frame', (x1_text, y_text),
                         font, 1/text_factor, (255, 255, 255), 2, line_type)
-            cv2.putText(image, f'{i_frame}', (x2_text, y_text),
+            cv2.putText(image, f'{i_frame+1}', (x2_text, y_text),
                         font, 1/text_factor, (255, 255, 255), 2, line_type)
        
             # mark sentence
@@ -286,22 +277,22 @@ def mark_pred_on_video(cap, fn_video, gender, cropping,
             # Mark forced alignment
             x_phone = int(x_cartoon + width*1.2)
             y_phone = y_cartoon
-            if i_frame in frames_phones:
-                IX = frames_phones.index(i_frame)
-                label_phone = labels_phones[IX]
+            if i_frame in onset_frames_syllables_mfa:
+                IX = onset_frames_syllables_mfa.index(i_frame)
+                syl = lpc_syllables[IX]
                 
                 font = ImageFont.truetype("DejaVuSans.ttf", 32)
                 img_pil = Image.fromarray(image)
                 draw = ImageDraw.Draw(img_pil)
-                draw.text((x_phone, y_phone), label_phone, font=font)
+                draw.text((x_phone, y_phone), f'MFA ({syl})', font=font)
                 image = np.array(img_pil)
             
             
-            # Mark forced alignment
+            # Mark Event onset
             x_onset = int(x_cartoon + width*0.4)
             y_onset = int(y_cartoon+height*1.2)
-            if i_frame in onsets:
-                IX = onsets.index(i_frame)
+            if i_frame in event_onset_frames:
+                IX = list(event_onset_frames).index(i_frame)
                 syl = lpc_syllables[IX]
                 
                 font = ImageFont.truetype("DejaVuSans.ttf", 32)
@@ -311,12 +302,12 @@ def mark_pred_on_video(cap, fn_video, gender, cropping,
                 image = np.array(img_pil)
 
             # Mark prediction
-            if predicted_probs_pos > p_thresh and \
-                predicted_probs_shape > p_thresh and \
-                    velocity[i_df][0]<velocity_thresh:# and \
+            # if predicted_probs_pos > p_thresh and \
+            #     predicted_probs_shape > p_thresh and \
+            #         velocity[i_df][0]<velocity_thresh:# and \
                         
-                        cv2.rectangle(image, (x1_box, y1_box), (x2_box, y2_box),
-                                      (16, 255, 16), -1)
+            #             cv2.rectangle(image, (x1_box, y1_box), (x2_box, y2_box),
+            #                           (16, 255, 16), -1)
              
 
                     
@@ -349,7 +340,7 @@ def mark_pred_on_video(cap, fn_video, gender, cropping,
     cap.release()
     cv2.destroyAllWindows()
     print("The video was successfully saved")
-    return fig, ax
+    return
 
 def plot_predictions(df_predictions_pos, df_predictions_shape, velocity,
                      thresh=0.5):

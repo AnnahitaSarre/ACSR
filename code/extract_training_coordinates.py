@@ -15,7 +15,7 @@ parser.add_argument('--path2data', default=os.path.join('..', 'data',
 parser.add_argument('--path2output', default=os.path.join('..', 'output'))
 args = parser.parse_args()
 
-file_name = f'all_coords_face_hand_{args.gender}_{args.cropping}.csv'    
+file_name = f'training_coords_face_hand_{args.gender}_{args.cropping}.csv'    
 
 positions_list = ['position_00','position_01','position_02',
                   'position_03','position_04'] 
@@ -33,10 +33,13 @@ for fn_videos in classes_list:
                                 args.gender,
                                 args.cropping,
                                 fn_video+'.mp4')
-        print(f'Extracting coordinates from: {fn_video}')
+        print(f'Loading: {fn_video}')
         cap = load_video(fn_video)
+        # EXTRACT COORDINATES
         df_coords = extract_coordinates(cap, os.path.basename(fn_video),
-                                        show_video=args.show_video)
+                                        show_video=args.show_video,
+                                        verbose=True)
         df = pd.concat([df,df_coords])
 
+os.makedirs(args.path2output, exist_ok=True)
 df.to_csv(os.path.join(args.path2output, file_name))
