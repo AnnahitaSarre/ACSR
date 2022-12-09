@@ -1,0 +1,37 @@
+python is /network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/bin/python
+Loaded model: ../trained_models/model_rf_position_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_h1_03.mp4
+Extracting coordinates...
+Extracting coordinates for: word_h1_03.mp4
+Number of frames in video: 68
+Extracting features...
+Face width computed for normalizaiton 0.1591590771574539
+Features saved to: ../output/word_h1_03_features.csv
+csv file with predictions was saved to ../output/predictions_rf_position_female_cropped_word_h1_03.csv
+Loaded model: ../trained_models/model_rf_shape_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_h1_03.mp4
+Extracting coordinates...
+Extracting coordinates for: word_h1_03.mp4
+Number of frames in video: 68
+Extracting features...
+Face width computed for normalizaiton 0.1591590771574539
+Features saved to: ../output/word_h1_03_features.csv
+csv file with predictions was saved to ../output/predictions_rf_shape_female_cropped_word_h1_03.csv
+Visualization for: ../stimuli/words/mp4/word_h1_03.mp4
+32
+Number of syllabels: 3
+['mE', 'd', 's5']
+Stimulus: médecin
+mE: frame #11
+d: frame #20
+s5: frame #34
+Event onsets saved to: ../stimuli/words/mp4/word_h1_03.mp4.events
+Figure was save to: ../stimuli/words/mp4/word_h1_03.mp4.png
+Visualization for: ../stimuli/words/mp4/word_h1_03.mp4
+32
+            event stimulus  frame_number
+0  SYLLABLE ONSET       mE            16
+1  SYLLABLE ONSET        d            47
+2  SYLLABLE ONSET       s5            52
+The video was successfully saved
+The marked video was saved to: ../stimuli/words/mp4/word_h1_03_marked_with_model_female_cropped.avi

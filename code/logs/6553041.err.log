@@ -1,0 +1,58 @@
+/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 0.24.2 when using version 1.1.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 0.24.2 when using version 1.1.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+  0%|          | 0/61 [00:00<?, ?it/s]INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+  2%|▏         | 1/61 [00:01<01:25,  1.43s/it]  3%|▎         | 2/61 [00:01<00:40,  1.45it/s]  5%|▍         | 3/61 [00:01<00:26,  2.23it/s]  7%|▋         | 4/61 [00:01<00:19,  2.99it/s]  8%|▊         | 5/61 [00:02<00:15,  3.65it/s] 10%|▉         | 6/61 [00:02<00:13,  4.00it/s] 11%|█▏        | 7/61 [00:02<00:12,  4.30it/s] 13%|█▎        | 8/61 [00:02<00:11,  4.48it/s] 15%|█▍        | 9/61 [00:02<00:11,  4.65it/s] 16%|█▋        | 10/61 [00:03<00:10,  4.80it/s] 18%|█▊        | 11/61 [00:03<00:10,  4.85it/s] 20%|█▉        | 12/61 [00:03<00:10,  4.78it/s] 21%|██▏       | 13/61 [00:03<00:09,  4.85it/s] 23%|██▎       | 14/61 [00:03<00:09,  4.86it/s] 25%|██▍       | 15/61 [00:04<00:09,  4.88it/s] 26%|██▌       | 16/61 [00:04<00:09,  4.90it/s] 28%|██▊       | 17/61 [00:04<00:08,  4.92it/s] 30%|██▉       | 18/61 [00:04<00:08,  4.99it/s] 31%|███       | 19/61 [00:04<00:08,  5.03it/s] 33%|███▎      | 20/61 [00:05<00:08,  5.00it/s] 34%|███▍      | 21/61 [00:05<00:07,  5.02it/s] 36%|███▌      | 22/61 [00:05<00:07,  5.04it/s] 38%|███▊      | 23/61 [00:05<00:07,  5.02it/s] 39%|███▉      | 24/61 [00:05<00:07,  4.92it/s] 41%|████      | 25/61 [00:06<00:07,  5.01it/s] 43%|████▎     | 26/61 [00:06<00:06,  5.03it/s] 44%|████▍     | 27/61 [00:06<00:06,  5.06it/s] 46%|████▌     | 28/61 [00:06<00:06,  5.07it/s] 48%|████▊     | 29/61 [00:06<00:06,  5.01it/s] 49%|████▉     | 30/61 [00:07<00:06,  5.02it/s] 51%|█████     | 31/61 [00:07<00:05,  5.07it/s] 52%|█████▏    | 32/61 [00:07<00:05,  5.06it/s] 54%|█████▍    | 33/61 [00:07<00:05,  5.09it/s] 56%|█████▌    | 34/61 [00:07<00:05,  5.16it/s] 57%|█████▋    | 35/61 [00:08<00:04,  5.37it/s] 59%|█████▉    | 36/61 [00:08<00:04,  5.52it/s] 61%|██████    | 37/61 [00:08<00:04,  5.63it/s] 62%|██████▏   | 38/61 [00:08<00:04,  5.73it/s] 64%|██████▍   | 39/61 [00:08<00:03,  5.79it/s] 66%|██████▌   | 40/61 [00:08<00:03,  5.79it/s] 67%|██████▋   | 41/61 [00:09<00:03,  5.83it/s] 69%|██████▉   | 42/61 [00:09<00:03,  5.84it/s] 70%|███████   | 43/61 [00:09<00:03,  5.82it/s] 72%|███████▏  | 44/61 [00:09<00:02,  5.85it/s] 74%|███████▍  | 45/61 [00:09<00:02,  5.89it/s] 75%|███████▌  | 46/61 [00:09<00:02,  5.92it/s] 77%|███████▋  | 47/61 [00:10<00:02,  5.87it/s] 79%|███████▊  | 48/61 [00:10<00:02,  5.80it/s] 80%|████████  | 49/61 [00:10<00:02,  5.85it/s] 82%|████████▏ | 50/61 [00:10<00:01,  5.91it/s] 84%|████████▎ | 51/61 [00:10<00:01,  5.94it/s] 85%|████████▌ | 52/61 [00:10<00:01,  5.95it/s] 87%|████████▋ | 53/61 [00:11<00:01,  5.95it/s] 89%|████████▊ | 54/61 [00:11<00:01,  5.96it/s] 90%|█████████ | 55/61 [00:11<00:01,  5.97it/s] 92%|█████████▏| 56/61 [00:11<00:00,  6.01it/s] 93%|█████████▎| 57/61 [00:11<00:00,  6.02it/s] 95%|█████████▌| 58/61 [00:11<00:00,  6.03it/s] 97%|█████████▋| 59/61 [00:12<00:00,  6.03it/s] 98%|█████████▊| 60/61 [00:12<00:00,  6.03it/s]Traceback (most recent call last):
+  File "/network/lustre/iss02/cohen/data/Annahita/ACSR/code/predict.py", line 51, in <module>
+    df_coords = extract_coordinates(cap, args.fn_video)
+  File "/network/lustre/iss02/cohen/data/Annahita/ACSR/code/utils.py", line 189, in extract_coordinates
+    assert df_coords.shape[0] == n_frames
+AssertionError
+ 98%|█████████▊| 60/61 [00:12<00:00,  4.87it/s]
+/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 0.24.2 when using version 1.1.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 0.24.2 when using version 1.1.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator Pipeline from version 0.24.2 when using version 1.1.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+  0%|          | 0/61 [00:00<?, ?it/s]INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+  2%|▏         | 1/61 [00:01<01:25,  1.43s/it]  3%|▎         | 2/61 [00:01<00:40,  1.44it/s]  5%|▍         | 3/61 [00:01<00:26,  2.22it/s]  7%|▋         | 4/61 [00:01<00:19,  2.98it/s]  8%|▊         | 5/61 [00:02<00:15,  3.65it/s] 10%|▉         | 6/61 [00:02<00:13,  4.03it/s] 11%|█▏        | 7/61 [00:02<00:12,  4.35it/s] 13%|█▎        | 8/61 [00:02<00:11,  4.54it/s] 15%|█▍        | 9/61 [00:02<00:11,  4.71it/s] 16%|█▋        | 10/61 [00:03<00:10,  4.87it/s] 18%|█▊        | 11/61 [00:03<00:10,  4.92it/s] 20%|█▉        | 12/61 [00:03<00:10,  4.82it/s] 21%|██▏       | 13/61 [00:03<00:09,  4.89it/s] 23%|██▎       | 14/61 [00:03<00:09,  4.88it/s] 25%|██▍       | 15/61 [00:04<00:09,  4.93it/s] 26%|██▌       | 16/61 [00:04<00:08,  5.01it/s] 28%|██▊       | 17/61 [00:04<00:08,  4.98it/s] 30%|██▉       | 18/61 [00:04<00:08,  5.02it/s] 31%|███       | 19/61 [00:04<00:08,  5.06it/s] 33%|███▎      | 20/61 [00:05<00:08,  5.01it/s] 34%|███▍      | 21/61 [00:05<00:07,  5.01it/s] 36%|███▌      | 22/61 [00:05<00:07,  5.04it/s] 38%|███▊      | 23/61 [00:05<00:07,  5.02it/s] 39%|███▉      | 24/61 [00:05<00:07,  4.91it/s] 41%|████      | 25/61 [00:06<00:07,  4.97it/s] 43%|████▎     | 26/61 [00:06<00:07,  4.97it/s] 44%|████▍     | 27/61 [00:06<00:06,  4.99it/s] 46%|████▌     | 28/61 [00:06<00:06,  5.00it/s] 48%|████▊     | 29/61 [00:06<00:06,  4.95it/s] 49%|████▉     | 30/61 [00:07<00:06,  4.96it/s] 51%|█████     | 31/61 [00:07<00:06,  4.97it/s] 52%|█████▏    | 32/61 [00:07<00:05,  4.90it/s] 54%|█████▍    | 33/61 [00:07<00:05,  4.92it/s] 56%|█████▌    | 34/61 [00:07<00:05,  4.99it/s] 57%|█████▋    | 35/61 [00:08<00:04,  5.21it/s] 59%|█████▉    | 36/61 [00:08<00:04,  5.36it/s] 61%|██████    | 37/61 [00:08<00:04,  5.46it/s] 62%|██████▏   | 38/61 [00:08<00:04,  5.55it/s] 64%|██████▍   | 39/61 [00:08<00:03,  5.62it/s] 66%|██████▌   | 40/61 [00:08<00:03,  5.66it/s] 67%|██████▋   | 41/61 [00:09<00:03,  5.69it/s] 69%|██████▉   | 42/61 [00:09<00:03,  5.72it/s] 70%|███████   | 43/61 [00:09<00:03,  5.74it/s] 72%|███████▏  | 44/61 [00:09<00:02,  5.76it/s] 74%|███████▍  | 45/61 [00:09<00:02,  5.77it/s] 75%|███████▌  | 46/61 [00:09<00:02,  5.78it/s] 77%|███████▋  | 47/61 [00:10<00:02,  5.79it/s] 79%|███████▊  | 48/61 [00:10<00:02,  5.81it/s] 80%|████████  | 49/61 [00:10<00:02,  5.83it/s] 82%|████████▏ | 50/61 [00:10<00:01,  5.85it/s] 84%|████████▎ | 51/61 [00:10<00:01,  5.87it/s] 85%|████████▌ | 52/61 [00:10<00:01,  5.90it/s] 87%|████████▋ | 53/61 [00:11<00:01,  5.91it/s] 89%|████████▊ | 54/61 [00:11<00:01,  5.92it/s] 90%|█████████ | 55/61 [00:11<00:01,  5.93it/s] 92%|█████████▏| 56/61 [00:11<00:00,  5.93it/s] 93%|█████████▎| 57/61 [00:11<00:00,  5.90it/s] 95%|█████████▌| 58/61 [00:12<00:00,  5.88it/s] 97%|█████████▋| 59/61 [00:12<00:00,  5.89it/s] 98%|█████████▊| 60/61 [00:12<00:00,  5.91it/s]Traceback (most recent call last):
+  File "/network/lustre/iss02/cohen/data/Annahita/ACSR/code/predict.py", line 51, in <module>
+    df_coords = extract_coordinates(cap, args.fn_video)
+  File "/network/lustre/iss02/cohen/data/Annahita/ACSR/code/utils.py", line 189, in extract_coordinates
+    assert df_coords.shape[0] == n_frames
+AssertionError
+ 98%|█████████▊| 60/61 [00:12<00:00,  4.83it/s]
+Traceback (most recent call last):
+  File "/network/lustre/iss02/cohen/data/Annahita/ACSR/code/find_onsets.py", line 99, in <module>
+    utils.write_onsets_to_file(str_stimulus, lpc_syllables, onset_frames_picked, fn_txt)
+  File "/network/lustre/iss02/cohen/data/Annahita/ACSR/code/utils.py", line 502, in write_onsets_to_file
+    assert len(lpc_syllables) == len(onset_frames_picked)
+AssertionError
+Traceback (most recent call last):
+  File "/network/lustre/iss02/cohen/data/Annahita/ACSR/code/mark_video.py", line 58, in <module>
+    df_measures = pd.read_csv(os.path.join(args.path2output,
+  File "/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/lib/python3.9/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../output/word_l1_05_pseudo_measures.csv'

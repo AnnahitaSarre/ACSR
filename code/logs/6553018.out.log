@@ -1,0 +1,37 @@
+python is /network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/bin/python
+Loaded model: ../trained_models/model_rf_position_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_l0_27.mp4
+Extracting coordinates...
+Extracting coordinates for: word_l0_27.mp4
+Number of frames in video: 68
+Extracting features...
+Face width computed for normalizaiton 0.1579420413790092
+Features saved to: ../output/word_l0_27_features.csv
+csv file with predictions was saved to ../output/predictions_rf_position_female_cropped_word_l0_27.csv
+Loaded model: ../trained_models/model_rf_shape_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_l0_27.mp4
+Extracting coordinates...
+Extracting coordinates for: word_l0_27.mp4
+Number of frames in video: 68
+Extracting features...
+Face width computed for normalizaiton 0.1579420413790092
+Features saved to: ../output/word_l0_27_features.csv
+csv file with predictions was saved to ../output/predictions_rf_shape_female_cropped_word_l0_27.csv
+Visualization for: ../stimuli/words/mp4/word_l0_27.mp4
+32
+Number of syllabels: 3
+['ka', 'vi', 'te']
+Stimulus: cavité
+ka: frame #20
+vi: frame #29
+te: frame #42
+Event onsets saved to: ../stimuli/words/mp4/word_l0_27.mp4.events
+Figure was save to: ../stimuli/words/mp4/word_l0_27.mp4.png
+Visualization for: ../stimuli/words/mp4/word_l0_27.mp4
+32
+            event stimulus  frame_number
+0  SYLLABLE ONSET       ka            18
+1  SYLLABLE ONSET       vi            31
+2  SYLLABLE ONSET       te            51
+The video was successfully saved
+The marked video was saved to: ../stimuli/words/mp4/word_l0_27_marked_with_model_female_cropped.avi

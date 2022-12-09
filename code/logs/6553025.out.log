@@ -1,0 +1,37 @@
+python is /network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/bin/python
+Loaded model: ../trained_models/model_rf_position_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_l0_34.mp4
+Extracting coordinates...
+Extracting coordinates for: word_l0_34.mp4
+Number of frames in video: 79
+Extracting features...
+Face width computed for normalizaiton 0.15762129598609356
+Features saved to: ../output/word_l0_34_features.csv
+csv file with predictions was saved to ../output/predictions_rf_position_female_cropped_word_l0_34.csv
+Loaded model: ../trained_models/model_rf_shape_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_l0_34.mp4
+Extracting coordinates...
+Extracting coordinates for: word_l0_34.mp4
+Number of frames in video: 79
+Extracting features...
+Face width computed for normalizaiton 0.15762129598609356
+Features saved to: ../output/word_l0_34_features.csv
+csv file with predictions was saved to ../output/predictions_rf_shape_female_cropped_word_l0_34.csv
+Visualization for: ../stimuli/words/mp4/word_l0_34.mp4
+32
+Number of syllabels: 3
+['Re', 'zi', 'dy']
+Stimulus: résidu
+Re: frame #16
+zi: frame #32
+dy: frame #45
+Event onsets saved to: ../stimuli/words/mp4/word_l0_34.mp4.events
+Figure was save to: ../stimuli/words/mp4/word_l0_34.mp4.png
+Visualization for: ../stimuli/words/mp4/word_l0_34.mp4
+32
+            event stimulus  frame_number
+0  SYLLABLE ONSET       Re            16
+1  SYLLABLE ONSET       zi            36
+2  SYLLABLE ONSET       dy            57
+The video was successfully saved
+The marked video was saved to: ../stimuli/words/mp4/word_l0_34_marked_with_model_female_cropped.avi

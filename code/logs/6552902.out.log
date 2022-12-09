@@ -1,0 +1,28 @@
+python is /network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/bin/python
+Loaded model: ../trained_models/model_rf_position_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_h1_04.mp4
+Extracting coordinates...
+Extracting coordinates for: word_h1_04.mp4
+Number of frames in video: 72
+Extracting features...
+Face width computed for normalizaiton 0.162851435607417
+Features saved to: ../output/word_h1_04_features.csv
+csv file with predictions was saved to ../output/predictions_rf_position_female_cropped_word_h1_04.csv
+Loaded model: ../trained_models/model_rf_shape_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_h1_04.mp4
+Extracting coordinates...
+Extracting coordinates for: word_h1_04.mp4
+Number of frames in video: 72
+Extracting features...
+Face width computed for normalizaiton 0.162851435607417
+Features saved to: ../output/word_h1_04_features.csv
+csv file with predictions was saved to ../output/predictions_rf_shape_female_cropped_word_h1_04.csv
+Visualization for: ../stimuli/words/mp4/word_h1_04.mp4
+32
+Number of syllabels: 2
+['E', 'R9', 'R']
+Stimulus: erreur
+E: frame #34
+R9: frame #47
+Visualization for: ../stimuli/words/mp4/word_h1_04.mp4
+32

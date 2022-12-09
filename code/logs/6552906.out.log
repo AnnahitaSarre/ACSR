@@ -1,0 +1,30 @@
+python is /network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/bin/python
+Loaded model: ../trained_models/model_rf_position_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_h1_06.mp4
+Extracting coordinates...
+Extracting coordinates for: word_h1_06.mp4
+Number of frames in video: 91
+Loaded model: ../trained_models/model_rf_shape_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_h1_06.mp4
+Extracting coordinates...
+Extracting coordinates for: word_h1_06.mp4
+Number of frames in video: 91
+Visualization for: ../stimuli/words/mp4/word_h1_06.mp4
+32
+Number of syllabels: 3
+['p', 'R5', 't@']
+Stimulus: printemps
+p: frame #29
+R5: frame #30
+t@: frame #62
+Event onsets saved to: ../stimuli/words/mp4/word_h1_06.mp4.events
+Figure was save to: ../stimuli/words/mp4/word_h1_06.mp4.png
+Visualization for: ../stimuli/words/mp4/word_h1_06.mp4
+32
+            event stimulus  frame_number
+0  SYLLABLE ONSET        p            10
+1  SYLLABLE ONSET       R5            32
+2  SYLLABLE ONSET       t@            54
+Something went wrong at frame 0!
+The video was successfully saved
+The marked video was saved to: ../stimuli/words/mp4/word_h1_06_marked_with_model_female_cropped.avi
