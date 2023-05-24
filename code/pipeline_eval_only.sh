@@ -7,7 +7,8 @@ cropping='cropped'
 path2test_videos='../stimuli/words/mp4'
 
 counter=0
-for fn_video in $path2test_videos/word_*.mp4; do
+#for fn_video in $path2test_videos/word_*.mp4; do
+for fn_video in $path2test_videos/word_h2_13.mp4; do
   let counter+=1
   fn_video="$(basename -- $fn_video)"
   echo '------------------------------------'
@@ -20,6 +21,3 @@ for fn_video in $path2test_videos/word_*.mp4; do
   python mark_video.py --gender $gender --cropping $cropping --path2video $path2test_videos --fn-video $fn_video --model-type $model_type --textgrid
 done
 echo $counter 'videos processed.'
-~
-~
-~

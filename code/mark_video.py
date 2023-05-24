@@ -62,8 +62,10 @@ df_measures = pd.read_csv(os.path.join(args.path2output,
 str_stimulus = utils.get_stimulus_string(fn_video)
 
 # GET SYLLABLE ONSETS FROM MFA
+lpc_syllables = utils.get_syllable_onset_frames_from_lpc_file(fn_video)
+print(lpc_syllables)
 if args.textgrid:
-    lpc_syllables, onset_frames_syllables_mfa = utils.get_syllable_onset_frames_from_mfa(fn_video)
+    onset_frames_syllables_mfa = utils.get_syllable_onset_frames_from_mfa(fn_video, lpc_syllables)
     n_syllables = len(onset_frames_syllables_mfa)
 else:
     lpc_syllables = None

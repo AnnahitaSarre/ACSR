@@ -80,7 +80,7 @@ n_syllables = len(lpc_syllables)
 print(lpc_syllables)
 
 if args.textgrid:
-    lpc_syllabless_mfa = utils.get_syllable_onset_frames_from_mfa(fn_video, lpc_syllables)
+    onset_frames_syllables_mfa = utils.get_syllable_onset_frames_from_mfa(fn_video, lpc_syllables)
     print(f'Number of MFA syllabels found: {n_syllables}')
 else:
     lpc_syllables = None

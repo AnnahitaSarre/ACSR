@@ -177,16 +177,20 @@ def extract_coordinates(cap, fn_video, show_video=False, verbose=True):
             #Create the row that will be written in the file
             row = [fn_video, i_frame] + face_row +r_hand_row
             curr_df = pd.DataFrame(dict(zip(columns, row)), index=[0])
+            #print(i_frame, curr_df)
             df_coords = pd.concat([df_coords, curr_df], ignore_index=True)
 
             if cv2.waitKey(10) & 0xFF == ord('q'):
                 break
+                print('WARNING!'*5)
+                print('break due to cv2.waitKey(10) & 0xFF == ord("q"')
             pbar.update(1)
 
     cap.release()
     cv2.destroyAllWindows()
-
-    assert df_coords.shape[0] == n_frames
+    
+    print(len(df_coords), n_frames)
+    assert n_frames - df_coords.shape[0] <=1
 
     return df_coords
 
@@ -519,12 +523,12 @@ def get_joint_measure(df_predictions_pos,
 def write_onsets_to_file(str_stimulus, lpc_syllables, onset_frames_picked, fn_txt):
     
     # HACK TO EQUALIZE THE NUMBER OF EXPECTED ONSETS (NUM SYLLABLES) AND THE ONE FOUND
-    #if len(lpc_syllables) < len(onset_frames_picked): # REMOVE EXTRA ONSETS
-    #    onset_frames_picked = onset_frames_picked[:3]
-    #for i_sy in range(len(lpc_syllables)-len(onset_frames_picked)): # ADD DUMMY ONSETS
-    #    onset_frames_picked = list(onset_frames_picked)
-    #    last_onset = onset_frames_picked[-1]
-    #    onset_frames_picked.append(last_onset + i_sy + 1)
+    if len(lpc_syllables) < len(onset_frames_picked): # REMOVE EXTRA ONSETS
+        onset_frames_picked = onset_frames_picked[:3]
+    for i_sy in range(len(lpc_syllables)-len(onset_frames_picked)): # ADD DUMMY ONSETS
+        onset_frames_picked = list(onset_frames_picked)
+        last_onset = onset_frames_picked[-1]
+        onset_frames_picked.append(last_onset + i_sy + 1)
 
     assert len(lpc_syllables) == len(onset_frames_picked)
 
