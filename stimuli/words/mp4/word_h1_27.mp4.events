@@ -1,5 +1,4 @@
-routine
-event,stimulus,frame_number
-SYLLABLE ONSET, Ru, 27
-SYLLABLE ONSET, ti, 47
-SYLLABLE ONSET, n, 66
+routine,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, Ru,27,3,3
+1,SYLLABLE ONSET, ti,47,2,3
+2,SYLLABLE ONSET, n,66,0,3

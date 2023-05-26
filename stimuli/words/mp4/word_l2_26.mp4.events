@@ -1,5 +1,4 @@
-cèdre
-event,stimulus,frame_number
-SYLLABLE ONSET, sE, 13
-SYLLABLE ONSET, d, 24
-SYLLABLE ONSET, R, 50
+cèdre,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, sE,13,3,2
+1,SYLLABLE ONSET, d,24,0,2
+2,SYLLABLE ONSET, R,50,0,2

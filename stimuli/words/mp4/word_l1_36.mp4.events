@@ -1,5 +1,4 @@
-lambris
-event,stimulus,frame_number
-SYLLABLE ONSET, l@, 24
-SYLLABLE ONSET, b, 37
-SYLLABLE ONSET, Ri, 50
+lambris,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, l@,24,2,2
+1,SYLLABLE ONSET, b,37,0,2
+2,SYLLABLE ONSET, Ri,50,2,2

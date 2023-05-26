@@ -1,5 +1,4 @@
-lycéen
-event,stimulus,frame_number
-SYLLABLE ONSET, ʎi, 20
-SYLLABLE ONSET, se, 37
-SYLLABLE ONSET, 5, 59
+lycéen,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ʎi,20,,4
+1,SYLLABLE ONSET, se,37,4,4
+2,SYLLABLE ONSET, 5,59,1,4

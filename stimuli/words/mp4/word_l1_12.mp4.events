@@ -1,5 +1,4 @@
-vignette
-event,stimulus,frame_number
-SYLLABLE ONSET, vi, 23
-SYLLABLE ONSET, NE, 31
-SYLLABLE ONSET, t, 49
+vignette,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, vi,23,2,4
+1,SYLLABLE ONSET, NE,31,3,4
+2,SYLLABLE ONSET, t,49,0,4

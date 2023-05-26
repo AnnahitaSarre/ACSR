@@ -1,5 +1,4 @@
-rodéo
-event,stimulus,frame_number
-SYLLABLE ONSET, Ro, 17
-SYLLABLE ONSET, de, 31
-SYLLABLE ONSET, o, 48
+rodéo,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, Ro,17,0,4
+1,SYLLABLE ONSET, de,31,4,4
+2,SYLLABLE ONSET, o,48,0,4

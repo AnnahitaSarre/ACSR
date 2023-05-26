@@ -1,5 +1,4 @@
-comédie
-event,stimulus,frame_number
-SYLLABLE ONSET, ko, 18
-SYLLABLE ONSET, me, 37
-SYLLABLE ONSET, di, 59
+comédie,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ko,18,0,0
+1,SYLLABLE ONSET, me,37,4,0
+2,SYLLABLE ONSET, di,59,2,0

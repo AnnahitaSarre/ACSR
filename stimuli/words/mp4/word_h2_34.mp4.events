@@ -1,5 +1,4 @@
-culte
-event,stimulus,frame_number
-SYLLABLE ONSET, ky, 21
-SYLLABLE ONSET, l, 38
-SYLLABLE ONSET, t, 47
+culte,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ky,21,4,4
+1,SYLLABLE ONSET, l,38,0,4
+2,SYLLABLE ONSET, t,47,0,4

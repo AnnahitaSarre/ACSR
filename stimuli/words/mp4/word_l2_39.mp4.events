@@ -1,5 +1,4 @@
-treuil
-event,stimulus,frame_number
-SYLLABLE ONSET, t, 18
-SYLLABLE ONSET, R9, 30
-SYLLABLE ONSET, j, 33
+treuil,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, t,18,0,7
+1,SYLLABLE ONSET, R9,30,0,7
+2,SYLLABLE ONSET, j,33,0,7

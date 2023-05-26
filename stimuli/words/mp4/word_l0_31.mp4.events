@@ -1,5 +1,4 @@
-vahiné
-event,stimulus,frame_number
-SYLLABLE ONSET, va, 18
-SYLLABLE ONSET, i, 31
-SYLLABLE ONSET, ne, 53
+vahiné,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, va,18,0,3
+1,SYLLABLE ONSET, i,31,2,3
+2,SYLLABLE ONSET, ne,53,4,3

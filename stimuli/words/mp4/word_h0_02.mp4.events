@@ -1,5 +1,4 @@
-araignée
-event,stimulus,frame_number
-SYLLABLE ONSET, a, 14
-SYLLABLE ONSET, RE, 29
-SYLLABLE ONSET, Ne, 44
+araignée,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, a,14,0,5
+1,SYLLABLE ONSET, RE,29,3,5
+2,SYLLABLE ONSET, Ne,44,4,5

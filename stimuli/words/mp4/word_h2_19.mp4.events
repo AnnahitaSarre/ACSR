@@ -1,5 +1,4 @@
-sport
-event,stimulus,frame_number
-SYLLABLE ONSET, s, 15
-SYLLABLE ONSET, pO, 24
-SYLLABLE ONSET, R, 39
+sport,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, s,15,0,2
+1,SYLLABLE ONSET, pO,24,3,2
+2,SYLLABLE ONSET, R,39,0,2

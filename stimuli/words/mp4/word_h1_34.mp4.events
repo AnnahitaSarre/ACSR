@@ -1,5 +1,4 @@
-perruque
-event,stimulus,frame_number
-SYLLABLE ONSET, pE, 11
-SYLLABLE ONSET, Ry, 33
-SYLLABLE ONSET, k, 54
+perruque,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, pE,11,3,1
+1,SYLLABLE ONSET, Ry,33,4,1
+2,SYLLABLE ONSET, k,54,0,1

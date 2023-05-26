@@ -1,5 +1,4 @@
-écusson
-event,stimulus,frame_number
-SYLLABLE ONSET, e, 17
-SYLLABLE ONSET, ky, 23
-SYLLABLE ONSET, s§, 51
+écusson,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, e,17,4,2
+1,SYLLABLE ONSET, ky,23,4,2
+2,SYLLABLE ONSET, s§,51,2,2

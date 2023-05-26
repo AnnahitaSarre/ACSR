@@ -1,5 +1,4 @@
-printemps
-event,stimulus,frame_number
-SYLLABLE ONSET, p, 10
-SYLLABLE ONSET, R5, 32
-SYLLABLE ONSET, t@, 54
+printemps,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, p,10,0,4
+1,SYLLABLE ONSET, R5,32,1,4
+2,SYLLABLE ONSET, t@,54,2,4

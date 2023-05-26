@@ -1,0 +1,4 @@
+poire,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, p, 23,0,2
+1,SYLLABLE ONSET, wa, 38,0,2
+2,SYLLABLE ONSET, R, None,0,2

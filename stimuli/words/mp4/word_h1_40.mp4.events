@@ -1,5 +1,4 @@
-feuillage
-event,stimulus,frame_number
-SYLLABLE ONSET, f9, 13
-SYLLABLE ONSET, ja, 40
-SYLLABLE ONSET, Z, 54
+feuillage,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, f9,13,0,0
+1,SYLLABLE ONSET, ja,40,0,0
+2,SYLLABLE ONSET, Z,54,0,0

@@ -1,5 +1,4 @@
-cavité
-event,stimulus,frame_number
-SYLLABLE ONSET, ka, 18
-SYLLABLE ONSET, vi, 31
-SYLLABLE ONSET, te, 51
+cavité,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ka,18,0,4
+1,SYLLABLE ONSET, vi,31,2,4
+2,SYLLABLE ONSET, te,51,4,4

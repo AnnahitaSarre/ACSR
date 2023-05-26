@@ -1,5 +1,4 @@
-quantité
-event,stimulus,frame_number
-SYLLABLE ONSET, k@, 18
-SYLLABLE ONSET, ti, 33
-SYLLABLE ONSET, te, 57
+quantité,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, k@,18,2,4
+1,SYLLABLE ONSET, ti,33,2,4
+2,SYLLABLE ONSET, te,57,4,4

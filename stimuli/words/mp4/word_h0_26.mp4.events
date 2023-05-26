@@ -1,5 +1,4 @@
-syndicat
-event,stimulus,frame_number
-SYLLABLE ONSET, s5, 18
-SYLLABLE ONSET, di, 42
-SYLLABLE ONSET, ka, 66
+syndicat,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, s5,18,1,1
+1,SYLLABLE ONSET, di,42,2,1
+2,SYLLABLE ONSET, ka,66,0,1

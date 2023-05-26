@@ -1,5 +1,4 @@
-flèche
-event,stimulus,frame_number
-SYLLABLE ONSET, f, 19
-SYLLABLE ONSET, lE, 40
-SYLLABLE ONSET, S, 59
+flèche,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, f,19,0,5
+1,SYLLABLE ONSET, lE,40,3,5
+2,SYLLABLE ONSET, S,59,0,5

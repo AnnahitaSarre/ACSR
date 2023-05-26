@@ -1,5 +1,4 @@
-nudité
-event,stimulus,frame_number
-SYLLABLE ONSET, ny, 52
-SYLLABLE ONSET, di, 71
-SYLLABLE ONSET, te, 79
+nudité,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ny,52,4,4
+1,SYLLABLE ONSET, di,71,2,4
+2,SYLLABLE ONSET, te,79,4,4

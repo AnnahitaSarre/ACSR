@@ -1,5 +1,4 @@
-ironie
-event,stimulus,frame_number
-SYLLABLE ONSET, i, 31
-SYLLABLE ONSET, Ro, 48
-SYLLABLE ONSET, ni, 69
+ironie,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, i,31,2,3
+1,SYLLABLE ONSET, Ro,48,0,3
+2,SYLLABLE ONSET, ni,69,2,3

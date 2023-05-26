@@ -1,5 +1,4 @@
-marge
-event,stimulus,frame_number
-SYLLABLE ONSET, ma, 18
-SYLLABLE ONSET, R, 28
-SYLLABLE ONSET, Z, 50
+marge,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ma,18,0,0
+1,SYLLABLE ONSET, R,28,0,0
+2,SYLLABLE ONSET, Z,50,0,0

@@ -1,5 +1,4 @@
-sympathie
-event,stimulus,frame_number
-SYLLABLE ONSET, s5, 18
-SYLLABLE ONSET, pa, 43
-SYLLABLE ONSET, ti, 62
+sympathie,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, s5,18,1,4
+1,SYLLABLE ONSET, pa,43,0,4
+2,SYLLABLE ONSET, ti,62,2,4

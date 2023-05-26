@@ -1,5 +1,4 @@
-échoppe
-event,stimulus,frame_number
-SYLLABLE ONSET, e, 14
-SYLLABLE ONSET, SO, 33
-SYLLABLE ONSET, p, 47
+échoppe,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, e,14,4,0
+1,SYLLABLE ONSET, SO,33,3,0
+2,SYLLABLE ONSET, p,47,0,0

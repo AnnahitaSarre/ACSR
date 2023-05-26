@@ -1,5 +1,4 @@
-cendre
-event,stimulus,frame_number
-SYLLABLE ONSET, s@, 26
-SYLLABLE ONSET, d, 46
-SYLLABLE ONSET, R, 57
+cendre,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, s@,26,2,2
+1,SYLLABLE ONSET, d,46,0,2
+2,SYLLABLE ONSET, R,57,0,2

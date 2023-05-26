@@ -1,5 +1,4 @@
-thérapie
-event,stimulus,frame_number
-SYLLABLE ONSET, te, 15
-SYLLABLE ONSET, Ra, 36
-SYLLABLE ONSET, pi, 56
+thérapie,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, te,15,4,0
+1,SYLLABLE ONSET, Ra,36,0,0
+2,SYLLABLE ONSET, pi,56,2,0

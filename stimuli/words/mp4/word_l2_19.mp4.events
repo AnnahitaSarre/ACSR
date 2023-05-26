@@ -1,5 +1,4 @@
-loueur
-event,stimulus,frame_number
-SYLLABLE ONSET, l, 19
-SYLLABLE ONSET, w9, 42
-SYLLABLE ONSET, R, 46
+loueur,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, l,19,0,2
+1,SYLLABLE ONSET, w9,42,0,2
+2,SYLLABLE ONSET, R,46,0,2

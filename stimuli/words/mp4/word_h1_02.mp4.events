@@ -1,5 +1,4 @@
-jardin
-event,stimulus,frame_number
-SYLLABLE ONSET, Za, 14
-SYLLABLE ONSET, R, 23
-SYLLABLE ONSET, d5, 44
+jardin,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, Za,14,0,0
+1,SYLLABLE ONSET, R,23,0,0
+2,SYLLABLE ONSET, d5,44,1,0

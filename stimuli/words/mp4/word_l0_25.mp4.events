@@ -1,5 +1,4 @@
-chicorée
-event,stimulus,frame_number
-SYLLABLE ONSET, Si, 22
-SYLLABLE ONSET, ko, 34
-SYLLABLE ONSET, Re, 55
+chicorée,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, Si,22,2,2
+1,SYLLABLE ONSET, ko,34,0,2
+2,SYLLABLE ONSET, Re,55,4,2

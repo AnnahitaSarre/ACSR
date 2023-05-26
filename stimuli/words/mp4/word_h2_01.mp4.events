@@ -1,5 +1,4 @@
-fric
-event,stimulus,frame_number
-SYLLABLE ONSET, f, 19
-SYLLABLE ONSET, Ri, 33
-SYLLABLE ONSET, k, 51
+fric,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, f,19,0,1
+1,SYLLABLE ONSET, Ri,33,2,1
+2,SYLLABLE ONSET, k,51,0,1

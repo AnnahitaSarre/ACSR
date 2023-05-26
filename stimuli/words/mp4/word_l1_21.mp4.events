@@ -1,5 +1,4 @@
-condor
-event,stimulus,frame_number
-SYLLABLE ONSET, k§, 17
-SYLLABLE ONSET, dO, 39
-SYLLABLE ONSET, R, 42
+condor,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, k§,17,2,2
+1,SYLLABLE ONSET, dO,39,3,2
+2,SYLLABLE ONSET, R,42,0,2

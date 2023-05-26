@@ -1,5 +1,4 @@
-leucémie
-event,stimulus,frame_number
-SYLLABLE ONSET, l2, 23
-SYLLABLE ONSET, se, 40
-SYLLABLE ONSET, mi, 63
+leucémie,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, l2,23,1,4
+1,SYLLABLE ONSET, se,40,4,4
+2,SYLLABLE ONSET, mi,63,2,4

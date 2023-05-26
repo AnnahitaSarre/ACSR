@@ -1,5 +1,4 @@
-perroquet
-event,stimulus,frame_number
-SYLLABLE ONSET, pE, 15
-SYLLABLE ONSET, Ro, 38
-SYLLABLE ONSET, cE, 51
+perroquet,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, pE,15,3,
+1,SYLLABLE ONSET, Ro,38,0,
+2,SYLLABLE ONSET, cE,51,,

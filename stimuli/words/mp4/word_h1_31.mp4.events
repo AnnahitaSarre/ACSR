@@ -1,5 +1,4 @@
-survie
-event,stimulus,frame_number
-SYLLABLE ONSET, sy, 8
-SYLLABLE ONSET, R, 29
-SYLLABLE ONSET, vi, 51
+survie,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, sy,8,4,1
+1,SYLLABLE ONSET, R,29,0,1
+2,SYLLABLE ONSET, vi,51,2,1

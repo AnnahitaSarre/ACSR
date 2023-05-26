@@ -1,5 +1,4 @@
-douane
-event,stimulus,frame_number
-SYLLABLE ONSET, d, 20
-SYLLABLE ONSET, wa, 27
-SYLLABLE ONSET, n, 41
+douane,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, d,20,0,3
+1,SYLLABLE ONSET, wa,27,0,3
+2,SYLLABLE ONSET, n,41,0,3

@@ -1,5 +1,4 @@
-document
-event,stimulus,frame_number
-SYLLABLE ONSET, do, 15
-SYLLABLE ONSET, ky, 33
-SYLLABLE ONSET, m@, 54
+document,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, do,15,0,4
+1,SYLLABLE ONSET, ky,33,4,4
+2,SYLLABLE ONSET, m@,54,2,4

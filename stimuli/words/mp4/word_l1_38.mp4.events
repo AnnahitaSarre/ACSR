@@ -1,5 +1,4 @@
-récif
-event,stimulus,frame_number
-SYLLABLE ONSET, Re, 19
-SYLLABLE ONSET, si, 37
-SYLLABLE ONSET, f, 50
+récif,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, Re,19,4,4
+1,SYLLABLE ONSET, si,37,2,4
+2,SYLLABLE ONSET, f,50,0,4

@@ -1,5 +1,4 @@
-guérison
-event,stimulus,frame_number
-SYLLABLE ONSET, ge, 28
-SYLLABLE ONSET, Ri, 47
-SYLLABLE ONSET, z§, 61
+guérison,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ge,28,4,1
+1,SYLLABLE ONSET, Ri,47,2,1
+2,SYLLABLE ONSET, z§,61,2,1

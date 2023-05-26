@@ -1,5 +1,4 @@
-casino
-event,stimulus,frame_number
-SYLLABLE ONSET, ka, 16
-SYLLABLE ONSET, zi, 37
-SYLLABLE ONSET, no, 61
+casino,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ka,16,0,3
+1,SYLLABLE ONSET, zi,37,2,3
+2,SYLLABLE ONSET, no,61,0,3

@@ -1,5 +1,4 @@
-match
-event,stimulus,frame_number
-SYLLABLE ONSET, ma, 22
-SYLLABLE ONSET, t, 23
-SYLLABLE ONSET, S, 25
+match,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ma,22,0,5
+1,SYLLABLE ONSET, t,23,0,5
+2,SYLLABLE ONSET, S,25,0,5

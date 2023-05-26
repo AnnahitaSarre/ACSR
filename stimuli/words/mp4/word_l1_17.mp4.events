@@ -1,5 +1,4 @@
-forum
-event,stimulus,frame_number
-SYLLABLE ONSET, fo, 27
-SYLLABLE ONSET, RO, 40
-SYLLABLE ONSET, m, 57
+forum,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, fo,27,0,4
+1,SYLLABLE ONSET, RO,40,3,4
+2,SYLLABLE ONSET, m,57,0,4

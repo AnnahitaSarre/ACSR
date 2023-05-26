@@ -1,5 +1,4 @@
-confetti
-event,stimulus,frame_number
-SYLLABLE ONSET, k§, 26
-SYLLABLE ONSET, fe, 42
-SYLLABLE ONSET, ti, 61
+confetti,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, k§,26,2,4
+1,SYLLABLE ONSET, fe,42,4,4
+2,SYLLABLE ONSET, ti,61,2,4

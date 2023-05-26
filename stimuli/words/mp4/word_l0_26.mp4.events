@@ -1,5 +1,4 @@
-nullité
-event,stimulus,frame_number
-SYLLABLE ONSET, ny, 16
-SYLLABLE ONSET, ʎi, 33
-SYLLABLE ONSET, te, 53
+nullité,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ny,16,4,4
+1,SYLLABLE ONSET, ʎi,33,,4
+2,SYLLABLE ONSET, te,53,4,4

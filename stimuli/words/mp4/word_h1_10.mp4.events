@@ -1,5 +1,4 @@
-plafond
-event,stimulus,frame_number
-SYLLABLE ONSET, p, 26
-SYLLABLE ONSET, la, 47
-SYLLABLE ONSET, f§, 53
+plafond,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, p,26,0,4
+1,SYLLABLE ONSET, la,47,0,4
+2,SYLLABLE ONSET, f§,53,2,4

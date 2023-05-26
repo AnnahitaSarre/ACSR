@@ -1,5 +1,4 @@
-haricot
-event,stimulus,frame_number
-SYLLABLE ONSET, a, 21
-SYLLABLE ONSET, Ri, 32
-SYLLABLE ONSET, ko, 52
+haricot,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, a,21,0,1
+1,SYLLABLE ONSET, Ri,32,2,1
+2,SYLLABLE ONSET, ko,52,0,1

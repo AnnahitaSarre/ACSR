@@ -1,5 +1,4 @@
-embolie
-event,stimulus,frame_number
-SYLLABLE ONSET, @, 22
-SYLLABLE ONSET, bɔ, 34
-SYLLABLE ONSET, ʎi, 52
+embolie,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, @,22,2,
+1,SYLLABLE ONSET, bɔ,34,,
+2,SYLLABLE ONSET, ʎi,52,,

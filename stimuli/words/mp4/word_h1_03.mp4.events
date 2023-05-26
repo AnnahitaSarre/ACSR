@@ -1,5 +1,4 @@
-médecin
-event,stimulus,frame_number
-SYLLABLE ONSET, mE, 16
-SYLLABLE ONSET, d, 47
-SYLLABLE ONSET, s5, 52
+médecin,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, mE,16,3,2
+1,SYLLABLE ONSET, d,47,0,2
+2,SYLLABLE ONSET, s5,52,1,2

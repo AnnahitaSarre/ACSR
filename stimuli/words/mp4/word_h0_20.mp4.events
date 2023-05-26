@@ -1,5 +1,4 @@
-paradis
-event,stimulus,frame_number
-SYLLABLE ONSET, pa, 10
-SYLLABLE ONSET, Ra, 29
-SYLLABLE ONSET, di, 59
+paradis,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, pa,10,0,0
+1,SYLLABLE ONSET, Ra,29,0,0
+2,SYLLABLE ONSET, di,59,2,0

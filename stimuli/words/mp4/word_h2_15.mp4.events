@@ -1,5 +1,4 @@
-flamme
-event,stimulus,frame_number
-SYLLABLE ONSET, f, 17
-SYLLABLE ONSET, la, 30
-SYLLABLE ONSET, m, 40
+flamme,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, f,17,0,4
+1,SYLLABLE ONSET, la,30,0,4
+2,SYLLABLE ONSET, m,40,0,4

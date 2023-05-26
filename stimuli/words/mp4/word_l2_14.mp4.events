@@ -1,5 +1,4 @@
-chlore
-event,stimulus,frame_number
-SYLLABLE ONSET, k, 20
-SYLLABLE ONSET, lO, 32
-SYLLABLE ONSET, R, 47
+chlore,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, k,20,0,2
+1,SYLLABLE ONSET, lO,32,3,2
+2,SYLLABLE ONSET, R,47,0,2

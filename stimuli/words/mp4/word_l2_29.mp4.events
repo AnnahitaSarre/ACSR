@@ -1,5 +1,4 @@
-norme
-event,stimulus,frame_number
-SYLLABLE ONSET, nO, 24
-SYLLABLE ONSET, R, 38
-SYLLABLE ONSET, m, 49
+norme,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, nO,24,3,4
+1,SYLLABLE ONSET, R,38,0,4
+2,SYLLABLE ONSET, m,49,0,4

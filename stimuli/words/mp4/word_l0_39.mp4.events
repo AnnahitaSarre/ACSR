@@ -1,5 +1,4 @@
-pilotis
-event,stimulus,frame_number
-SYLLABLE ONSET, pi, 21
-SYLLABLE ONSET, lo, 35
-SYLLABLE ONSET, ti, 54
+pilotis,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, pi,21,2,4
+1,SYLLABLE ONSET, lo,35,0,4
+2,SYLLABLE ONSET, ti,54,2,4

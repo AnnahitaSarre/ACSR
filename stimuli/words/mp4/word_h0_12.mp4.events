@@ -1,5 +1,4 @@
-jalousie
-event,stimulus,frame_number
-SYLLABLE ONSET, Za, 14
-SYLLABLE ONSET, lu, 36
-SYLLABLE ONSET, zi, 50
+jalousie,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, Za,14,0,1
+1,SYLLABLE ONSET, lu,36,3,1
+2,SYLLABLE ONSET, zi,50,2,1

@@ -1,5 +1,4 @@
-monument
-event,stimulus,frame_number
-SYLLABLE ONSET, mo, 17
-SYLLABLE ONSET, ny, 36
-SYLLABLE ONSET, m@, 55
+monument,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, mo,17,0,4
+1,SYLLABLE ONSET, ny,36,4,4
+2,SYLLABLE ONSET, m@,55,2,4

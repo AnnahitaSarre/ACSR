@@ -1,0 +1,4 @@
+clip,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, k, 16,0,0
+1,SYLLABLE ONSET, ʎi, 37,,0
+2,SYLLABLE ONSET, p, None,0,0

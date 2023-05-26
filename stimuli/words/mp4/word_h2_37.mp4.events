@@ -1,5 +1,4 @@
-stop
-event,stimulus,frame_number
-SYLLABLE ONSET, s, 22
-SYLLABLE ONSET, tO, 35
-SYLLABLE ONSET, p, 50
+stop,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, s,22,0,0
+1,SYLLABLE ONSET, tO,35,3,0
+2,SYLLABLE ONSET, p,50,0,0

@@ -1,5 +1,4 @@
-spot
-event,stimulus,frame_number
-SYLLABLE ONSET, s, 21
-SYLLABLE ONSET, pO, 34
-SYLLABLE ONSET, t, 50
+spot,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, s,21,0,4
+1,SYLLABLE ONSET, pO,34,3,4
+2,SYLLABLE ONSET, t,50,0,4

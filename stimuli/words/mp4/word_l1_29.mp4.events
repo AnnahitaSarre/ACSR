@@ -1,5 +1,4 @@
-ténor
-event,stimulus,frame_number
-SYLLABLE ONSET, te, 14
-SYLLABLE ONSET, nO, 30
-SYLLABLE ONSET, R, 43
+ténor,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, te,14,4,2
+1,SYLLABLE ONSET, nO,30,3,2
+2,SYLLABLE ONSET, R,43,0,2

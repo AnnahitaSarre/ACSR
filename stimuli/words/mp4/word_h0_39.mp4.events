@@ -1,5 +1,4 @@
-messager
-event,stimulus,frame_number
-SYLLABLE ONSET, me, 19
-SYLLABLE ONSET, sa, 40
-SYLLABLE ONSET, Ze, 61
+messager,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, me,19,4,0
+1,SYLLABLE ONSET, sa,40,0,0
+2,SYLLABLE ONSET, Ze,61,4,0

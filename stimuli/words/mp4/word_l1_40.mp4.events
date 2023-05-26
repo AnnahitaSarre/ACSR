@@ -1,5 +1,4 @@
-sésame
-event,stimulus,frame_number
-SYLLABLE ONSET, se, 22
-SYLLABLE ONSET, za, 43
-SYLLABLE ONSET, m, 53
+sésame,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, se,22,4,4
+1,SYLLABLE ONSET, za,43,0,4
+2,SYLLABLE ONSET, m,53,0,4

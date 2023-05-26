@@ -1,5 +1,4 @@
-bâtonnet
-event,stimulus,frame_number
-SYLLABLE ONSET, ba, 9
-SYLLABLE ONSET, to, 21
-SYLLABLE ONSET, nE, 54
+bâtonnet,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ba,9,0,3
+1,SYLLABLE ONSET, to,21,0,3
+2,SYLLABLE ONSET, nE,54,3,3

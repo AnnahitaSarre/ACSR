@@ -1,5 +1,4 @@
-piscine
-event,stimulus,frame_number
-SYLLABLE ONSET, pi, 26
-SYLLABLE ONSET, si, 40
-SYLLABLE ONSET, n, 50
+piscine,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, pi,26,2,3
+1,SYLLABLE ONSET, si,40,2,3
+2,SYLLABLE ONSET, n,50,0,3

@@ -1,5 +1,4 @@
-cigale
-event,stimulus,frame_number
-SYLLABLE ONSET, si, 14
-SYLLABLE ONSET, ga, 27
-SYLLABLE ONSET, l, 50
+cigale,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, si,14,2,5
+1,SYLLABLE ONSET, ga,27,0,5
+2,SYLLABLE ONSET, l,50,0,5

@@ -86,6 +86,36 @@ def get_delta_dim(df_name, landmark1, landmark2, dim, norm_factor=None):
     return  delta
 
 
+def get_frames_around_event(fn_video, frame_number, n_neighbor_frames):
+    st = frame_number - n_neighbor_frames
+    ed = frame_number + n_neighbor_frames + 1
+    frame_numbers = range(st, ed)
+    
+    extracted_frames = []
+    cap = cv2.VideoCapture(fn_video)
+    for frame_number in frame_numbers:
+        cap.set(cv2.CAP_PROP_POS_FRAMES, frame_number)
+        ret, frame = cap.read()
+        if ret:
+            extracted_frames.append(frame)
+    cap.release()
+        
+    return extracted_frames
+
+
+def create_video_from_frames(fn_video, extracted_frames):
+    out = None
+    if extracted_frames:
+        height, width, _ = extracted_frames[0].shape
+        fourcc = cv2.VideoWriter_fourcc(*"mp4v")  # Codec for MP4 video
+        out = cv2.VideoWriter(fn_video, fourcc, 30.0, (width, height))
+        for frame in extracted_frames:
+            out.write(frame)
+        out.release()
+    
+    return out
+
+
 def extract_coordinates(cap, fn_video, show_video=False, verbose=True):
 
     if verbose:
@@ -538,3 +568,80 @@ def write_onsets_to_file(str_stimulus, lpc_syllables, onset_frames_picked, fn_tx
         for (syllable, onset) in zip(lpc_syllables, onset_frames_picked):
             f.write(f'SYLLABLE ONSET, {syllable}, {onset}\n')
     return None
+
+# FROM HAGAR
+
+def get_LPC_p(word):
+    lex = pd.read_csv("/home/yair/projects/ACSR/data/hagar/Lexique380.utf8.csv")
+    lex = lex[(lex.ortho.str.contains('-| ') == False) & (lex.phon.str.contains('°') == False)]  # suppress schwa
+    lex = lex.drop_duplicates(subset='ortho', keep="first")
+    lex = lex[['ortho','phon', 'p_cvcv','nbhomogr','cv-cv','syll']]
+    dic = lex.set_index('ortho').to_dict()
+
+    cv_dic = dic['cv-cv']
+    p_cv_dic = dic['syll']
+    phon_dic = dic['phon']    
+
+    dev_syl = pd.read_csv("/home/yair/projects/ACSR/data/hagar/lpc_syl_configurations.csv")
+    dev_syl['lpc_n'] = dev_syl['LPC_config'].apply(lambda x: x.split('-'))
+    dev_syl['lpc_n'] = dev_syl['lpc_n'].apply(lambda x: len(x))
+    dic2 = dev_syl.set_index('spoken_config').to_dict()
+    
+    g_cv_dic = dic2['LPC_config']
+    
+    lpc_cv = get_LPC_cv(word, cv_dic, g_cv_dic)
+    
+    new_word = ''
+    phon = phon_dic[word]
+    if lpc_cv == cv_dic[word]:
+        return p_cv_dic[word]
+    else:
+        l_lpc = lpc_cv.split('-')
+        for syl in l_lpc:
+            new_word += phon[:len(syl)]+'-'
+            phon = phon[len(syl):]
+        return new_word[:-1]
+
+
+def get_LPC_cv(word, cv_dic, g_cv_dic):
+    
+
+    LPC_cv = ''
+    if word in cv_dic:
+        cv_lst = cv_dic[word].split('-')
+        for syl in cv_lst:
+            LPC_cv = LPC_cv + g_cv_dic[syl] + '-'
+        return LPC_cv[:-1]
+
+    else:
+        return word
+
+def get_word_code(syll):
+    position = {'a': '0', 'o': '0', '9': '0', '5': '1', '2': '1', 'i': '2', '§': '2', '@': '2', 'E': '3', 'u': '3', 'O': '3', '1': '4', 'y': '4', 'e': '4'}
+    configuration = {'p': '0', 'd': '0', 'Z': '0', 'k': '1', 'v': '1', 'z': '1', 's': '2', 'R': '2', 'b': '3', 'n': '3', '8': '3', 't': '4', 'm': '4', 'f': '4', 'l': '5', 'S': '5', 'N': '5', 'w': '5', 'g': '6', 'j': '7', 'G': '7'}
+    try:
+        code_word = ''
+        if len(syll) == 1:
+            if syll in configuration:
+                code_word += configuration[syll]
+                code_word += '0'
+            else:
+                code_word += '4'
+                code_word += position[syll]
+        else:
+            for i in range (0,len(syll)):
+                if syll[i] in configuration:
+                    code_word += configuration[syll[i]]
+                else:
+                    code_word += position[syll[i]]
+        return code_word
+    except:
+        return None
+
+
+def shape_position_code(word):
+    code_word = ""
+    syll_lst = get_LPC_p(word).split("-")
+    for syll in syll_lst:
+        code_word += get_word_code(syll) + '-'  
+    return code_word[:-1]

@@ -1,5 +1,4 @@
-safari
-event,stimulus,frame_number
-SYLLABLE ONSET, sa, 20
-SYLLABLE ONSET, fa, 31
-SYLLABLE ONSET, Ri, 49
+safari,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, sa,20,0,2
+1,SYLLABLE ONSET, fa,31,0,2
+2,SYLLABLE ONSET, Ri,49,2,2

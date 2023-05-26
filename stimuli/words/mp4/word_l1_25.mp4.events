@@ -1,5 +1,4 @@
-savane
-event,stimulus,frame_number
-SYLLABLE ONSET, sa, 18
-SYLLABLE ONSET, va, 29
-SYLLABLE ONSET, n, 37
+savane,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, sa,18,0,3
+1,SYLLABLE ONSET, va,29,0,3
+2,SYLLABLE ONSET, n,37,0,3

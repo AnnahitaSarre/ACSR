@@ -1,5 +1,4 @@
-numéro
-event,stimulus,frame_number
-SYLLABLE ONSET, ny, 27
-SYLLABLE ONSET, me, 31
-SYLLABLE ONSET, Ro, 35
+numéro,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ny,27,4,2
+1,SYLLABLE ONSET, me,31,4,2
+2,SYLLABLE ONSET, Ro,35,0,2

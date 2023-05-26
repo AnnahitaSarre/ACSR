@@ -1,5 +1,4 @@
-talc
-event,stimulus,frame_number
-SYLLABLE ONSET, ta, 27
-SYLLABLE ONSET, l, 41
-SYLLABLE ONSET, k, 43
+talc,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ta,27,0,1
+1,SYLLABLE ONSET, l,41,0,1
+2,SYLLABLE ONSET, k,43,0,1

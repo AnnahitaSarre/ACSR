@@ -1,5 +1,4 @@
-perte
-event,stimulus,frame_number
-SYLLABLE ONSET, pE, 24
-SYLLABLE ONSET, R, 43
-SYLLABLE ONSET, t, 56
+perte,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, pE,24,3,4
+1,SYLLABLE ONSET, R,43,0,4
+2,SYLLABLE ONSET, t,56,0,4

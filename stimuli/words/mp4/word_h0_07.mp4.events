@@ -1,5 +1,4 @@
-député
-event,stimulus,frame_number
-SYLLABLE ONSET, de, 14
-SYLLABLE ONSET, py, 29
-SYLLABLE ONSET, te, 57
+député,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, de,14,4,4
+1,SYLLABLE ONSET, py,29,4,4
+2,SYLLABLE ONSET, te,57,4,4

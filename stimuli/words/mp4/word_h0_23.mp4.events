@@ -1,5 +1,4 @@
-qualité
-event,stimulus,frame_number
-SYLLABLE ONSET, ka, 12
-SYLLABLE ONSET, ʎi, 34
-SYLLABLE ONSET, te, 55
+qualité,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ka,12,0,4
+1,SYLLABLE ONSET, ʎi,34,,4
+2,SYLLABLE ONSET, te,55,4,4

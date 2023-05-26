@@ -1,5 +1,4 @@
-kangourou
-event,stimulus,frame_number
-SYLLABLE ONSET, k@, 21
-SYLLABLE ONSET, gu, 36
-SYLLABLE ONSET, Ru, 56
+kangourou,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, k@,21,2,2
+1,SYLLABLE ONSET, gu,36,3,2
+2,SYLLABLE ONSET, Ru,56,3,2

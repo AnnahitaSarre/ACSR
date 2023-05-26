@@ -1,5 +1,4 @@
-rosette
-event,stimulus,frame_number
-SYLLABLE ONSET, Ro, 21
-SYLLABLE ONSET, zE, 36
-SYLLABLE ONSET, t, 53
+rosette,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, Ro,21,0,4
+1,SYLLABLE ONSET, zE,36,3,4
+2,SYLLABLE ONSET, t,53,0,4

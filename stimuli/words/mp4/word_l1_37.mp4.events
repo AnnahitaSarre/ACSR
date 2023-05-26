@@ -1,5 +1,4 @@
-perruche
-event,stimulus,frame_number
-SYLLABLE ONSET, pE, 18
-SYLLABLE ONSET, Ry, 22
-SYLLABLE ONSET, S, 49
+perruche,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, pE,18,3,5
+1,SYLLABLE ONSET, Ry,22,4,5
+2,SYLLABLE ONSET, S,49,0,5

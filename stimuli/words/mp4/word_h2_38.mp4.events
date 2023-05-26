@@ -1,5 +1,4 @@
-nombre
-event,stimulus,frame_number
-SYLLABLE ONSET, n§, 24
-SYLLABLE ONSET, b, 37
-SYLLABLE ONSET, R, 51
+nombre,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, n§,24,2,2
+1,SYLLABLE ONSET, b,37,0,2
+2,SYLLABLE ONSET, R,51,0,2

@@ -1,5 +1,4 @@
-moulinet
-event,stimulus,frame_number
-SYLLABLE ONSET, mu, 22
-SYLLABLE ONSET, ʎi, 33
-SYLLABLE ONSET, nE, 56
+moulinet,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, mu,22,3,3
+1,SYLLABLE ONSET, ʎi,33,,3
+2,SYLLABLE ONSET, nE,56,3,3

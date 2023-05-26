@@ -1,5 +1,4 @@
-bétail
-event,stimulus,frame_number
-SYLLABLE ONSET, be, 18
-SYLLABLE ONSET, ta, 44
-SYLLABLE ONSET, j, 60
+bétail,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, be,18,4,7
+1,SYLLABLE ONSET, ta,44,0,7
+2,SYLLABLE ONSET, j,60,0,7

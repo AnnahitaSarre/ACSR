@@ -1,5 +1,4 @@
-rivage
-event,stimulus,frame_number
-SYLLABLE ONSET, Ri, 17
-SYLLABLE ONSET, va, 35
-SYLLABLE ONSET, Z, 43
+rivage,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, Ri,17,2,0
+1,SYLLABLE ONSET, va,35,0,0
+2,SYLLABLE ONSET, Z,43,0,0

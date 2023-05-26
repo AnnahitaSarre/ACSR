@@ -1,5 +1,4 @@
-séquoia
-event,stimulus,frame_number
-SYLLABLE ONSET, se, 13
-SYLLABLE ONSET, ko, 18
-SYLLABLE ONSET, ja, 47
+séquoia,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, se,13,4,7
+1,SYLLABLE ONSET, ko,18,0,7
+2,SYLLABLE ONSET, ja,47,0,7

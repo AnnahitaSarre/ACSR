@@ -1,5 +1,4 @@
-apport
-event,stimulus,frame_number
-SYLLABLE ONSET, a, 20
-SYLLABLE ONSET, pO, 28
-SYLLABLE ONSET, R, 42
+apport,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, a,20,0,2
+1,SYLLABLE ONSET, pO,28,3,2
+2,SYLLABLE ONSET, R,42,0,2

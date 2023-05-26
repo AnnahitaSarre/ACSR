@@ -1,5 +1,4 @@
-panama
-event,stimulus,frame_number
-SYLLABLE ONSET, pa, 14
-SYLLABLE ONSET, na, 27
-SYLLABLE ONSET, ma, 40
+panama,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, pa,14,0,4
+1,SYLLABLE ONSET, na,27,0,4
+2,SYLLABLE ONSET, ma,40,0,4

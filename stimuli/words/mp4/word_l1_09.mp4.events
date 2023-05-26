@@ -1,5 +1,4 @@
-rôdeur
-event,stimulus,frame_number
-SYLLABLE ONSET, Ro, 16
-SYLLABLE ONSET, d9, 19
-SYLLABLE ONSET, R, 40
+rôdeur,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, Ro,16,0,2
+1,SYLLABLE ONSET, d9,19,0,2
+2,SYLLABLE ONSET, R,40,0,2

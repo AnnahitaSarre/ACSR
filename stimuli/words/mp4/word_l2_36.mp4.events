@@ -1,5 +1,4 @@
-lynx
-event,stimulus,frame_number
-SYLLABLE ONSET, l5, 25
-SYLLABLE ONSET, k, 47
-SYLLABLE ONSET, s, 53
+lynx,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, l5,25,1,2
+1,SYLLABLE ONSET, k,47,0,2
+2,SYLLABLE ONSET, s,53,0,2

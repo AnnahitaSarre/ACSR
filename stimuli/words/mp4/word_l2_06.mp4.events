@@ -1,5 +1,4 @@
-malt
-event,stimulus,frame_number
-SYLLABLE ONSET, ma, 23
-SYLLABLE ONSET, l, 37
-SYLLABLE ONSET, t, 45
+malt,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ma,23,0,4
+1,SYLLABLE ONSET, l,37,0,4
+2,SYLLABLE ONSET, t,45,0,4

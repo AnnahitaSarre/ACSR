@@ -1,5 +1,4 @@
-import
-event,stimulus,frame_number
-SYLLABLE ONSET, 5, 19
-SYLLABLE ONSET, pO, 34
-SYLLABLE ONSET, R, 47
+import,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, 5,19,1,2
+1,SYLLABLE ONSET, pO,34,3,2
+2,SYLLABLE ONSET, R,47,0,2

@@ -1,5 +1,4 @@
-lavabo
-event,stimulus,frame_number
-SYLLABLE ONSET, la, 27
-SYLLABLE ONSET, va, 43
-SYLLABLE ONSET, bo, 62
+lavabo,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, la,27,0,3
+1,SYLLABLE ONSET, va,43,0,3
+2,SYLLABLE ONSET, bo,62,0,3

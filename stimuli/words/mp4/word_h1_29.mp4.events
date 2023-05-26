@@ -1,5 +1,4 @@
-tambour
-event,stimulus,frame_number
-SYLLABLE ONSET, t@, 26
-SYLLABLE ONSET, bu, 45
-SYLLABLE ONSET, R, 62
+tambour,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, t@,26,2,2
+1,SYLLABLE ONSET, bu,45,3,2
+2,SYLLABLE ONSET, R,62,0,2
