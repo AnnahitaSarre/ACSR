@@ -1,4 +1,5 @@
-grotte,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, g,21,0,4
-1,SYLLABLE ONSET, RO,36,3,4
-2,SYLLABLE ONSET, t,54,0,4
+grotte
+event,stimulus,frame_number
+SYLLABLE ONSET, g, 21
+SYLLABLE ONSET, RO, 36
+SYLLABLE ONSET, t, 54

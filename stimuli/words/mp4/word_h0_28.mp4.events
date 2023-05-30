@@ -1,4 +1,5 @@
-unité,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, y,13,4,4
-1,SYLLABLE ONSET, ɲi,34,,4
-2,SYLLABLE ONSET, te,59,4,4
+unité
+event,stimulus,frame_number
+SYLLABLE ONSET, y, 13
+SYLLABLE ONSET, ɲi, 34
+SYLLABLE ONSET, te, 59

@@ -1,4 +1,5 @@
-candidat,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, k@,19,2,0
-1,SYLLABLE ONSET, di,28,2,0
-2,SYLLABLE ONSET, da,39,0,0
+candidat
+event,stimulus,frame_number
+SYLLABLE ONSET, k@, 19
+SYLLABLE ONSET, di, 28
+SYLLABLE ONSET, da, 39

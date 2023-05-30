@@ -1,4 +1,5 @@
-duel,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, d,17,0,5
-1,SYLLABLE ONSET, 8E,31,3,5
-2,SYLLABLE ONSET, l,48,0,5
+duel
+event,stimulus,frame_number
+SYLLABLE ONSET, d, 17
+SYLLABLE ONSET, 8E, 31
+SYLLABLE ONSET, l, 48

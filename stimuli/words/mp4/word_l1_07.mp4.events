@@ -1,4 +1,5 @@
-baignade,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, bE,16,3,0
-1,SYLLABLE ONSET, Na,23,0,0
-2,SYLLABLE ONSET, d,53,0,0
+baignade
+event,stimulus,frame_number
+SYLLABLE ONSET, bE, 16
+SYLLABLE ONSET, Na, 23
+SYLLABLE ONSET, d, 53

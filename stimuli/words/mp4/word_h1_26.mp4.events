@@ -1,4 +1,5 @@
-chaussure,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, So,21,0,2
-1,SYLLABLE ONSET, sy,49,4,2
-2,SYLLABLE ONSET, R,67,0,2
+chaussure
+event,stimulus,frame_number
+SYLLABLE ONSET, So, 21
+SYLLABLE ONSET, sy, 49
+SYLLABLE ONSET, R, 67

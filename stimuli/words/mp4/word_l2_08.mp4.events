@@ -1,4 +1,5 @@
-fuel,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, f,22,0,5
-1,SYLLABLE ONSET, ju,33,3,5
-2,SYLLABLE ONSET, l,47,0,5
+fuel
+event,stimulus,frame_number
+SYLLABLE ONSET, f, 22
+SYLLABLE ONSET, ju, 33
+SYLLABLE ONSET, l, 47

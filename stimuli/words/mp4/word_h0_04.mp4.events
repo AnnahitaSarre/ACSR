@@ -1,4 +1,5 @@
-canapé,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, ka,23,0,0
-1,SYLLABLE ONSET, na,37,0,0
-2,SYLLABLE ONSET, pe,42,4,0
+canapé
+event,stimulus,frame_number
+SYLLABLE ONSET, ka, 23
+SYLLABLE ONSET, na, 37
+SYLLABLE ONSET, pe, 42

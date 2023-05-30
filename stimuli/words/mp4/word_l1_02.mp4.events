@@ -1,4 +1,5 @@
-kayak,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, ka,20,0,1
-1,SYLLABLE ONSET, ja,32,0,1
-2,SYLLABLE ONSET, k,34,0,1
+kayak
+event,stimulus,frame_number
+SYLLABLE ONSET, ka, 20
+SYLLABLE ONSET, ja, 32
+SYLLABLE ONSET, k, 34

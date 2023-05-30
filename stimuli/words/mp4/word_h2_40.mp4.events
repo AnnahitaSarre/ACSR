@@ -1,4 +1,5 @@
-chèvre,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, SE,32,3,2
-1,SYLLABLE ONSET, v,53,0,2
-2,SYLLABLE ONSET, R,60,0,2
+chèvre
+event,stimulus,frame_number
+SYLLABLE ONSET, SE, 32
+SYLLABLE ONSET, v, 53
+SYLLABLE ONSET, R, 60

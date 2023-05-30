@@ -1,4 +1,5 @@
-langage,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, l@,31,2,0
-1,SYLLABLE ONSET, ga,62,0,0
-2,SYLLABLE ONSET, Z,77,0,0
+langage
+event,stimulus,frame_number
+SYLLABLE ONSET, l@, 31
+SYLLABLE ONSET, ga, 62
+SYLLABLE ONSET, Z, 77

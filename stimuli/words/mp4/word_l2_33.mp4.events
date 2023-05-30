@@ -1,4 +1,5 @@
-troc,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, t,20,0,1
-1,SYLLABLE ONSET, RO,29,3,1
-2,SYLLABLE ONSET, k,41,0,1
+troc
+event,stimulus,frame_number
+SYLLABLE ONSET, t, 20
+SYLLABLE ONSET, RO, 29
+SYLLABLE ONSET, k, 41

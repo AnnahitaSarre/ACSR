@@ -1,4 +1,6 @@
-appétit,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, a,8,0,4
-1,SYLLABLE ONSET, pe,13,4,4
-2,SYLLABLE ONSET, ti,44,2,4
+appétit
+event,stimulus,frame_number
+SYLLABLE ONSET, a, 8
+SYLLABLE ONSET, pe, 13
+SYLLABLE ONSET, ti, 29
+

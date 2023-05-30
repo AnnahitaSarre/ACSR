@@ -1,4 +1,5 @@
-gérance,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, Ze,19,4,2
-1,SYLLABLE ONSET, R@,32,2,2
-2,SYLLABLE ONSET, s,48,0,2
+gérance
+event,stimulus,frame_number
+SYLLABLE ONSET, Ze, 19
+SYLLABLE ONSET, R@, 32
+SYLLABLE ONSET, s, 48

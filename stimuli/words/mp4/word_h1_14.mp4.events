@@ -1,4 +1,5 @@
-crédit,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, k,25,0,0
-1,SYLLABLE ONSET, Re,44,4,0
-2,SYLLABLE ONSET, di,68,2,0
+crédit
+event,stimulus,frame_number
+SYLLABLE ONSET, k, 25
+SYLLABLE ONSET, Re, 44
+SYLLABLE ONSET, di, 68

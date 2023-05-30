@@ -1,4 +1,5 @@
-toboggan,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, to,21,0,6
-1,SYLLABLE ONSET, bo,30,0,6
-2,SYLLABLE ONSET, g@,50,2,6
+toboggan
+event,stimulus,frame_number
+SYLLABLE ONSET, to, 21
+SYLLABLE ONSET, bo, 30
+SYLLABLE ONSET, g@, 50

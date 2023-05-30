@@ -1,4 +1,5 @@
-épave,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, e,20,4,1
-1,SYLLABLE ONSET, pa,51,0,1
-2,SYLLABLE ONSET, v,54,0,1
+épave
+event,stimulus,frame_number
+SYLLABLE ONSET, e, 20
+SYLLABLE ONSET, pa, 51
+SYLLABLE ONSET, v, 54

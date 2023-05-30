@@ -1,4 +1,5 @@
-caméra,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, ka,22,0,2
-1,SYLLABLE ONSET, me,40,4,2
-2,SYLLABLE ONSET, Ra,60,0,2
+caméra
+event,stimulus,frame_number
+SYLLABLE ONSET, ka, 22
+SYLLABLE ONSET, me, 40
+SYLLABLE ONSET, Ra, 60

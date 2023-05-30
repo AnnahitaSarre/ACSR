@@ -1,4 +1,5 @@
-papillon,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, pa,26,0,7
-1,SYLLABLE ONSET, pi,44,2,7
-2,SYLLABLE ONSET, j§,57,2,7
+papillon
+event,stimulus,frame_number
+SYLLABLE ONSET, pa, 26
+SYLLABLE ONSET, pi, 44
+SYLLABLE ONSET, j§, 57

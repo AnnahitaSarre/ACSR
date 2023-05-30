@@ -1,4 +1,5 @@
-ramassis,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, Ra,22,0,2
-1,SYLLABLE ONSET, ma,33,0,2
-2,SYLLABLE ONSET, si,53,2,2
+ramassis
+event,stimulus,frame_number
+SYLLABLE ONSET, Ra, 22
+SYLLABLE ONSET, ma, 33
+SYLLABLE ONSET, si, 53

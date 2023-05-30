@@ -1,4 +1,5 @@
-saumure,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, so,19,0,2
-1,SYLLABLE ONSET, my,31,4,2
-2,SYLLABLE ONSET, R,52,0,2
+saumure
+event,stimulus,frame_number
+SYLLABLE ONSET, so, 19
+SYLLABLE ONSET, my, 31
+SYLLABLE ONSET, R, 52

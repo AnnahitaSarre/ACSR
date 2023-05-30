@@ -1,4 +1,5 @@
-compagnon,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, k§,20,2,5
-1,SYLLABLE ONSET, pa,38,0,5
-2,SYLLABLE ONSET, N§,54,2,5
+compagnon
+event,stimulus,frame_number
+SYLLABLE ONSET, k§, 20
+SYLLABLE ONSET, pa, 38
+SYLLABLE ONSET, N§, 54

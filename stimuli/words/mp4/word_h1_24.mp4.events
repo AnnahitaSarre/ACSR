@@ -1,4 +1,5 @@
-serrure,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, se,20,4,2
-1,SYLLABLE ONSET, Ry,45,4,2
-2,SYLLABLE ONSET, R,76,0,2
+serrure
+event,stimulus,frame_number
+SYLLABLE ONSET, se, 20
+SYLLABLE ONSET, Ry, 45
+SYLLABLE ONSET, R, 76

@@ -1,4 +1,5 @@
-carte,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, ka,18,0,4
-1,SYLLABLE ONSET, R,36,0,4
-2,SYLLABLE ONSET, t,49,0,4
+carte
+event,stimulus,frame_number
+SYLLABLE ONSET, ka, 18
+SYLLABLE ONSET, R, 36
+SYLLABLE ONSET, t, 49

@@ -1,4 +1,5 @@
-cuisse,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, k,26,0,2
-1,SYLLABLE ONSET, 8i,42,2,2
-2,SYLLABLE ONSET, s,66,0,2
+cuisse
+event,stimulus,frame_number
+SYLLABLE ONSET, k, 26
+SYLLABLE ONSET, 8i, 42
+SYLLABLE ONSET, s, 66

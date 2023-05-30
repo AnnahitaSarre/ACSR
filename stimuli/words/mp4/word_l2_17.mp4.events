@@ -1,4 +1,5 @@
-snack,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, s,20,0,1
-1,SYLLABLE ONSET, na,28,0,1
-2,SYLLABLE ONSET, k,44,0,1
+snack
+event,stimulus,frame_number
+SYLLABLE ONSET, s, 20
+SYLLABLE ONSET, na, 28
+SYLLABLE ONSET, k, 44

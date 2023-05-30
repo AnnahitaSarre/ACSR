@@ -1,4 +1,5 @@
-notice,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, no,20,0,2
-1,SYLLABLE ONSET, ti,32,2,2
-2,SYLLABLE ONSET, s,46,0,2
+notice
+event,stimulus,frame_number
+SYLLABLE ONSET, no, 20
+SYLLABLE ONSET, ti, 32
+SYLLABLE ONSET, s, 46

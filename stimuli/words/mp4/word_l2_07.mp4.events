@@ -1,4 +1,5 @@
-gouache,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, g,11,0,5
-1,SYLLABLE ONSET, wa,24,0,5
-2,SYLLABLE ONSET, S,41,0,5
+gouache
+event,stimulus,frame_number
+SYLLABLE ONSET, g, 11
+SYLLABLE ONSET, wa, 24
+SYLLABLE ONSET, S, 41

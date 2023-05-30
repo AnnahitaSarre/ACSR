@@ -1,4 +1,5 @@
-cantine,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, k@,23,2,3
-1,SYLLABLE ONSET, ti,35,2,3
-2,SYLLABLE ONSET, n,51,0,3
+cantine
+event,stimulus,frame_number
+SYLLABLE ONSET, k@, 23
+SYLLABLE ONSET, ti, 35
+SYLLABLE ONSET, n, 51

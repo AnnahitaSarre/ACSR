@@ -1,4 +1,5 @@
-cinéma,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, si,21,2,4
-1,SYLLABLE ONSET, ne,41,4,4
-2,SYLLABLE ONSET, ma,59,0,4
+cinéma
+event,stimulus,frame_number
+SYLLABLE ONSET, si, 21
+SYLLABLE ONSET, ne, 41
+SYLLABLE ONSET, ma, 59

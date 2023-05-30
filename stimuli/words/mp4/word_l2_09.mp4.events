@@ -1,4 +1,5 @@
-bulbe,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, by,17,4,3
-1,SYLLABLE ONSET, l,49,0,3
-2,SYLLABLE ONSET, b,51,0,3
+bulbe
+event,stimulus,frame_number
+SYLLABLE ONSET, by, 17
+SYLLABLE ONSET, l, 49
+SYLLABLE ONSET, b, 51

@@ -1,4 +1,5 @@
-volt,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, vO,18,3,4
-1,SYLLABLE ONSET, l,32,0,4
-2,SYLLABLE ONSET, t,41,0,4
+volt
+event,stimulus,frame_number
+SYLLABLE ONSET, vO, 18
+SYLLABLE ONSET, l, 32
+SYLLABLE ONSET, t, 41

@@ -1,4 +1,5 @@
-glotte,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, g,18,0,4
-1,SYLLABLE ONSET, lO,31,3,4
-2,SYLLABLE ONSET, t,44,0,4
+glotte
+event,stimulus,frame_number
+SYLLABLE ONSET, g, 18
+SYLLABLE ONSET, lO, 31
+SYLLABLE ONSET, t, 44

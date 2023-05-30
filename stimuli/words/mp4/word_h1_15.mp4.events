@@ -1,4 +1,5 @@
-balcon,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, ba,21,0,1
-1,SYLLABLE ONSET, l,33,0,1
-2,SYLLABLE ONSET, k§,57,2,1
+balcon
+event,stimulus,frame_number
+SYLLABLE ONSET, ba, 21
+SYLLABLE ONSET, l, 33
+SYLLABLE ONSET, k§, 57

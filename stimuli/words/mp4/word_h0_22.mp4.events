@@ -1,4 +1,5 @@
-pyjama,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, pi,16,2,4
-1,SYLLABLE ONSET, Za,40,0,4
-2,SYLLABLE ONSET, ma,48,0,4
+pyjama
+event,stimulus,frame_number
+SYLLABLE ONSET, pi, 16
+SYLLABLE ONSET, Za, 40
+SYLLABLE ONSET, ma, 48

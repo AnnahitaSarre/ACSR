@@ -1,4 +1,5 @@
-apathie,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, a,17,0,4
-1,SYLLABLE ONSET, pa,27,0,4
-2,SYLLABLE ONSET, ti,49,2,4
+apathie
+event,stimulus,frame_number
+SYLLABLE ONSET, a, 17
+SYLLABLE ONSET, pa, 27
+SYLLABLE ONSET, ti, 49

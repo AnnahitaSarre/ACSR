@@ -1,4 +1,5 @@
-résidu,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, Re,16,4,0
-1,SYLLABLE ONSET, zi,36,2,0
-2,SYLLABLE ONSET, dy,57,4,0
+résidu
+event,stimulus,frame_number
+SYLLABLE ONSET, Re, 16
+SYLLABLE ONSET, zi, 36
+SYLLABLE ONSET, dy, 57

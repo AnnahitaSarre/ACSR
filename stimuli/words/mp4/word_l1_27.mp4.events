@@ -1,4 +1,5 @@
-salsa,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, sa,21,0,1
-1,SYLLABLE ONSET, l,29,0,1
-2,SYLLABLE ONSET, za,47,0,1
+salsa
+event,stimulus,frame_number
+SYLLABLE ONSET, sa, 21
+SYLLABLE ONSET, l, 29
+SYLLABLE ONSET, za, 47

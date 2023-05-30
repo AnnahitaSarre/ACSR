@@ -1,4 +1,5 @@
-tandem,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, t@,20,2,4
-1,SYLLABLE ONSET, dE,32,3,4
-2,SYLLABLE ONSET, m,49,0,4
+tandem
+event,stimulus,frame_number
+SYLLABLE ONSET, t@, 20
+SYLLABLE ONSET, dE, 32
+SYLLABLE ONSET, m, 49

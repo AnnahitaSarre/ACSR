@@ -1,4 +1,5 @@
-diamant,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, d,22,0,4
-1,SYLLABLE ONSET, ja,30,0,4
-2,SYLLABLE ONSET, m@,54,2,4
+diamant
+event,stimulus,frame_number
+SYLLABLE ONSET, d, 22
+SYLLABLE ONSET, ja, 30
+SYLLABLE ONSET, m@, 54

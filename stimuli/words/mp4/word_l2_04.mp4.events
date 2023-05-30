@@ -1,4 +1,5 @@
-kyste,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, ci,18,,4
-1,SYLLABLE ONSET, s,28,0,4
-2,SYLLABLE ONSET, t,40,0,4
+kyste
+event,stimulus,frame_number
+SYLLABLE ONSET, ci, 18
+SYLLABLE ONSET, s, 28
+SYLLABLE ONSET, t, 40

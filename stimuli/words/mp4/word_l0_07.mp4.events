@@ -1,4 +1,5 @@
-marabout,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, ma, 27,0,3
-1,SYLLABLE ONSET, Ra, 46,0,3
-2,SYLLABLE ONSET, bu, None,3,3
+marabout
+event,stimulus,frame_number
+SYLLABLE ONSET, ma, 27
+SYLLABLE ONSET, Ra, 46
+SYLLABLE ONSET, bu, None

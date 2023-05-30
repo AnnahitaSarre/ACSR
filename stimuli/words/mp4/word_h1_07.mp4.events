@@ -1,4 +1,5 @@
-montagne,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, m§,26,2,5
-1,SYLLABLE ONSET, ta,48,0,5
-2,SYLLABLE ONSET, N,52,0,5
+montagne
+event,stimulus,frame_number
+SYLLABLE ONSET, m§, 26
+SYLLABLE ONSET, ta, 48
+SYLLABLE ONSET, N, 52

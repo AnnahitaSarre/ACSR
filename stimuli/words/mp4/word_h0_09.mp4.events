@@ -1,4 +1,5 @@
-éléphant,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, e,14,4,4
-1,SYLLABLE ONSET, le,30,4,4
-2,SYLLABLE ONSET, f@,55,2,4
+éléphant
+event,stimulus,frame_number
+SYLLABLE ONSET, e, 14
+SYLLABLE ONSET, le, 30
+SYLLABLE ONSET, f@, 55

@@ -1,4 +1,5 @@
-mikado,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, mi,19,2,0
-1,SYLLABLE ONSET, ka,36,0,0
-2,SYLLABLE ONSET, do,50,0,0
+mikado
+event,stimulus,frame_number
+SYLLABLE ONSET, mi, 19
+SYLLABLE ONSET, ka, 36
+SYLLABLE ONSET, do, 50

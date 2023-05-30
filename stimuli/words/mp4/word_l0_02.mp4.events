@@ -1,4 +1,5 @@
-latino,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, la,21,0,3
-1,SYLLABLE ONSET, ti,34,2,3
-2,SYLLABLE ONSET, no,53,0,3
+latino
+event,stimulus,frame_number
+SYLLABLE ONSET, la, 21
+SYLLABLE ONSET, ti, 34
+SYLLABLE ONSET, no, 53

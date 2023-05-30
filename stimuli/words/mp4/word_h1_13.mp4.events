@@ -1,4 +1,5 @@
-orage,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, ɔ,24,,0
-1,SYLLABLE ONSET, Ra,40,0,0
-2,SYLLABLE ONSET, Z,52,0,0
+orage
+event,stimulus,frame_number
+SYLLABLE ONSET, ɔ, 24
+SYLLABLE ONSET, Ra, 40
+SYLLABLE ONSET, Z, 52

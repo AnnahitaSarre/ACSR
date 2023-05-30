@@ -1,4 +1,5 @@
-flore,event,stimulus,frame_number,pos,shape
-0,SYLLABLE ONSET, f,16,0,2
-1,SYLLABLE ONSET, lO,29,3,2
-2,SYLLABLE ONSET, R,43,0,2
+flore
+event,stimulus,frame_number
+SYLLABLE ONSET, f, 16
+SYLLABLE ONSET, lO, 29
+SYLLABLE ONSET, R, 43
