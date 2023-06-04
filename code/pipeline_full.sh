@@ -1,5 +1,5 @@
 #!/bin/bash
-# set -x
+set -x
 
 model_type='rf' # 'rf', 'lr'
 gender='female' # male/female
