@@ -1,0 +1,19 @@
+python is /network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/bin/python
+Loaded model: ../trained_models/model_rf_position_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_h2_05.mp4
+Extracting coordinates...
+Extracting coordinates for: word_h2_05.mp4
+Number of frames in video: 61
+Loaded model: ../trained_models/model_rf_shape_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_h2_05.mp4
+Extracting coordinates...
+Extracting coordinates for: word_h2_05.mp4
+Number of frames in video: 61
+Visualization for: ../stimuli/words/mp4/word_h2_05.mp4
+32
+Number of syllabels: 1
+['ma', 't', 'S']
+Stimulus: match
+ma: frame #14
+Visualization for: ../stimuli/words/mp4/word_h2_05.mp4
+32

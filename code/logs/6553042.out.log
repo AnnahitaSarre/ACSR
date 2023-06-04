@@ -1,0 +1,37 @@
+python is /network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/bin/python
+Loaded model: ../trained_models/model_rf_position_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_l1_06.mp4
+Extracting coordinates...
+Extracting coordinates for: word_l1_06.mp4
+Number of frames in video: 57
+Extracting features...
+Face width computed for normalizaiton 0.15731968322388562
+Features saved to: ../output/word_l1_06_features.csv
+csv file with predictions was saved to ../output/predictions_rf_position_female_cropped_word_l1_06.csv
+Loaded model: ../trained_models/model_rf_shape_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_l1_06.mp4
+Extracting coordinates...
+Extracting coordinates for: word_l1_06.mp4
+Number of frames in video: 57
+Extracting features...
+Face width computed for normalizaiton 0.15731968322388562
+Features saved to: ../output/word_l1_06_features.csv
+csv file with predictions was saved to ../output/predictions_rf_shape_female_cropped_word_l1_06.csv
+Visualization for: ../stimuli/words/mp4/word_l1_06.mp4
+32
+Number of syllabels: 3
+['o', 'vE', 'R']
+Stimulus: ovaire
+o: frame #15
+vE: frame #25
+R: frame #31
+Event onsets saved to: ../stimuli/words/mp4/word_l1_06.mp4.events
+Figure was save to: ../stimuli/words/mp4/word_l1_06.mp4.png
+Visualization for: ../stimuli/words/mp4/word_l1_06.mp4
+32
+            event stimulus  frame_number
+0  SYLLABLE ONSET        o            15
+1  SYLLABLE ONSET       vE            28
+2  SYLLABLE ONSET        R            43
+The video was successfully saved
+The marked video was saved to: ../stimuli/words/mp4/word_l1_06_marked_with_model_female_cropped.avi

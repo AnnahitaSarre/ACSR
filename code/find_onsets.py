@@ -24,13 +24,21 @@ parser.add_argument('--path2predictions', default=os.path.join('..',
                                                                'output'))
 parser.add_argument('--path2output', default=os.path.join('..', 'output'))
 parser.add_argument('--path2figures', default=os.path.join('..', 'figures'))
-parser.add_argument('--textgrid', action='store_true', default=True,
+#parser.add_argument('--n-syllables', default=None,
+#                    help='If textgrid is true then num syllables taken from MFA')
+parser.add_argument('--textgrid', action='store_true', default=False,
                     help='If true, onset from grid text will be added')
 parser.add_argument('--plot-measures', action='store_true', default=True,
                     help='If true, velocity, joint measures and probabilites will be plotted')
 parser.add_argument('--weight-velocity', default=3,
                     help='Importance weight of velocity compared to probabilities in the computation of the joint measure')
 args = parser.parse_args()
+
+#if args.textgrid:
+#    args.n_syllables = None
+#else:
+#    if args.n_syllables is None:
+#        raise('If textgrid is False then n-syllables must be provided!')
 
 os.environ["QT_QPA_PLATFORM_PLUGIN_PATH"] = os.fspath(
     Path(PyQt5.__file__).resolve().parent / "Qt5" / "plugins"
@@ -67,15 +75,16 @@ velocity_scaled = utils.scale_velocity(velocity)
 str_stimulus = utils.get_stimulus_string(fn_video)
 
 # GET SYLLABLE ONSETS FROM MFA
+lpc_syllables = utils.get_syllable_onset_frames_from_lpc_file(fn_video)
+n_syllables = len(lpc_syllables)
+print(lpc_syllables)
+
 if args.textgrid:
-    lpc_syllables, onset_frames_syllables_mfa = utils.get_syllable_onset_frames_from_mfa(fn_video)
-    n_syllables = len(onset_frames_syllables_mfa)
-    print(f'Number of syllabels: {n_syllables}')
-    print(lpc_syllables)
+    onset_frames_syllables_mfa = utils.get_syllable_onset_frames_from_mfa(fn_video, lpc_syllables)
+    print(f'Number of MFA syllabels found: {n_syllables}')
 else:
     lpc_syllables = None
     onset_frames_syllables_mfa = None
-    n_syllables = None
 
 joint_measure = utils.get_joint_measure(df_predictions_pos,
                                         df_predictions_shape,
@@ -91,19 +100,10 @@ if (lpc_syllables is not None) and (onset_frames_syllables_mfa is not None):
 thresh = 0.3
 onset_frames_picked, onset_frames_extrema = utils.find_onsets_based_on_extrema(joint_measure,
                                                                                n_syllables,
-                                                                               onset_frames_syllables_mfa,
-                                                                               thresh)
-
-os.makedirs(args.path2output, exist_ok=True)
-fn_txt = os.path.join(args.path2video, f'{os.path.basename(fn_video)}.events')
-utils.write_onsets_to_file(str_stimulus, lpc_syllables, onset_frames_picked, fn_txt)
-print(f'Event onsets saved to: {fn_txt}')
-
-# SAVE MESAURES TO CSV
-df_measures = pd.DataFrame(list(zip(velocity, acceleration, velocity_scaled, joint_measure)),
-                           columns=['velocity', 'acceleration', 'velocity_scaled', 'joint_measure'])
-df_measures.to_csv(os.path.join(args.path2output,
-                                f'{args.fn_video[:-4]}_measures.csv'))
+                                                                               onset_frames_syllables_mfa=onset_frames_syllables_mfa,
+                                                                               thresh=thresh)
+print('Frame onsets of extrema of joint measure:', onset_frames_extrema)
+print('Identified frame onsets:', onset_frames_picked)
 
 # PLOT JOINT MEASURE, SCALED VELOCITY AND PROBS (POSITION AND SHAPE)
 if args.plot_measures:
@@ -120,4 +120,15 @@ if args.plot_measures:
     fig.savefig(fn_fig)
     print(f'Figure was save to: {fn_fig}')
 
+
+os.makedirs(args.path2output, exist_ok=True)
+fn_txt = os.path.join(args.path2video, f'{os.path.basename(fn_video)}.events')
+utils.write_onsets_to_file(str_stimulus, lpc_syllables, onset_frames_picked, fn_txt)
+print(f'Event onsets saved to: {fn_txt}')
+
+# SAVE MESAURES TO CSV
+df_measures = pd.DataFrame(list(zip(velocity, acceleration, velocity_scaled, joint_measure)),
+                           columns=['velocity', 'acceleration', 'velocity_scaled', 'joint_measure'])
+df_measures.to_csv(os.path.join(args.path2output,
+                                f'{args.fn_video[:-4]}_measures.csv'))
 

@@ -10,7 +10,7 @@ import os
 import csv
 import numpy as np
 import pandas as pd
-from tqdm import tqdm 
+from tqdm import tqdm
 import matplotlib.pyplot as plt
 from scipy.signal import savgol_filter
 import textgrids
@@ -46,7 +46,7 @@ def extract_class_from_fn(fn):
 
 def get_distance(df_name, landmark1, landmark2, norm_factor=None):
     '''
-    
+
 
     Parameters
     ----------
@@ -63,7 +63,7 @@ def get_distance(df_name, landmark1, landmark2, norm_factor=None):
     The distance between landmark1 and landmark2
 
     '''
-    
+
     x1 = df_name[f'x_{landmark1}']
     x2 = df_name[f'x_{landmark2}']
     y1 = df_name[f'y_{landmark1}']
@@ -71,11 +71,11 @@ def get_distance(df_name, landmark1, landmark2, norm_factor=None):
     z1 = df_name[f'z_{landmark1}']
     z2 = df_name[f'z_{landmark2}']
     d = np.sqrt((x1-x2)**2 + (y1-y2)**2 + (z1-z2)**2)
-    
+
     # NORMALIZE
     if norm_factor is not None:
         d /= norm_factor
-    
+
     return  d
 
 def get_delta_dim(df_name, landmark1, landmark2, dim, norm_factor=None):
@@ -84,29 +84,59 @@ def get_delta_dim(df_name, landmark1, landmark2, dim, norm_factor=None):
     if norm_factor is not None:
         delta /= norm_factor
     return  delta
+
+
+def get_frames_around_event(fn_video, frame_number, n_neighbor_frames):
+    st = frame_number - n_neighbor_frames
+    ed = frame_number + n_neighbor_frames + 1
+    frame_numbers = range(st, ed)
     
+    extracted_frames = []
+    cap = cv2.VideoCapture(fn_video)
+    for frame_number in frame_numbers:
+        cap.set(cv2.CAP_PROP_POS_FRAMES, frame_number)
+        ret, frame = cap.read()
+        if ret:
+            extracted_frames.append(frame)
+    cap.release()
+        
+    return extracted_frames
+
+
+def create_video_from_frames(fn_video, extracted_frames):
+    out = None
+    if extracted_frames:
+        height, width, _ = extracted_frames[0].shape
+        fourcc = cv2.VideoWriter_fourcc(*"mp4v")  # Codec for MP4 video
+        out = cv2.VideoWriter(fn_video, fourcc, 30.0, (width, height))
+        for frame in extracted_frames:
+            out.write(frame)
+        out.release()
     
+    return out
+
+
 def extract_coordinates(cap, fn_video, show_video=False, verbose=True):
-    
+
     if verbose:
-        print(f'Extracting coordinates for: {fn_video}')    
+        print(f'Extracting coordinates for: {fn_video}')
     mp_drawing = mp.solutions.drawing_utils # Drawing helpers
     mp_holistic = mp.solutions.holistic # Mediapipe Solutions
-    
-    
+
+
     columns = ['fn_video', 'frame_number']
     num_coords_face = 468
     num_coords_hand = 21
-    
+
     # generate columns names
     for val in range(0, num_coords_face):
         columns += ['x_face{}'.format(val), 'y_face{}'.format(val),
                       'z_face{}'.format(val), 'v_face{}'.format(val)]
-    
+
     for val in range(0, num_coords_hand):
         columns += ['x_r_hand{}'.format(val), 'y_r_hand{}'.format(val),
                       'z_r_hand{}'.format(val), 'v_r_hand{}'.format(val)]
-    
+
     df_coords = pd.DataFrame(columns=columns)
 
     n_frames = int(cap. get(cv2. CAP_PROP_FRAME_COUNT))
@@ -118,7 +148,7 @@ def extract_coordinates(cap, fn_video, show_video=False, verbose=True):
     i_frame = 0
     with mp_holistic.Holistic(min_detection_confidence=0.5,
                               min_tracking_confidence=0.5) as holistic:
-        
+
         while cap.isOpened():
             ret, frame = cap.read()
             i_frame += 1
@@ -132,31 +162,31 @@ def extract_coordinates(cap, fn_video, show_video=False, verbose=True):
 
 
             # Recolor image back to BGR for rendering
-            image.flags.writeable = True   
+            image.flags.writeable = True
             image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
 
-            
+
             # 4. Pose Detections
             if show_video:
                 # Draw face landmarks
-                mp_drawing.draw_landmarks(image, results.face_landmarks, mp_holistic.FACEMESH_TESSELATION, 
+                mp_drawing.draw_landmarks(image, results.face_landmarks, mp_holistic.FACEMESH_TESSELATION,
                                          mp_drawing.DrawingSpec(color=(80,110,10), thickness=1, circle_radius=1),
                                          mp_drawing.DrawingSpec(color=(80,256,121), thickness=1, circle_radius=1)
                                          )
-                
+
                 # Right hand landmarks
-                mp_drawing.draw_landmarks(image, results.right_hand_landmarks, mp_holistic.HAND_CONNECTIONS, 
+                mp_drawing.draw_landmarks(image, results.right_hand_landmarks, mp_holistic.HAND_CONNECTIONS,
                                          mp_drawing.DrawingSpec(color=(80,22,10), thickness=2, circle_radius=4),
                                          mp_drawing.DrawingSpec(color=(80,44,121), thickness=2, circle_radius=2)
                                          )
                 # Pose landmarks
-                mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_holistic.POSE_CONNECTIONS, 
+                mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_holistic.POSE_CONNECTIONS,
                                           mp_drawing.DrawingSpec(color=(245,117,66), thickness=2, circle_radius=4),
                                           mp_drawing.DrawingSpec(color=(245,66,230), thickness=2, circle_radius=2)
                                           )
                 cv2.imshow('cued_estimated', image)
 
-            
+
             # Export coordinates
             if results.face_landmarks is not None:
                 face = results.face_landmarks.landmark
@@ -177,28 +207,32 @@ def extract_coordinates(cap, fn_video, show_video=False, verbose=True):
             #Create the row that will be written in the file
             row = [fn_video, i_frame] + face_row +r_hand_row
             curr_df = pd.DataFrame(dict(zip(columns, row)), index=[0])
+            #print(i_frame, curr_df)
             df_coords = pd.concat([df_coords, curr_df], ignore_index=True)
 
             if cv2.waitKey(10) & 0xFF == ord('q'):
                 break
+                print('WARNING!'*5)
+                print('break due to cv2.waitKey(10) & 0xFF == ord("q"')
             pbar.update(1)
-            
+
     cap.release()
     cv2.destroyAllWindows()
-
-    assert df_coords.shape[0] == n_frames
+    
+    print(len(df_coords), n_frames)
+    assert n_frames - df_coords.shape[0] <=1
 
     return df_coords
- 
-    
-    
+
+
+
 def extract_features(df_coords):
     #create the df of relevant feature
-    
+
     df_features = pd.DataFrame()
     df_features['fn_video'] = df_coords['fn_video'].copy()
     df_features['frame_number'] = df_coords['frame_number']
-    
+
     #face width to normalize the distance
     # print('Computing face width for normalization')
     face_width = get_distance(df_coords,'face234','face454').mean()
@@ -216,19 +250,19 @@ def extract_features(df_coords):
                                                   f'face{face_index}',
                                                   f'r_hand{hand_index}',
                                                   norm_factor=norm_factor)
-        
+
         dx = get_delta_dim(df_coords,
                             f'face{face_index}',
                             f'r_hand{hand_index}',
                             'x',
                             norm_factor=norm_factor)
-        
+
         dy = get_delta_dim(df_coords,
                             f'face{face_index}',
                             f'r_hand{hand_index}',
                             'y',
                             norm_factor=norm_factor)
-        
+
         feature_name = f'tan_angle_face{face_index}_r_hand{hand_index}'
         df_features[feature_name] = dx/dy
 
@@ -241,7 +275,7 @@ def extract_features(df_coords):
                                                  f'r_hand{hand_index1}',
                                                  f'r_hand{hand_index2}',
                                                  norm_factor=norm_factor)
-    
+
 
     return df_features
 
@@ -252,22 +286,22 @@ def get_index_pairs(property_type):
         index_pairs.extend([(2, 4), (5, 8), (9, 12), (13, 16), (17, 20),
                             (4, 5), (4, 8),
                             (8, 12), (7, 11), (6, 10)])
-    
+
     elif property_type == 'position':
         hand_indices = [8, 9, 12] # index and middle fingers
-                        
+
         face_indices = [#0, # Middle Lips
                         #61, # right side of lips
                         #172, # right side down
                         #234, # right side up
                         130, # right corner of right eye
                         152, # chin
-                        94 # nose                
+                        94 # nose
                         ]
         for hand_index in hand_indices:
             for face_index in face_indices:
                 index_pairs.append((hand_index, face_index))
-                
+
     return index_pairs
 
 
@@ -284,11 +318,11 @@ def get_feature_names(property_name):
     # SHAPE
     elif property_name == 'shape':
         shape_index_pairs = get_index_pairs('shape')
-                            
+
         for hand_index1, hand_index2 in shape_index_pairs:
             feature_name = f'distance_r_hand{hand_index1}_r_hand{hand_index2}'
             feature_names.append(feature_name)
-           
+
     return feature_names
 
 
@@ -313,28 +347,27 @@ def compute_predictions(model, df_features):
 
     return np.asarray(predicted_probs, dtype=object), np.asarray(predicted_class)
 
- 
+
 def compute_velocity(df, landmark, fn=None):
     frame_number = df['frame_number']
     x = df['x_' + landmark].values
     y = df['y_' + landmark].values
     z = df['z_' + landmark].values
-    
+
     dx = np.gradient(x, frame_number)
     dy = np.gradient(y, frame_number)
     dz = np.gradient(z, frame_number)
-    
+
     dx2 = np.gradient(dx, frame_number)
     dy2 = np.gradient(dy, frame_number)
     dz2 = np.gradient(dz, frame_number)
-    
+
     v = np.sqrt(dx**2 + dy**2 + dz**2)
     a = np.sqrt(dx2**2 + dy2**2 + dz2**2)
-    
+
     v_smoothed = savgol_filter(v, 9, 3) # window
     a_smoothed = savgol_filter(a, 9, 3) # window
-     
-    
+
     if fn is not None:
         fig, ax = plt.subplots()
         ax.plot(v_smoothed, lw=3, color='k')
@@ -353,7 +386,7 @@ def get_phone_onsets(fn_textgrid):
     phones = grid['phones']
     for phone in phones:
         if phone.text.transcode() != '':
-            times.append(phone.xmin) 
+            times.append(phone.xmin)
             labels.append(phone.text.transcode())
 
     return times, labels
@@ -368,10 +401,23 @@ def get_stimulus_string(fn_video):
 
 
 def dict_phone_transcription():
+    # Megalex (key) to MFA (value) phone labels
     d = {}
     d['R'] = 'ʁ'
     d['N'] = 'ɲ'
-    # d['g'] = 'ɟ'
+    d['§'] = 'ɔ̃'
+    d['Z'] = 'ʒ'
+    d['5'] = 'ɛ̃'
+    d['E'] = 'ɛ'
+    d['9'] = 'œ'
+    d['8'] = 'ɥ'
+    d['S'] = 'ʃ'
+    d['O'] = 'ɔ'
+    d['2'] = 'ø'
+    d['g'] = 'ɟ'
+    d['g'] = 'ɡ'
+    d['@'] = 'ɑ̃'
+    d['8'] = 'ɥ'
     return d
 
 def find_syllable_onsets(lpc_syllables, times_phones, labels_phones):
@@ -394,34 +440,46 @@ def find_syllable_onsets(lpc_syllables, times_phones, labels_phones):
     return times
 
 
-def get_syllable_onset_frames_from_mfa(fn_video):
-    
-    # Load video and get number of frames per second (fps)
-    cap = load_video(fn_video)
-    fps = int(cap.get(cv2.CAP_PROP_FPS)) # frames per second
-    assert fps > 0; 'Frames per seconds is not a positive number' 
-    
-    # Load corresponing TextGrid file
+def get_syllable_onset_frames_from_lpc_file(fn_video):
     fn_base = os.path.basename(fn_video)[:-4]
-    fn_textgrid = fn_base + '.TextGrid'
-    fn_textgrid = os.path.join('../stimuli/words/mfa_out', fn_textgrid)
 
-    # Get LPC parsing of stimulus, into separate SYLLABLES 
+    # Get LPC parsing of stimulus, into separate SYLLABLES
     # (MFA is for ALL phones and we need to know which phones are at the beginning of each syllable)
     fn_lpc_parsing = fn_base + '.lpc'
     fn_lpc_parsing = os.path.join('../stimuli/words/txt', fn_lpc_parsing)
     lpc_syllables = open(fn_lpc_parsing, 'r').readlines()[0].strip('\n').split()
 
+    return lpc_syllables
+
+    return 
+def get_syllable_onset_frames_from_mfa(fn_video, lpc_syllables):
+
+    # Load video and get number of frames per second (fps)
+    cap = load_video(fn_video)
+    fps = int(cap.get(cv2.CAP_PROP_FPS)) # frames per second
+    assert fps > 0; 'Frames per seconds is not a positive number'
+
+    # Load corresponing TextGrid file
+    fn_base = os.path.basename(fn_video)[:-4]
+    fn_textgrid = fn_base + '.TextGrid'
+    fn_textgrid = os.path.join('../stimuli/words/mfa_out', fn_textgrid)
+
+    # Get LPC parsing of stimulus, into separate SYLLABLES
+    # (MFA is for ALL phones and we need to know which phones are at the beginning of each syllable)
+    #fn_lpc_parsing = fn_base + '.lpc'
+    #fn_lpc_parsing = os.path.join('../stimuli/words/txt', fn_lpc_parsing)
+    #lpc_syllables = open(fn_lpc_parsing, 'r').readlines()[0].strip('\n').split()
+
     # PHONE onests in seconds from MFA
     onset_secs_phones_mfa, labels_phones_textgrid = get_phone_onsets(fn_textgrid)
-    
+    print(onset_secs_phones_mfa, labels_phones_textgrid)
     # SYLLABLE ONSET from MFA based on the onset of their FIRST PHONE
     onset_secs_syllables_mfa = find_syllable_onsets(lpc_syllables, # in seconds
                                                     onset_secs_phones_mfa,
                                                     labels_phones_textgrid)
     onset_frames_syllables_mfa = [int(t*fps) for t in onset_secs_syllables_mfa] # in frames
 
-    return lpc_syllables, onset_frames_syllables_mfa 
+    return onset_frames_syllables_mfa
 
 
 
@@ -429,10 +487,10 @@ def find_onsets_based_on_extrema(time_series,
                                  n_syllables=None,
                                  onset_frames_syllables_mfa=None,
                                  thresh=None): # condition: time_series > thresh
-    
-    
-    onset_frames_syllables_mfa = np.asarray(onset_frames_syllables_mfa)
-    
+
+    if onset_frames_syllables_mfa is not None: 
+        onset_frames_syllables_mfa = np.asarray(onset_frames_syllables_mfa)
+
     # find extrema
     onset_frames_extrema = argrelextrema(time_series, np.greater)[0]
     # Threshold
@@ -440,7 +498,6 @@ def find_onsets_based_on_extrema(time_series,
         onset_frames_extrema = np.asarray([onset_frame for onset_frame in onset_frames_extrema if time_series[onset_frame]>thresh])
 
     onset_frames_extrema_temp = onset_frames_extrema.copy()
-
     onset_frames_picked = []
     if onset_frames_syllables_mfa is not None: # use MFA onsets to constrain the solution
         if len(onset_frames_syllables_mfa) == len(onset_frames_extrema_temp):
@@ -454,9 +511,14 @@ def find_onsets_based_on_extrema(time_series,
                 onset_frames_picked.append(onset_frame_extremum_nearest_mfa)
                 # Remove past indexes, in order to make sure the next onset frame is in the future
                 onset_frames_extrema_temp = onset_frames_extrema_temp[onset_frames_extrema_temp > onset_frame_extremum_nearest_mfa]
+                if len(onset_frames_extrema_temp)==0:
+                    while len(onset_frames_picked) < len(onset_frames_syllables_mfa): # Fill None values if not enough identified extrema
+                        onset_frames_picked.append(None)
+                    break
     else:
         IXs = np.argpartition(onset_frames_extrema, -n_syllables)[-n_syllables:]
-        onset_frames_picked = list(onset_frames_extrema,[IXs])
+        onset_frames_picked = list(onset_frames_extrema[IXs])
+
     return onset_frames_picked, onset_frames_extrema
 
 def scale_velocity(velocity):
@@ -473,7 +535,7 @@ def get_joint_measure(df_predictions_pos,
                       df_predictions_shape,
                       velocity_scaled,
                       weight_velocity=1):
-    
+
     # MAX PROBABILITIES (POSITION AND SHAPE)
     max_probs_pos = df_predictions_pos.copy().filter(regex=("p_class*")).to_numpy().max(axis=1)
     max_probs_shape = df_predictions_shape.copy().filter(regex=("p_class*")).to_numpy().max(axis=1)
@@ -484,13 +546,22 @@ def get_joint_measure(df_predictions_pos,
     # replace nans caused by smoothing with original values
     is_nan_smoothed = np.isnan(joint_measure_smoothed)
     joint_measure_smoothed[is_nan_smoothed] = joint_measure[is_nan_smoothed]
-    
+
     return joint_measure_smoothed
 
 
 def write_onsets_to_file(str_stimulus, lpc_syllables, onset_frames_picked, fn_txt):
     
+    # HACK TO EQUALIZE THE NUMBER OF EXPECTED ONSETS (NUM SYLLABLES) AND THE ONE FOUND
+    if len(lpc_syllables) < len(onset_frames_picked): # REMOVE EXTRA ONSETS
+        onset_frames_picked = onset_frames_picked[:3]
+    for i_sy in range(len(lpc_syllables)-len(onset_frames_picked)): # ADD DUMMY ONSETS
+        onset_frames_picked = list(onset_frames_picked)
+        last_onset = onset_frames_picked[-1]
+        onset_frames_picked.append(last_onset + i_sy + 1)
+
     assert len(lpc_syllables) == len(onset_frames_picked)
+
     with open(fn_txt, 'w') as f:
         f.write(f'{str_stimulus}\n')
         f.write('event,stimulus,frame_number\n')
@@ -498,3 +569,79 @@ def write_onsets_to_file(str_stimulus, lpc_syllables, onset_frames_picked, fn_tx
             f.write(f'SYLLABLE ONSET, {syllable}, {onset}\n')
     return None
 
+# FROM HAGAR
+
+def get_LPC_p(word):
+    lex = pd.read_csv("/home/yair/projects/ACSR/data/hagar/Lexique380.utf8.csv")
+    lex = lex[(lex.ortho.str.contains('-| ') == False) & (lex.phon.str.contains('°') == False)]  # suppress schwa
+    lex = lex.drop_duplicates(subset='ortho', keep="first")
+    lex = lex[['ortho','phon', 'p_cvcv','nbhomogr','cv-cv','syll']]
+    dic = lex.set_index('ortho').to_dict()
+
+    cv_dic = dic['cv-cv']
+    p_cv_dic = dic['syll']
+    phon_dic = dic['phon']    
+
+    dev_syl = pd.read_csv("/home/yair/projects/ACSR/data/hagar/lpc_syl_configurations.csv")
+    dev_syl['lpc_n'] = dev_syl['LPC_config'].apply(lambda x: x.split('-'))
+    dev_syl['lpc_n'] = dev_syl['lpc_n'].apply(lambda x: len(x))
+    dic2 = dev_syl.set_index('spoken_config').to_dict()
+    
+    g_cv_dic = dic2['LPC_config']
+    
+    lpc_cv = get_LPC_cv(word, cv_dic, g_cv_dic)
+    
+    new_word = ''
+    phon = phon_dic[word]
+    if lpc_cv == cv_dic[word]:
+        return p_cv_dic[word]
+    else:
+        l_lpc = lpc_cv.split('-')
+        for syl in l_lpc:
+            new_word += phon[:len(syl)]+'-'
+            phon = phon[len(syl):]
+        return new_word[:-1]
+
+
+def get_LPC_cv(word, cv_dic, g_cv_dic):
+    
+
+    LPC_cv = ''
+    if word in cv_dic:
+        cv_lst = cv_dic[word].split('-')
+        for syl in cv_lst:
+            LPC_cv = LPC_cv + g_cv_dic[syl] + '-'
+        return LPC_cv[:-1]
+
+    else:
+        return word
+
+def get_word_code(syll):
+    position = {'a': '0', 'o': '0', '9': '0', '5': '1', '2': '1', 'i': '2', '§': '2', '@': '2', 'E': '3', 'u': '3', 'O': '3', '1': '4', 'y': '4', 'e': '4'}
+    configuration = {'p': '0', 'd': '0', 'Z': '0', 'k': '1', 'v': '1', 'z': '1', 's': '2', 'R': '2', 'b': '3', 'n': '3', '8': '3', 't': '4', 'm': '4', 'f': '4', 'l': '5', 'S': '5', 'N': '5', 'w': '5', 'g': '6', 'j': '7', 'G': '7'}
+    try:
+        code_word = ''
+        if len(syll) == 1:
+            if syll in configuration:
+                code_word += configuration[syll]
+                code_word += '0'
+            else:
+                code_word += '4'
+                code_word += position[syll]
+        else:
+            for i in range (0,len(syll)):
+                if syll[i] in configuration:
+                    code_word += configuration[syll[i]]
+                else:
+                    code_word += position[syll[i]]
+        return code_word
+    except:
+        return None
+
+
+def shape_position_code(word):
+    code_word = ""
+    syll_lst = get_LPC_p(word).split("-")
+    for syll in syll_lst:
+        code_word += get_word_code(syll) + '-'  
+    return code_word[:-1]

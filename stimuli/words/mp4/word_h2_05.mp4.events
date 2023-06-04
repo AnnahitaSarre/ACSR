@@ -1,0 +1,5 @@
+match
+event,stimulus,frame_number
+SYLLABLE ONSET, ma, 22
+SYLLABLE ONSET, t, 23
+SYLLABLE ONSET, S, 25

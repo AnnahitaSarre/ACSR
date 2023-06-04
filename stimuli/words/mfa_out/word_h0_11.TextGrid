@@ -45,11 +45,11 @@ item []:
         intervals [4]:
             xmin = 1.62 
             xmax = 1.87 
-            text = "ɔ" 
+            text = "o" 
         intervals [5]:
             xmin = 1.87 
             xmax = 2.2 
-            text = "ɲ" 
+            text = "n" 
         intervals [6]:
             xmin = 2.2 
             xmax = 2.3 

@@ -1,0 +1,37 @@
+python is /network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/bin/python
+Loaded model: ../trained_models/model_rf_position_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_l1_05.mp4
+Extracting coordinates...
+Extracting coordinates for: word_l1_05.mp4
+Number of frames in video: 57
+Extracting features...
+Face width computed for normalizaiton 0.15709980401695905
+Features saved to: ../output/word_l1_05_features.csv
+csv file with predictions was saved to ../output/predictions_rf_position_female_cropped_word_l1_05.csv
+Loaded model: ../trained_models/model_rf_shape_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_l1_05.mp4
+Extracting coordinates...
+Extracting coordinates for: word_l1_05.mp4
+Number of frames in video: 57
+Extracting features...
+Face width computed for normalizaiton 0.15709980401695905
+Features saved to: ../output/word_l1_05_features.csv
+csv file with predictions was saved to ../output/predictions_rf_shape_female_cropped_word_l1_05.csv
+Visualization for: ../stimuli/words/mp4/word_l1_05.mp4
+32
+Number of syllabels: 3
+['ko', 'jO', 't']
+Stimulus: coyote
+ko: frame #15
+jO: frame #27
+t: frame #35
+Event onsets saved to: ../stimuli/words/mp4/word_l1_05.mp4.events
+Figure was save to: ../stimuli/words/mp4/word_l1_05.mp4.png
+Visualization for: ../stimuli/words/mp4/word_l1_05.mp4
+32
+            event stimulus  frame_number
+0  SYLLABLE ONSET       ko            18
+1  SYLLABLE ONSET       jO            31
+2  SYLLABLE ONSET        t            45
+The video was successfully saved
+The marked video was saved to: ../stimuli/words/mp4/word_l1_05_marked_with_model_female_cropped.avi

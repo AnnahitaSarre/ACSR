@@ -1,0 +1,26 @@
+python is /network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/bin/python
+Loaded model: ../trained_models/model_rf_position_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_l2_04_pseudo.mp4
+Extracting coordinates...
+Extracting coordinates for: word_l2_04_pseudo.mp4
+Number of frames in video: 60
+Extracting features...
+Face width computed for normalizaiton 0.16147154436654446
+Features saved to: ../output/word_l2_04_pseudo_features.csv
+csv file with predictions was saved to ../output/predictions_rf_position_female_cropped_word_l2_04_pseudo.csv
+Loaded model: ../trained_models/model_rf_shape_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_l2_04_pseudo.mp4
+Extracting coordinates...
+Extracting coordinates for: word_l2_04_pseudo.mp4
+Number of frames in video: 60
+Extracting features...
+Face width computed for normalizaiton 0.16147154436654446
+Features saved to: ../output/word_l2_04_pseudo_features.csv
+csv file with predictions was saved to ../output/predictions_rf_shape_female_cropped_word_l2_04_pseudo.csv
+Visualization for: ../stimuli/words/mp4/word_l2_04_pseudo.mp4
+32
+Number of syllabels: 0
+['mE', 'p', 't']
+Stimulus: mepte
+Visualization for: ../stimuli/words/mp4/word_l2_04_pseudo.mp4
+32

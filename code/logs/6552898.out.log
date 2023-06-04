@@ -1,0 +1,37 @@
+python is /network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/bin/python
+Loaded model: ../trained_models/model_rf_position_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_h1_02.mp4
+Extracting coordinates...
+Extracting coordinates for: word_h1_02.mp4
+Number of frames in video: 60
+Extracting features...
+Face width computed for normalizaiton 0.16173862673090703
+Features saved to: ../output/word_h1_02_features.csv
+csv file with predictions was saved to ../output/predictions_rf_position_female_cropped_word_h1_02.csv
+Loaded model: ../trained_models/model_rf_shape_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_h1_02.mp4
+Extracting coordinates...
+Extracting coordinates for: word_h1_02.mp4
+Number of frames in video: 60
+Extracting features...
+Face width computed for normalizaiton 0.16173862673090703
+Features saved to: ../output/word_h1_02_features.csv
+csv file with predictions was saved to ../output/predictions_rf_shape_female_cropped_word_h1_02.csv
+Visualization for: ../stimuli/words/mp4/word_h1_02.mp4
+32
+Number of syllabels: 3
+['Za', 'R', 'd5']
+Stimulus: jardin
+Za: frame #12
+R: frame #25
+d5: frame #36
+Event onsets saved to: ../stimuli/words/mp4/word_h1_02.mp4.events
+Figure was save to: ../stimuli/words/mp4/word_h1_02.mp4.png
+Visualization for: ../stimuli/words/mp4/word_h1_02.mp4
+32
+            event stimulus  frame_number
+0  SYLLABLE ONSET       Za            14
+1  SYLLABLE ONSET        R            23
+2  SYLLABLE ONSET       d5            44
+The video was successfully saved
+The marked video was saved to: ../stimuli/words/mp4/word_h1_02_marked_with_model_female_cropped.avi

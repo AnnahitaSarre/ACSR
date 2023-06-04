@@ -1,0 +1,37 @@
+python is /network/lustre/iss02/home/annahita.sarre/anaconda3/envs/myenv/bin/python
+Loaded model: ../trained_models/model_rf_position_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_h0_25.mp4
+Extracting coordinates...
+Extracting coordinates for: word_h0_25.mp4
+Number of frames in video: 81
+Extracting features...
+Face width computed for normalizaiton 0.1595468343854593
+Features saved to: ../output/word_h0_25_features.csv
+csv file with predictions was saved to ../output/predictions_rf_position_female_cropped_word_h0_25.csv
+Loaded model: ../trained_models/model_rf_shape_female_cropped.pkl
+Loaded video: ../stimuli/words/mp4/word_h0_25.mp4
+Extracting coordinates...
+Extracting coordinates for: word_h0_25.mp4
+Number of frames in video: 81
+Extracting features...
+Face width computed for normalizaiton 0.1595468343854593
+Features saved to: ../output/word_h0_25_features.csv
+csv file with predictions was saved to ../output/predictions_rf_shape_female_cropped_word_h0_25.csv
+Visualization for: ../stimuli/words/mp4/word_h0_25.mp4
+32
+Number of syllabels: 3
+['s5', 'pa', 'ti']
+Stimulus: sympathie
+s5: frame #16
+pa: frame #36
+ti: frame #51
+Event onsets saved to: ../stimuli/words/mp4/word_h0_25.mp4.events
+Figure was save to: ../stimuli/words/mp4/word_h0_25.mp4.png
+Visualization for: ../stimuli/words/mp4/word_h0_25.mp4
+32
+            event stimulus  frame_number
+0  SYLLABLE ONSET       s5            18
+1  SYLLABLE ONSET       pa            43
+2  SYLLABLE ONSET       ti            62
+The video was successfully saved
+The marked video was saved to: ../stimuli/words/mp4/word_h0_25_marked_with_model_female_cropped.avi

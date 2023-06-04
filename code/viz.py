@@ -105,7 +105,8 @@ def plot_joint_measure(df_predictions_pos,
     
     if onsets_extrema is not None:
         for onset in onsets_extrema:
-            ax.axvline(onset, color='k', ls='--')
+            if onset is not None:
+                ax.axvline(onset, color='k', ls='--')
     return fig, ax 
 
 def mark_video(cap, fn_video,
