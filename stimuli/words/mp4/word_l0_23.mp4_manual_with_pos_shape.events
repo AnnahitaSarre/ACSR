@@ -1,0 +1,4 @@
+cassoulet,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ka,16,0,1
+1,SYLLABLE ONSET, su,28,3,2
+2,SYLLABLE ONSET, lE,42,3,5

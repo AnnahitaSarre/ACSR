@@ -1,0 +1,4 @@
+laps,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, la,19,0,5
+1,SYLLABLE ONSET, p,23,0,0
+2,SYLLABLE ONSET, s,34,0,2

@@ -1,5 +1,5 @@
 poisson
 event,stimulus,frame_number
-SYLLABLE ONSET, p, 48
-SYLLABLE ONSET, wa, 59
-SYLLABLE ONSET, s§, None
+SYLLABLE ONSET, p, 21
+SYLLABLE ONSET, wa, 30
+SYLLABLE ONSET, s§, 56

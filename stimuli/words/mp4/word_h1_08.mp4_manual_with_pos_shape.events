@@ -1,0 +1,4 @@
+poisson,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, p,25,0,0
+1,SYLLABLE ONSET, wa,31,0,5
+2,SYLLABLE ONSET, s§,49,2,2

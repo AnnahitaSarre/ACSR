@@ -1,0 +1,4 @@
+cassure,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ka,20,0,1
+1,SYLLABLE ONSET, sy,34,4,2
+2,SYLLABLE ONSET, R,45,0,2

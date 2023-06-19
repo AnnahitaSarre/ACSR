@@ -1,0 +1,4 @@
+match,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ma,23,0,4
+1,SYLLABLE ONSET, t,34,0,4
+2,SYLLABLE ONSET, S,39,0,5

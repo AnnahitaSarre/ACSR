@@ -39,7 +39,8 @@ def extract_class_from_fn(fn):
     if fn is not None:
         st = fn.find('_') + 1
         ed = fn.find('.')
-        return int(fn[st:ed])
+        c = fn[st:ed]#.split('_')[0]
+        return int(c)
     else:
         return None
 
@@ -90,9 +91,10 @@ def get_frames_around_event(fn_video, frame_number, n_neighbor_frames):
     st = frame_number - n_neighbor_frames
     ed = frame_number + n_neighbor_frames + 1
     frame_numbers = range(st, ed)
-    
+
     extracted_frames = []
     cap = cv2.VideoCapture(fn_video)
+
     for frame_number in frame_numbers:
         cap.set(cv2.CAP_PROP_POS_FRAMES, frame_number)
         ret, frame = cap.read()
@@ -219,7 +221,7 @@ def extract_coordinates(cap, fn_video, show_video=False, verbose=True):
     cap.release()
     cv2.destroyAllWindows()
     
-    print(len(df_coords), n_frames)
+    #print(len(df_coords), n_frames)
     assert n_frames - df_coords.shape[0] <=1
 
     return df_coords

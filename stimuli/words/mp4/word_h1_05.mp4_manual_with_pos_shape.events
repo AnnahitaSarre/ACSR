@@ -1,0 +1,4 @@
+-tableau,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ta,18,0,4
+1,SYLLABLE ONSET, b,28,0,3
+2,SYLLABLE ONSET, lo,40,0,5

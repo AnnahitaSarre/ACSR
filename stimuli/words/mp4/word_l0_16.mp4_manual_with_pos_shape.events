@@ -1,0 +1,4 @@
+ciboulot,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, si,26,2,2
+1,SYLLABLE ONSET, bu,37,3,3
+2,SYLLABLE ONSET, lo,51,0,5

@@ -1,0 +1,4 @@
+calorie,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ka,20,0,1
+1,SYLLABLE ONSET, lo,31,0,5
+2,SYLLABLE ONSET, Ri,46,2,2

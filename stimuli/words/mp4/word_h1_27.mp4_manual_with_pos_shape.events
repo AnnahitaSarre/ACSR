@@ -1,0 +1,4 @@
+routine,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, Ru,23,3,2
+1,SYLLABLE ONSET, ti,47,2,4
+2,SYLLABLE ONSET, n,64,0,3

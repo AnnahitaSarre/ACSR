@@ -1,0 +1,4 @@
+messager,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, me,23,4,4
+1,SYLLABLE ONSET, sa,40,0,2
+2,SYLLABLE ONSET, Ze,57,4,0

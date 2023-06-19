@@ -1,0 +1,4 @@
+pendule,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, p@,18,2,0
+1,SYLLABLE ONSET, dy,40,4,0
+2,SYLLABLE ONSET, l,55,0,5

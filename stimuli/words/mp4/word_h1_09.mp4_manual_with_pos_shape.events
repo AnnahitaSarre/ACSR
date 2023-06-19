@@ -1,0 +1,4 @@
+essence,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, e,24,4,4
+1,SYLLABLE ONSET, s@,47,2,2
+2,SYLLABLE ONSET, s,64,0,2

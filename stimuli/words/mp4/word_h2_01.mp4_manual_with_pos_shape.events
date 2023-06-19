@@ -1,0 +1,4 @@
+fric,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, f,20,0,4
+1,SYLLABLE ONSET, Ri,35,2,2
+2,SYLLABLE ONSET, k,48,0,1

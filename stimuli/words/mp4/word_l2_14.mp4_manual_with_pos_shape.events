@@ -1,0 +1,4 @@
+chlore,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, k,20,0,1
+1,SYLLABLE ONSET, lO,30,3,5
+2,SYLLABLE ONSET, R,41,0,2

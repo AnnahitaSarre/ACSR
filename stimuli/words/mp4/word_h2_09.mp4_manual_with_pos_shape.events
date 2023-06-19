@@ -1,0 +1,4 @@
+fruit,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, f,19,0,4
+1,SYLLABLE ONSET, R,27,0,2
+2,SYLLABLE ONSET, 8i,41,2,3

@@ -1,0 +1,4 @@
+usage,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, y,25,4,4
+1,SYLLABLE ONSET, za,51,0,1
+2,SYLLABLE ONSET, Z,58,0,0

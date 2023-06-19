@@ -1,0 +1,4 @@
+savane,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, sa,20,0,2
+1,SYLLABLE ONSET, va,29,0,1
+2,SYLLABLE ONSET, n,39,0,3

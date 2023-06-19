@@ -1,0 +1,4 @@
+pitance,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, pi,23,2,0
+1,SYLLABLE ONSET, t@,36,2,4
+2,SYLLABLE ONSET, s,47,0,2

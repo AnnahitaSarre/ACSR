@@ -1,0 +1,4 @@
+bloc,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, b,18,0,3
+1,SYLLABLE ONSET, lO,31,3,5
+2,SYLLABLE ONSET, k,44,0,1

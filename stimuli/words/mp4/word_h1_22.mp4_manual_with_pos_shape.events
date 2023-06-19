@@ -1,0 +1,4 @@
+poison,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, p,20,0,0
+1,SYLLABLE ONSET, wa,35,0,5
+2,SYLLABLE ONSET, z§,54,2,1

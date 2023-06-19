@@ -1,5 +1,5 @@
 sigle
 event,stimulus,frame_number
-SYLLABLE ONSET, si, 10
-SYLLABLE ONSET, g, 24
-SYLLABLE ONSET, l, 42
+SYLLABLE ONSET, si, 24
+SYLLABLE ONSET, g, 45
+SYLLABLE ONSET, l, None

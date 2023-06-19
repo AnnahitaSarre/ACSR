@@ -15,13 +15,11 @@ parser.add_argument('--path2data', default=os.path.join('..', 'data',
 parser.add_argument('--path2output', default=os.path.join('..', 'output'))
 args = parser.parse_args()
 
-file_name = f'training_coords_face_hand_{args.gender}_{args.cropping}.csv'    
+positions_list = [f'position_0{i}' for i in range(5)]
+shapes_list = [f'shape_0{i}' for i in range(8)]
 
-positions_list = ['position_00','position_01','position_02',
-                  'position_03','position_04'] 
-
-shapes_list = ['shape_00','shape_01','shape_02','shape_03',
-               'shape_04','shape_05','shape_06','shape_07']
+#positions_list = [f'position_{i}_from_words' for i in range(5)]
+#shapes_list = [f'shape_{i}_from_words' for i in range(5)]
 
 classes_list = [positions_list, shapes_list]
 
@@ -42,4 +40,8 @@ for fn_videos in classes_list:
         df = pd.concat([df,df_coords])
 
 os.makedirs(args.path2output, exist_ok=True)
-df.to_csv(os.path.join(args.path2output, file_name))
+
+fn_output = f'training_coords_face_hand_{args.gender}_{args.cropping}.csv'    
+fn_output = os.path.join(args.path2output, fn_output)
+df.to_csv(fn_output)
+print(f'coordinates saved to: {fn_output}')

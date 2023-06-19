@@ -1,0 +1,4 @@
+fuite,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, f,20,0,4
+1,SYLLABLE ONSET, 8i,37,2,3
+2,SYLLABLE ONSET, t,50,0,4

@@ -4,12 +4,13 @@ import pandas as pd
 
 from utils import get_word_code
 
-
+manual = '_manual' # either '', or '_manual'
 path2stimuli = '../stimuli/words/mp4'
-fns_events = glob.glob(os.path.join(path2stimuli, '*.events'))
+fns_events = glob.glob(os.path.join(path2stimuli, f'*{manual}.events'))
 
 # ADD SHAPE AND POSITION TO EVENTS FILE
 for fn_events in fns_events:
+    print(f'Processing file {fn_events}')
     word = open(fn_events, 'r').readlines()[0].strip('\n')
     df = pd.read_csv(fn_events, skiprows=1, index_col=False)
     
@@ -28,9 +29,17 @@ for fn_events in fns_events:
         shapes.append(shape)
     
     df['pos'] = poss
-    df['shape'] = shape
+    df['shape'] = shapes
     
     df.index.name = word
     
-    df.to_csv(fn_events)
+    fn_new_folder = os.path.dirname(fn_events)
+    fn_new_base = os.path.basename(fn_events).split('.')
+    
+    fn_new_base = f'{fn_new_base[0]}.{fn_new_base[1]}_with_pos_shape.{fn_new_base[2]}'
+    
+    fn_new = os.path.join(fn_new_folder, fn_new_base)
+    
+    print(f'Saving new file to: {fn_new}')
+    df.to_csv(fn_new)
     

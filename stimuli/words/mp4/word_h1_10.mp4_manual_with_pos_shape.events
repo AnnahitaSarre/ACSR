@@ -1,0 +1,4 @@
+plafond,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, p,20,0,0
+1,SYLLABLE ONSET, la,27,0,5
+2,SYLLABLE ONSET, f§,45,2,4

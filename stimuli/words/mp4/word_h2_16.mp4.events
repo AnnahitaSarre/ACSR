@@ -1,5 +1,5 @@
 bloc
 event,stimulus,frame_number
-SYLLABLE ONSET, b, 18
-SYLLABLE ONSET, lO, 30
-SYLLABLE ONSET, k, 50
+SYLLABLE ONSET, b, 30
+SYLLABLE ONSET, lO, 49
+SYLLABLE ONSET, k, None

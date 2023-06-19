@@ -20,7 +20,7 @@ args=parser.parse_args()
 # LOAD COORDINATE DATAFRAME
 fn_coordinates = f'training_coords_face_hand_{args.gender}_{args.cropping}.csv'
 df_coord = pd.read_csv(os.path.join(args.path2coordinates, fn_coordinates))
-
+print(set(df_coord['fn_video']))
 # CREATE NEW DATAFRAME FOR FEATURES
 df_features = extract_features(df_coord)
 

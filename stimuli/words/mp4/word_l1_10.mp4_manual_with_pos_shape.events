@@ -1,0 +1,4 @@
+verso,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, vE,23,3,1
+1,SYLLABLE ONSET, R,33,0,2
+2,SYLLABLE ONSET, so,44,0,2

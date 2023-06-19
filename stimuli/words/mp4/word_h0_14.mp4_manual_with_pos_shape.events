@@ -1,0 +1,4 @@
+ maladie,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ma,24,0,4
+1,SYLLABLE ONSET, la,36,0,5
+2,SYLLABLE ONSET, di,58,2,0

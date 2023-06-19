@@ -80,6 +80,7 @@ df_events = pd.read_csv(fn_txt, skiprows=1)
 print(df_events)
 
 # MARK VIDEO
+#print(df_predictions_shape)
 viz.mark_video(cap, fn_video,
                args.gender, args.cropping,
                str_stimulus,

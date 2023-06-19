@@ -1,0 +1,4 @@
+sentiment,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, s@,32,2,2
+1,SYLLABLE ONSET, ti,53,2,4
+2,SYLLABLE ONSET, m@,73,2,4

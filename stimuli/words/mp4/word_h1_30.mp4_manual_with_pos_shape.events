@@ -1,0 +1,4 @@
+indice,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, 5,15,1,4
+1,SYLLABLE ONSET, di,38,2,0
+2,SYLLABLE ONSET, s,56,0,2

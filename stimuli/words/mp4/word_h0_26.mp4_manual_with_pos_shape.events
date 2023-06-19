@@ -1,0 +1,4 @@
+syndicat,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, s5,25,1,2
+1,SYLLABLE ONSET, di,42,2,0
+2,SYLLABLE ONSET, ka,62,0,1

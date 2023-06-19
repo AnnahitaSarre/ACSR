@@ -154,6 +154,10 @@ def mark_video(cap, fn_video,
             curr_row_pos = df_predictions_pos[df_predictions_pos['frame_number']==i_frame+1]
             # SHAPE
             curr_row_shape = df_predictions_shape[df_predictions_shape['frame_number']==i_frame+1]
+
+            #print(curr_row_pos)
+            #print(curr_row_shape)
+
             if curr_row_shape.empty or curr_row_pos.empty:
                 print(f'Something went wrong at frame {i_frame}!')
                 break

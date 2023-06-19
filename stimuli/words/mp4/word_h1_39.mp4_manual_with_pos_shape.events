@@ -1,0 +1,4 @@
+coquille,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ko,19,0,1
+1,SYLLABLE ONSET, ci,39,,
+2,SYLLABLE ONSET, j,52,0,7

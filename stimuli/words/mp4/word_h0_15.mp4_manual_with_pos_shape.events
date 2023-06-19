@@ -1,0 +1,4 @@
+monument,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, mo,18,0,4
+1,SYLLABLE ONSET, ny,37,4,3
+2,SYLLABLE ONSET, m@,54,2,4

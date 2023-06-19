@@ -1,0 +1,4 @@
+pluie,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, p,19,0,0
+1,SYLLABLE ONSET, l,26,0,5
+2,SYLLABLE ONSET, 8i,36,2,3

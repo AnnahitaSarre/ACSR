@@ -61,13 +61,16 @@ if args.save_features:
                                     f'{args.fn_video[:-4]}_features.csv'))
     print(f"Features saved to: {os.path.join(args.path2output, f'{args.fn_video[:-4]}_features.csv')}")
 
-# print(df_features)
+#print(df_features)
 
 # PREDICT
 predicted_probs, predicted_class = compute_predictions(model,
                                                        df_features[feature_names])
 
-df_predictions = pd.DataFrame()
+n_classes = {'position':5, 'shape':8}[args.property_type]
+columns = ['frame_number', 'predicted_class'] + [f'p_class_{c+1}' for c in range(n_classes)]
+df_predictions = pd.DataFrame(columns=columns)
+
 df_predictions['frame_number'] = df_features['frame_number']
 df_predictions['predicted_class'] = predicted_class
 df_predictions['predicted_class'] = df_predictions.apply(lambda row: extract_class_from_fn(row['predicted_class']),
@@ -76,6 +79,7 @@ for i_row, curr_predicted_probs in enumerate(predicted_probs):
     if curr_predicted_probs is not None:
         for c, p_c in enumerate(curr_predicted_probs):
             df_predictions.loc[i_row, f'p_class_{c+1}'] = p_c
+#print(df_predictions)
 
 # SAVE
 fn_predictions = f'predictions_{args.model_type}_{args.property_type}_{args.gender}_{args.cropping}_{args.fn_video[:-4]}.csv'

@@ -1,0 +1,4 @@
+nombre,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, n§,28,2,3
+1,SYLLABLE ONSET, b,46,0,3
+2,SYLLABLE ONSET, R,51,0,2

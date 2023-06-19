@@ -1,0 +1,4 @@
+stop,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, s,24,0,2
+1,SYLLABLE ONSET, tO,36,3,4
+2,SYLLABLE ONSET, p,47,0,0

@@ -1,0 +1,4 @@
+numéro,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, ny,19,4,3
+1,SYLLABLE ONSET, me,38,4,4
+2,SYLLABLE ONSET, Ro,58,0,2

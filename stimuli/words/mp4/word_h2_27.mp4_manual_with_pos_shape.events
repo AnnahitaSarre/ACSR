@@ -1,0 +1,4 @@
+grange,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, g,20,0,6
+1,SYLLABLE ONSET, R@,37,2,2
+2,SYLLABLE ONSET, Z,56,0,0

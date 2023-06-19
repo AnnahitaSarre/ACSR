@@ -1,0 +1,4 @@
+psaume,event,stimulus,frame_number,pos,shape
+0,SYLLABLE ONSET, p,22,0,0
+1,SYLLABLE ONSET, so,29,0,2
+2,SYLLABLE ONSET, m,39,0,4
